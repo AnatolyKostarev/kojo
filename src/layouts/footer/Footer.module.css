@@ -1,3 +1,7 @@
+footer {
+  background: transparent;
+}
+
 .container {
   max-width: 1920px;
   margin: 0 auto;
@@ -58,7 +62,7 @@
 
 .item:hover {
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transform: translateY(-100%);
+  transform: translateY(-112%);
   transition: 0.3s ease-in-out;
 }
 
