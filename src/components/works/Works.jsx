@@ -4,7 +4,7 @@ import styles from "./Works.module.css";
 export default function Works() {
   return (
     <div>
-      <h1 className={styles.title}>WORKS Anatoly</h1>
+      <h1 className={styles.title}>WORKS</h1>
     </div>
   );
 }
