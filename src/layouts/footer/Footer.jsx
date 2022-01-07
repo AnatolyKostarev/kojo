@@ -18,9 +18,14 @@ export default function Footer() {
               <ul className={styles.list}>
                 {footerNav.map((elem, index) => (
                   <li className={styles.item} key={index}>
-                    <a href={elem.href} className={styles.links}>
-                      {elem.social}
-                    </a>
+                    <div className={styles.roll__link}>
+                      <a href={elem.href} className={styles.link__top}>
+                        {elem.social}
+                      </a>
+                      <a href={elem.href} className={styles.link__bottom}>
+                        {elem.social}
+                      </a>
+                    </div>
                   </li>
                 ))}
               </ul>
