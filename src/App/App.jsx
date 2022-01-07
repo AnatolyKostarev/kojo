@@ -2,8 +2,8 @@ import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
+import Footer from "../layouts/footer/Footer";
 import "./App.module.css";
-import Button from "../components/button/Button";
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <Works />
         <Services />
         <Contacts />
-        <Button title="hire us" />
       </main>
+      <Footer />
     </>
   );
 }
