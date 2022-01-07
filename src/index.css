@@ -11,7 +11,7 @@ body {
   font-size: 11px !important;
   color: #000;
   background: #fff;
-  cursor: url("../public/img/header/cursor.png") 6 6, auto;
+  cursor: url("/public/img/header/cursor.png") 6 6, auto;
 }
 
 h1,
@@ -31,7 +31,7 @@ a {
   padding: 0;
   color: #000;
   text-decoration: none;
-  cursor: url("../public/img/header/cursor.png") 6 6, auto;
+  cursor: url("/public/img/header/cursor.png") 6 6, auto;
 }
 
 ul,
