@@ -1,13 +1,106 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "GothamProMedium", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 11px !important;
+  color: #000;
+  background: #fff;
+  cursor: url("../public/img/header/cursor.png") 6 6, auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../public/fonts/GothamPro-Medium.eot");
+  src: local("Gotham Pro Medium"), local("GothamPro-Medium"),
+    url("../public/fonts/GothamPro-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/GothamPro-Medium.woff") format("woff"),
+    url("../public/fonts/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProBold";
+  src: url("../public/fonts/GothamPro-Bold.eot");
+  src: local("../public/fonts/Gotham Pro Bold"), local("GothamPro-Bold"),
+    url("../public/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../public/fonts/GothamPro-Bold.woff") format("woff"),
+    url("../public/fonts/GothamPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProNarrowBold";
+  src: url("../public/fonts/GothamProNarrow-Bold.eot");
+  src: local("../public/fonts/Gotham Pro Narrow Bold"),
+    local("GothamProNarrow-Bold"),
+    url("../public/fonts/GothamProNarrow-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/GothamProNarrow-Bold.woff") format("woff"),
+    url("../public/fonts/GothamProNarrow-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProNarrowMedium";
+  src: url("../public/fonts/GothamProNarrow-Medium.eot");
+  src: local("../public/fonts/Gotham Pro Narrow Medium"),
+    local("GothamProNarrow-Medium"),
+    url("../public/fonts/GothamProNarrow-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/GothamProNarrow-Medium.woff") format("woff"),
+    url("../public/fonts/GothamProNarrow-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProLight";
+  src: url("../public/fonts/GothamPro-Light.eot");
+  src: local("../public/fonts/Gotham Pro Light"), local("GothamPro-Light"),
+    url("../public/fonts/GothamPro-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/GothamPro-Light.woff") format("woff"),
+    url("../public/fonts/GothamPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamProBlack";
+  src: url("../public/fonts/GothamPro-Black.eot");
+  src: local("../public/fonts/Gotham Pro Black"), local("GothamPro-Black"),
+    url("../public/fonts/GothamPro-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../public/fonts/GothamPro-Black.woff") format("woff"),
+    url("../public/fonts/GothamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("../public/fonts/GothamPro.eot");
+  src: local("../public/fonts/Gotham Pro"), local("GothamPro"),
+    url("../public/fonts/GothamPro.eot?#iefix") format("embedded-opentype"),
+    url("../public/fonts/GothamPro.woff") format("woff"),
+    url("../public/fonts/GothamPro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
