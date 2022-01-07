@@ -3,8 +3,12 @@ import styles from "./Services.module.css";
 
 export default function Services() {
   return (
-    <div>
-      <h1 className={styles.title}>SERVICES</h1>
-    </div>
+    <>
+      <section className={styles.service}>
+        <div className="container">
+          <h1 className={styles.title}>SERVICES</h1>
+        </div>
+      </section>
+    </>
   );
 }

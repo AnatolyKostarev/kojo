@@ -14,6 +14,29 @@ body {
   cursor: url("../public/img/header/cursor.png") 6 6, auto;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: content-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "GothamProMedium";
   src: url("../public/fonts/GothamPro-Medium.eot");
