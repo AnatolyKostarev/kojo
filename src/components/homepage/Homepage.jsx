@@ -5,7 +5,7 @@ export default function Homepage() {
   return (
     <>
       <section className={styles.home}>
-        <div className="container">
+        <div className={styles.container}>
           <h1 className={styles.title}>HOMEPAGE</h1>
         </div>
       </section>

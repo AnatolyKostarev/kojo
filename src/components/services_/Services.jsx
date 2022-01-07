@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <>
       <section className={styles.service}>
-        <div className="container">
+        <div className={styles.container}>
           <h1 className={styles.title}>SERVICES</h1>
         </div>
       </section>
