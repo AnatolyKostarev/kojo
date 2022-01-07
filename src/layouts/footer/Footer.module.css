@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10vh 0;
+  padding: 0 0 10vh;
   max-width: 1440px;
   font-size: 10px;
   line-height: 8px;
@@ -33,6 +33,11 @@
 
 .item:nth-child(2n) {
   margin: 0 1.4vw;
+}
+
+.item:hover,
+.links:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
 .copyright {
