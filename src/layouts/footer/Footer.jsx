@@ -3,9 +3,9 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   const footerNav = [
-    { social: "/ facebook", href: "https://facebook.com" },
-    { social: "/ instagram", href: "https://instagram.com" },
-    { social: "/ youtube", href: "https://youtube.ru" },
+    { social: "/ фэйсбук", href: "https://facebook.com" },
+    { social: "/ инстаграм", href: "https://instagram.com" },
+    { social: "/ вконтакте", href: "https://vk.com" },
   ];
 
   return (
@@ -32,7 +32,7 @@ export default function Footer() {
             </div>
 
             <div className={styles.copyright}>
-              {new Date().getFullYear()} &copy; "kojo" studio
+              {new Date().getFullYear()} &copy; "kojo" студия
             </div>
           </div>
         </div>
