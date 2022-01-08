@@ -1,8 +1,5 @@
 .btn {
-  overflow: hidden;
-}
-
-.btn__right {
+  position: relative;
   display: block;
   width: 12.5vw;
   padding: 0 1.3888888888888888vw;
@@ -16,20 +13,48 @@
   text-transform: uppercase;
   color: #fff;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.5s linear;
+  overflow: hidden;
+  z-index: 100;
 }
 
-.btn__right:hover {
-  transform: translateX(-110%);
-  transition: 0.5s ease-in-out;
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: 0.5s linear;
+  background: #fff;
+  outline: none;
 }
 
-.btn__right:focus {
-  transform: translateX(-110%);
-  transition: 0.5s ease-in-out;
+.btn:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "GothamProBlack";
+  font-size: 3.4814814814814816vh;
+  line-height: 4.938271604938272vh;
+  transform: translateX(-100%);
+  transition: 0.5s linear;
+  color: #000;
+  background: #fff;
+  z-index: -1;
 }
 
-.btn__right:active {
-  transform: translateX(-110%);
-  transition: 0.5s ease-in-out;
+.btn:hover::before {
+  transform: translateX(0);
+  transition: 0.5s linear;
+}
+
+.btn:hover::after {
+  transform: translateX(0);
+  transition: 0.5s linear;
+  z-index: 1;
 }
