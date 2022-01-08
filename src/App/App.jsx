@@ -17,6 +17,8 @@ function App() {
       </main>
       <Footer />
       <Button title="Заказать" />
+      <br />
+      <Button title="Отправить" />
     </>
   );
 }
