@@ -1,3 +1,35 @@
-.button {
+.btn {
+  overflow: hidden;
+}
+
+.btn__right {
   display: block;
+  width: 12.5vw;
+  padding: 0 1.3888888888888888vw;
+  font-family: "GothamProMedium";
+  font-size: 1.4814814814814816vh;
+  letter-spacing: 0.06944444444444445vw;
+  line-height: 4.938271604938272vh;
+  background: #000;
+  border: 0;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.btn__right:hover {
+  transform: translateX(-110%);
+  transition: 0.5s ease-in-out;
+}
+
+.btn__right:focus {
+  transform: translateX(-110%);
+  transition: 0.5s ease-in-out;
+}
+
+.btn__right:active {
+  transform: translateX(-110%);
+  transition: 0.5s ease-in-out;
 }
