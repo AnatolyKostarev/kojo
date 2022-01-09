@@ -1,0 +1,44 @@
+header {
+  margin-bottom: 200px;
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 100px 0;
+  box-sizing: content-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 140px;
+}
+
+.header__logo {
+  display: flex;
+  flex-basis: 32%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logo:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+
+.title {
+  font-family: "GothamProBold";
+  font-size: 4.938271604938272vh;
+  line-height: 4.691358024691358vh;
+  text-transform: uppercase;
+}
+
+.header__btn {
+  padding-right: 12vh;
+}
