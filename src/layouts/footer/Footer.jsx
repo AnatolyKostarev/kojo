@@ -14,7 +14,7 @@ export default function Footer() {
         <div className={styles.container}>
           <div className={styles.footer}>
             <div className={styles.social}>
-              <p className={styles.title}>socials:</p>
+              <p className={styles.title}>мы в сети:</p>
               <ul className={styles.list}>
                 {footerNav.map((elem, index) => (
                   <li className={styles.item} key={index}>
