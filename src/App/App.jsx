@@ -6,7 +6,6 @@ import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
 import Footer from "../layouts/footer/Footer";
 import "./App.module.css";
-import Button from "../components/button/Button";
 
 function App() {
   return (
@@ -19,9 +18,6 @@ function App() {
         <Route path="contacts" element={<Contacts />} />
       </Routes>
       <Footer />
-      <Button title="Заказать" />
-      <br />
-      <Button title="Отправить" />
     </>
   );
 }
