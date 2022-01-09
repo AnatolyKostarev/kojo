@@ -7,6 +7,10 @@
 .works {
   background: cornflowerblue;
 }
+
 .title {
-  color: #ccc;
+  font-family: "GothamProBold";
+  font-size: 4.938271604938272vh;
+  line-height: 4.691358024691358vh;
+  text-transform: uppercase;
 }
