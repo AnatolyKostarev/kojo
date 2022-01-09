@@ -4,7 +4,6 @@ import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
-import Footer from "../layouts/footer/Footer";
 import "./App.module.css";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
         <Route path="services" element={<Services />} />
         <Route path="contacts" element={<Contacts />} />
       </Routes>
-      <Footer />
     </>
   );
 }
