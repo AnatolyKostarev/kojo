@@ -1,4 +1,5 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navigation from "../components/navigation/Navigation";
 import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
@@ -10,14 +11,13 @@ import Button from "../components/button/Button";
 function App() {
   return (
     <>
-      <main>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="works" element={<Works />} />
-          <Route path="services" element={<Services />} />
-          <Route path="contacts" element={<Contacts />} />
-        </Routes>
-      </main>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="works" element={<Works />} />
+        <Route path="services" element={<Services />} />
+        <Route path="contacts" element={<Contacts />} />
+      </Routes>
       <Footer />
       <Button title="Заказать" />
       <br />
