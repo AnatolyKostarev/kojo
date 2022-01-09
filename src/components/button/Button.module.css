@@ -44,7 +44,7 @@
   transform: translateX(-100%);
   transition: 0.5s linear;
   color: #000;
-  background: #fff;
+  /* background: #fff; */
   z-index: -1;
 }
 
