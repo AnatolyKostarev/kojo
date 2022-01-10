@@ -4,7 +4,7 @@ import Footerworks from "../../layouts/footer/works/Footerworks";
 
 import styles from "./Works.module.css";
 
-export default function Works({ title }) {
+export default function Works() {
   return (
     <>
       <Headerworks title="Работы" />
