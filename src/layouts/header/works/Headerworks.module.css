@@ -20,6 +20,7 @@ header {
   flex-basis: 32%;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -28,7 +29,31 @@ header {
   height: auto;
 }
 
-.logo:hover {
+.header__img {
+  position: relative;
+  animation: show_title;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.header__img:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: slide;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.header__img:hover {
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
@@ -62,11 +87,10 @@ header {
 @keyframes slide {
   0% {
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(0);
   }
 
   100% {
-    opacity: 0;
     transform: translateX(100%);
   }
 }
