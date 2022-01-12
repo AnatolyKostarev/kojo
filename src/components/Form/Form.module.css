@@ -1,0 +1,29 @@
+.formcontrol {
+    font-size: 11.3580246913580247vh;
+}
+
+.input, .textarea {
+    width: 27.7vw;
+    height: 8vh;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    text-transform: uppercase;
+  }
+
+  .textarea {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    height: 6vh;
+    padding: 3vh 0 0;
+    overflow: hidden;
+    resize: none;
+  }
+  
+  .submitWrapper {
+    text-align: right;
+    margin: 6.049382716049383vh 0 0;
+  }
+
+  .item:hover {
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
