@@ -29,6 +29,7 @@
   transition: 0.5s linear;
   background: #fff;
   outline: none;
+  z-index: -1;
 }
 
 .btn:after {
@@ -44,8 +45,7 @@
   transform: translateX(-100%);
   transition: 0.5s linear;
   color: #000;
-  /* background: #fff; */
-  z-index: -1;
+  z-index: 10;
 }
 
 .btn:hover::before {
