@@ -4,7 +4,7 @@ import "../../../components/homepage/scrollSpy.css";
 import Button from "../../../components/buttonMax/button";
 export default function Header() {
   return (
-    <header className="header">
+    <header className="headerMax">
       <h1 className={style.title}>HEADER</h1>
       <div className={style.logoWrapper}>
         <img src="./img/header/icon-logo.svg" alt=" " />
