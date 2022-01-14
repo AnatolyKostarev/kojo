@@ -1,13 +1,24 @@
-.container {
-  max-width: 1920px;
-  padding: 0 100px;
-  box-sizing: content-box;
+.homepage {
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
 }
-
-.home {
-  background: coral;
+.blockLine {
+  width: 1px;
+  height: 17.28vh;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 39.93vw;
+  animation: showLine 0.5s ease;
 }
-
-.title {
-  color: #ccc;
+@keyframes showLine {
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+  }
 }
