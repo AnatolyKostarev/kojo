@@ -1,0 +1,21 @@
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 20;
+}
+.title{
+    display: none;
+}
+.logoWrapper{
+position: fixed;
+left: 6.25vw;
+top: 12.3vh;
+}
+.logoWrapper>img{
+    height: 3.7vh;
+}
+.btnBlock{
+    
+}
+
