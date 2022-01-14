@@ -3,7 +3,7 @@ import styles from "./Form.module.css";
 
 export default function Form() {
   return (
-    <form>
+    <form className={styles.form}>
         <div className={styles.required}>
           <input
             type="text"
@@ -13,7 +13,7 @@ export default function Form() {
             name="Feedback[name]"
             placeholder="Имя"
           />
-          <p>Это поле обязательно</p>
+          {/* <p>Это поле обязательно</p> */}
         </div>
         <div>
           <input
@@ -24,7 +24,7 @@ export default function Form() {
             name="Feedback[email]"
             placeholder="Email"
           />
-          <p>Это поле обязательно</p>
+          {/* <p>Это поле обязательно</p> */}
         </div>
         <div>
           <textarea
@@ -34,12 +34,12 @@ export default function Form() {
             name="Feedback[message]"
             placeholder="Сообщение"
           ></textarea>
-          <p>Это поле обязательно</p>
+          {/* <p>Это поле обязательно</p> */}
         </div>
         <div className={styles.submitWrapper}>
           <button
             type="submit"
-            className={styles.item}
+            className={styles.btn}
           >
             <div>Отправить</div>
           </button>
