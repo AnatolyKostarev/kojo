@@ -80,7 +80,7 @@ export default function Contacts() {
           {new Date().getFullYear()} &copy; "kojo" студия
         </div>
       </section>
-      <footer>
+      {/* <footer>
         <div className={styles.footer__container}>
           <div className={styles.footer__footer}>
             <div className={styles.footer__social}>
@@ -109,7 +109,7 @@ export default function Contacts() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }
