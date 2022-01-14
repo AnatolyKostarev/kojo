@@ -1,5 +1,5 @@
 header {
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .container {
@@ -13,6 +13,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-top: 140px;
+  max-width: 1560px;
 }
 
 .header__logo {
@@ -103,8 +104,4 @@ header {
   100% {
     opacity: 1;
   }
-}
-
-.header__btn {
-  padding-right: 12vh;
 }
