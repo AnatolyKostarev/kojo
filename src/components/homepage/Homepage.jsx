@@ -4,7 +4,7 @@ import Title from "./title/title";
 import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
 import Footer from './footer/footer.jsx';
-import Header from "../../layouts/header/Header.jsx";
+import Header from "../../layouts/header/homepage/Header.jsx";
 
 
 export default function Homepage() {
