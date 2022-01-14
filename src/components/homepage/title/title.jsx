@@ -10,6 +10,7 @@ function Title() {
       <section className={style.title} id="title">
         <div className={style.mainImage}>
           <img src="https://zipl.pro/assets/ce6872b3/img/studio.svg" />
+          <div className={style.boxAnimation}></div>
         </div>
         <div className={style.mainContent}>
           <div className={style.itemTitle}>

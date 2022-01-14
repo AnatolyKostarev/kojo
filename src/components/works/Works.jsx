@@ -12,7 +12,7 @@ export default function Works() {
         <div className={styles.container}>
           <div className={styles.works__list}>
             <div className={styles.works__item}>
-              <div className={styles.works__img}>
+              <div className={styles.works__img}>``
                 <img
                   src="/img/works/image_works-1.jpg"
                   width="840"
