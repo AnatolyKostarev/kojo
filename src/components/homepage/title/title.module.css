@@ -1,0 +1,47 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.title {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 33.3vh;
+  scroll-snap-align: start;
+}
+.mainImage {
+  width: 93.75vw;
+  height: 17vh;
+  background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
+  /* padding-left: 90px; */
+  padding-left: 6.25vw;
+  background-size: 100% 100%;
+}
+.mainImage > img {
+  z-index: 2;
+  height: calc(100% - -2px);
+}
+.mainContent {
+  padding-top: 16vh;
+  padding-left: 6.25vw;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent > div {
+  width: 20vw;
+}
+.itemTitle {
+  font-size: 5vh;
+  line-height: 5vh;
+}
+.itemParagph {
+  font-size: 1.3vh;
+  line-height: 1.8vh;
+}
+.itemParagph>p:nth-child(2) {
+ margin-top: 2.4vh;
+}
+.itemText {
+  font-size: 2.2vh;
+  line-height: 2.5vh;
+}

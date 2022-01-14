@@ -5,8 +5,64 @@
 }
 
 .works {
-  background: cornflowerblue;
+}
+
+.works__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 1560px;
+  box-sizing: content-box;
+}
+
+.works__img {
+  /* max-width: 840px; */
+  flex-basis: 54%;
+  overflow: hidden;
+}
+
+.works__img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s linear;
+  object-fit: cover;
+}
+
+.works__img img:hover {
+  transform: scale(1.05);
+  transition: 0.5s linear;
+}
+
+.works__info {
+  flex-basis: 46%;
+  padding: 128px 0 0 127px;
 }
 .title {
-  color: #ccc;
+  margin-bottom: 40px;
+  font-family: "GothamProBold", sans-serif;
+  font-size: 53px;
+}
+
+.counter {
+  margin-bottom: 15px;
+  font-family: "GothamProMedium", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.action {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  text-transform: uppercase;
 }

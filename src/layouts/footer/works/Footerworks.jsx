@@ -1,13 +1,12 @@
 import React from "react";
-import styles from "./Footer.module.css";
+import styles from "./Footerworks.module.css";
 
-export default function Footer() {
-  const footerNav = [
+export default function Footerworks() {
+  const footerWorksNav = [
     { social: "/ фэйсбук", href: "https://facebook.com" },
     { social: "/ инстаграм", href: "https://instagram.com" },
     { social: "/ вконтакте", href: "https://vk.com" },
   ];
-
   return (
     <>
       <footer>
@@ -16,7 +15,7 @@ export default function Footer() {
             <div className={styles.social}>
               <p className={styles.title}>мы в сети:</p>
               <ul className={styles.list}>
-                {footerNav.map((elem, index) => (
+                {footerWorksNav.map((elem, index) => (
                   <li className={styles.item} key={index}>
                     <div className={styles.roll__link}>
                       <a href={elem.href} className={styles.link__top}>
