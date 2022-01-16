@@ -18,7 +18,9 @@ export default function Headercontacts({ title }) {
                   />
                 </div>
               </Link>
-              <h1 className={styles.title}>{title}</h1>
+              <h1 className={styles.title}>
+                <strong>{title}</strong>
+              </h1>
             </div>
           </div>
         </div>

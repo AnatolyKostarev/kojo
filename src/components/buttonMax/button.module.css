@@ -21,7 +21,7 @@
 }
 
 #btn:before {
-  content: "SEND";
+  content: "ЗАКАЗАТЬ";
   color: black;
   font-size: 3.95vh;
   line-height: 4.93vh;
@@ -38,7 +38,7 @@
 }
 
 #btn:after {
-  content: "SEND";
+  content: "ЗАКАЗАТЬ";
   position: absolute;
   top: 0;
   left: 0;
