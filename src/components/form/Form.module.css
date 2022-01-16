@@ -22,17 +22,19 @@
   }
 
   .submitWrapper {
-    text-align: right;
     margin: 6.049382716049383vh 0 0;
   }
 
   .item:hover {
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   }
+
+  [data-btn="form_btn"] {
+    margin-left: auto;
+  }
 }
 
 @media screen and (max-width: 1023px) {
-
   .form {
     width: 95%;
   }
@@ -81,6 +83,6 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: GothamProMedium;
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   }
 }
