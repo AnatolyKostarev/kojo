@@ -7,33 +7,37 @@ export default function Form() {
     <form className={styles.form}>
       <div className={styles.required}>
         <input
-          type="text"
-          required
           id="feedback-name"
           className={styles.input}
+          type="text"
           name="Feedback[name]"
           placeholder="Имя"
+          minLength="2"
+          maxLength="50"
+          required
         />
         {/* <p>Это поле обязательно</p> */}
       </div>
       <div>
         <input
-          type="text"
-          required
           id="feedback-email"
           className={styles.input}
+          type="email"
           name="Feedback[email]"
           placeholder="Email"
+          required
         />
         {/* <p>Это поле обязательно</p> */}
       </div>
       <div>
         <textarea
           id="feedback-message"
-          required
           className={styles.textarea}
           name="Feedback[message]"
           placeholder="Сообщение"
+          minLength="10"
+          maxLength="500"
+          required
         ></textarea>
         {/* <p>Это поле обязательно</p> */}
       </div>
