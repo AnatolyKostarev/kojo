@@ -18,10 +18,20 @@ export default function Footerworks() {
                 {footerWorksNav.map((elem, index) => (
                   <li className={styles.item} key={index}>
                     <div className={styles.roll__link}>
-                      <a href={elem.href} className={styles.link__top}>
+                      <a
+                        href={elem.href}
+                        className={styles.link__top}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {elem.social}
                       </a>
-                      <a href={elem.href} className={styles.link__bottom}>
+                      <a
+                        href={elem.href}
+                        className={styles.link__bottom}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {elem.social}
                       </a>
                     </div>
