@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../buttonMax/button";
+import Button from "../button/Button";
 import styles from "./Form.module.css";
 
 export default function Form() {
@@ -38,13 +38,7 @@ export default function Form() {
         {/* <p>Это поле обязательно</p> */}
       </div>
       <div className={styles.submitWrapper}>
-        {/* <button
-            type="submit"
-            className={styles.btn}
-          >
-            <div>Отправить</div>
-          </button> */}
-        <Button />
+        <Button title="Отправить" modificator="form_btn" />
       </div>
     </form>
   );

@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Button from "../../../components/button/Button";
-import styles from "./Headerworks.module.css";
+import styles from "./Headercontacts.module.css";
 
-export default function Headerworks({ title }) {
+export default function Headercontacts({ title }) {
   return (
     <>
-      <header>
+      <header id={styles.header}>
         <div className={styles.container}>
           <div className={styles.header}>
             <div className={styles.header__logo}>
@@ -20,9 +19,6 @@ export default function Headerworks({ title }) {
                 </div>
               </Link>
               <h1 className={styles.title}>{title}</h1>
-            </div>
-            <div className={styles.header__btn}>
-              <Button title="Заказать" modificator="header_btn" />
             </div>
           </div>
         </div>
