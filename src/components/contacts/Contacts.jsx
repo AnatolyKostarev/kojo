@@ -44,12 +44,20 @@ export default function Contacts() {
                 <ul className={styles.contacts__list}>
                   {socialList.map((elem, index) => (
                     <li className={styles.contacts__row} key={index}>
-                      <div className={styles.contacts__link}>
+                      <div className={styles.contacts__links}>
                         <a
                           href={elem.href}
                           target="_blank"
                           rel="noreferrer"
-                          className={styles.contacts__item}
+                          className={styles.contacts__item_top}
+                        >
+                          {elem.social}
+                        </a>
+                        <a
+                          href={elem.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className={styles.contacts__item_bottom}
                         >
                           {elem.social}
                         </a>
