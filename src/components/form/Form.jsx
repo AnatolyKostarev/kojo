@@ -38,7 +38,7 @@ export default function Form() {
         {/* <p>Это поле обязательно</p> */}
       </div>
       <div className={styles.submitWrapper}>
-        <Button title="Отправить" modificator="form_btn" />
+        <Button title="Отправить" addStyle="form_btn" />
       </div>
     </form>
   );
