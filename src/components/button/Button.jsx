@@ -1,17 +1,12 @@
 import React from "react";
 import styles from "./Button.module.css";
 
-export default function Button({ title, modificator }) {
+export default function Button({ title, addStyle }) {
   return (
     <>
-      <a
-        className={styles.btn}
-        data-btn={modificator}
-        href="#"
-        data-text={title}
-      >
+      <button className={styles.btn} data-style={addStyle} data-text={title}>
         {title}
-      </a>
+      </button>
     </>
   );
 }

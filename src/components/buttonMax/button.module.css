@@ -1,8 +1,8 @@
 #anchor_form {
   position: fixed;
+  top: 12.3vh;
   right: 12.5vw;
   z-index: 10;
-  top: 12.3vh;
 }
 
 #anchor_from:hover,
@@ -11,30 +11,30 @@
 }
 
 #btn {
+  position: relative;
   height: 4.9vh;
   width: 12.5vw;
   border: none;
-  position: relative;
+  background: transparent;
   overflow: hidden;
   transition: 0.3s linear;
-  background: transparent;
 }
 
 #btn:before {
   content: "ЗАКАЗАТЬ";
-  color: black;
-  font-size: 3.95vh;
-  line-height: 4.93vh;
-  font-weight: 900;
   position: absolute;
   top: 0;
   left: -100%;
-  background: white;
   width: 100%;
   height: 100%;
+  font-size: 3.95vh;
+  line-height: 4.93vh;
+  font-weight: 900;
+  color: #000;
+  background: white;
+  box-sizing: border-box;
   transition: 0.3s linear;
   text-align: left;
-  box-sizing: border-box;
 }
 
 #btn:after {
@@ -42,6 +42,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  padding-left: 1.38vw;
   width: 100%;
   height: 100%;
   font-size: 1.48vh;
@@ -52,7 +53,6 @@
   background: #000;
   transition: 0.3s;
   text-align: left;
-  padding-left: 1.38vw;
   box-sizing: border-box;
   animation: showElement 0.5s ease;
   /* анимация для появление элемента */
