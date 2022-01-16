@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./Contacts.module.css";
+import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import Form from "../form/Form";
+import styles from "./Contacts.module.css";
 
 export default function Contacts() {
   const socialList = [
