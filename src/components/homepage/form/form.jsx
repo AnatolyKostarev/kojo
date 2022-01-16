@@ -1,5 +1,6 @@
 import style from "./form.module.css";
 import "../scrollSpy.css";
+
 function MainForm() {
   return (
     <>
@@ -19,7 +20,6 @@ function MainForm() {
                 HIRE US NOW - WE'RE HERE TO ASSIST YOU. DROP US A LINE, AND
                 WE'LL GET BACK TO YOU IN A BLINK OF AN EYE.
               </p>
-              
             </form>
           </div>
         </div>
