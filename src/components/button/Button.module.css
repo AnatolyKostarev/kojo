@@ -2,37 +2,38 @@
   position: relative;
   display: block;
   width: 12.5vw;
-  padding: 0 1.3888888888888888vw;
+  padding: 0 1.4vw;
   font-family: "GothamProMedium";
-  font-size: 1.4814814814814816vh;
-  letter-spacing: 0.06944444444444445vw;
-  line-height: 4.938271604938272vh;
-  background: #000;
+  font-size: 1.5vh;
+  letter-spacing: 0.07vw;
+  line-height: 4.9vh;
+  background: transparent;
   border: 0;
   text-align: left;
   text-transform: uppercase;
-  color: #fff;
+  color: transparent;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   transition: 0.5s linear;
   overflow: hidden;
-  z-index: 100;
 }
 
-.btn::before {
-  content: "";
+.btn::after {
+  content: attr(data-text);
   position: absolute;
   top: 0;
   left: 0;
+  padding-left: 1.38vw;
   width: 100%;
   height: 100%;
-  transform: translateX(100%);
-  transition: 0.5s linear;
-  background: #fff;
+  background: #000;
   outline: none;
-  z-index: -1;
+  color: #fff;
+  box-sizing: border-box;
+  transform: translateX(0);
+  transition: 0.5s linear;
 }
 
-.btn:after {
+.btn::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -40,21 +41,21 @@
   width: 100%;
   height: 100%;
   font-family: "GothamProBlack";
-  font-size: 3.4814814814814816vh;
-  line-height: 4.938271604938272vh;
+  font-size: 3.5vh;
+  line-height: 4.9vh;
+  letter-spacing: 0.06vw;
+  color: #000;
+  box-sizing: border-box;
   transform: translateX(-100%);
   transition: 0.5s linear;
-  color: #000;
-  z-index: 10;
+}
+
+.btn:hover::after {
+  transform: translateX(-100%);
+  transition: 0.5s linear;
 }
 
 .btn:hover::before {
   transform: translateX(0);
   transition: 0.5s linear;
-}
-
-.btn:hover::after {
-  transform: translateX(0);
-  transition: 0.5s linear;
-  z-index: 1;
 }
