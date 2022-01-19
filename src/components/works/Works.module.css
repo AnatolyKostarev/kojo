@@ -16,12 +16,11 @@
 }
 
 .works__img {
-  /* max-width: 840px; */
   flex-basis: 54%;
   overflow: hidden;
 }
 
-.works__img img {
+.works__pic {
   display: block;
   width: 100%;
   height: auto;
@@ -29,7 +28,7 @@
   object-fit: cover;
 }
 
-.works__img img:hover {
+.works__pic:hover {
   transform: scale(1.05);
   transition: 0.5s linear;
 }
@@ -38,6 +37,7 @@
   flex-basis: 46%;
   padding: 128px 0 0 127px;
 }
+
 .title {
   margin-bottom: 40px;
   font-family: "GothamProBold", sans-serif;
