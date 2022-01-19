@@ -13,7 +13,7 @@
   text-transform: uppercase;
   color: transparent;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transition: 0.5s linear;
+  transition: 0.4s linear;
   overflow: hidden;
 }
 
@@ -30,7 +30,7 @@
   color: #fff;
   box-sizing: border-box;
   transform: translateX(0);
-  transition: 0.5s linear;
+  transition: 0.4s linear;
 }
 
 .btn::before {
@@ -47,15 +47,15 @@
   color: #000;
   box-sizing: border-box;
   transform: translateX(-100%);
-  transition: 0.5s linear;
+  transition: 0.4s linear;
 }
 
 .btn:hover::after {
   transform: translateX(-100%);
-  transition: 0.5s linear;
+  transition: 0.4s linear;
 }
 
 .btn:hover::before {
   transform: translateX(0);
-  transition: 0.5s linear;
+  transition: 0.4s linear;
 }
