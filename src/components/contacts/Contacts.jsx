@@ -19,9 +19,11 @@ export default function Contacts() {
   return (
     <>
       <Navigation />
+
+      <Headercontacts title="контакты" />
+
       <section className={styles.contacts}>
         <div className={styles.container}>
-          <Headercontacts title="контакты" />
           <div className={styles.contacts__wraper}>
             <div className={styles.contacts__wraper_left}>
               <ul className={styles.contacts__info}>
