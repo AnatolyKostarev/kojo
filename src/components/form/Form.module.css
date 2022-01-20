@@ -15,14 +15,14 @@
 
   .textarea {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    height: 6vh;
+    height: 8vh;
     padding: 3vh 0 0;
     overflow: hidden;
     resize: none;
   }
 
   .submitWrapper {
-    margin: 6.049382716049383vh 0 0;
+    margin: 6vh 0 0;
   }
 
   .item:hover {
@@ -36,7 +36,7 @@
 
 @media screen and (max-width: 1023px) {
   .form {
-    width: 95%;
+    width: 100%;
   }
 
   .formcontrol {
@@ -55,15 +55,15 @@
 
   .textarea {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    height: 6vh;
-    padding: 3vh 0 0;
+    height: 55px;
+    padding: 20px 0;
     overflow: hidden;
     resize: none;
   }
 
   .submitWrapper {
     text-align: right;
-    margin: 6.049382716049383vh 0 0;
+    margin: 40px 0 40px;
   }
 
   .item:hover {
