@@ -1,3 +1,5 @@
+@media screen and (min-width: 1240px) {
+
 #header {
   max-width: 860px;
   margin-bottom: 150px;
@@ -5,7 +7,7 @@
 
 .container {
   max-width: 860px;
-  padding: 0;
+  padding: 0 120px 0;
   box-sizing: content-box;
 }
 
@@ -59,8 +61,10 @@
 .title {
   position: relative;
   font-family: "GothamProBold", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
+  /* top: 12.34vh; */
+  /* left: 20.13vh; */
+  font-size: 4.93vh;
+  line-height: 4.69vh;
   text-transform: uppercase;
   animation: show_title;
   animation-duration: 1.5s;
@@ -81,6 +85,37 @@
   animation-duration: 1.5s;
   animation-delay: 1s;
   opacity: 0;
+}
+}
+
+@media screen and (max-width: 1239px) {
+
+  .title {
+    position: absolute;
+    font-family: "GothamProBold";
+    padding: 0 20px;
+    margin: 40px 0 100px;
+    font-size: 40px;
+    line-height: 28px;
+    text-transform: uppercase;
+    animation: show_title;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+
+  .header__img {
+    position: relative;
+    padding: 20px;
+    animation: show_title;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    opacity: 0;
+    overflow: hidden;
+  }
+
 }
 
 @keyframes slide {
