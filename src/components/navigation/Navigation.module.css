@@ -1,6 +1,77 @@
-nav {
+.nav__sidebar {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 100;
+  padding-top: 12.3vh;
+  width: 6.25vw;
+  height: 100%;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "GothamProMedium", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 13px;
+  z-index: 102;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.nav__items {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  z-index: 102;
+}
+
+.nav__items a {
+  font-size: 14px;
+
+  color: transparent;
+  /* z-index: 1000; */
+}
+
+.nav__items::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  color: rgba(0, 0, 0, 0.3);
+  /* z-index: 999; */
+}
+
+.nav__items:hover::before {
+  left: -100%;
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+}
+
+.nav__items::after {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: -34px;
+  transform: rotate(90deg) translateY(550%);
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  font-family: "GothamProBlack", sans-serif;
+  font-size: 96px;
+  line-height: 66px;
+  color: rgba(0, 0, 0, 1);
+  /* z-index: 999; */
+}
+
+.nav__items:hover::after {
+  top: 0;
+  bottom: 0;
+  transform: rotate(90deg) translateY(-600%);
+  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }

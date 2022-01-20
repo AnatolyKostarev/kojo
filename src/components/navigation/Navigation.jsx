@@ -14,9 +14,13 @@ export default function Navigation() {
     <>
       <aside className={styles.nav__sidebar}>
         <nav>
-          <ul>
+          <ul className={styles.nav__list}>
             {navSideBar.map((elem, index) => (
-              <li key={index}>
+              <li
+                className={styles.nav__items}
+                data-text={elem.title}
+                key={index}
+              >
                 <Link to={elem.linkto}>{elem.title}</Link>
               </li>
             ))}
