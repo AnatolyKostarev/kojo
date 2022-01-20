@@ -21,7 +21,9 @@ export default function Navigation() {
                 data-text={elem.title}
                 key={index}
               >
-                <Link to={elem.linkto}>{elem.title}</Link>
+                <Link className={styles.nav__item} to={elem.linkto}>
+                  {elem.title}
+                </Link>
               </li>
             ))}
           </ul>
