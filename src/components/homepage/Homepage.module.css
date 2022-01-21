@@ -1,11 +1,14 @@
 .homepage {
-  overflow-y: auto;
-  scroll-snap-type: y mandatory;
-  height: 100vh;
-  position: relative;
-  scroll-behavior: smooth;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
-.blockLine {
+
+
+/* .blockLine {
   width: 1px;
   height: 17.28vh;
   background: #000;
@@ -21,4 +24,4 @@
   to{
     top: 0;
   }
-}
+} */

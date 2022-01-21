@@ -7,7 +7,7 @@ function AboutUs() {
       <section className={style.about} id="about">
         <div className={style.mainBlock}>
           <div className={style.mainData}>
-            <h2>Data</h2>
+            <h2>DATA</h2>
             <p>SOME INFORMATION ABOUT US</p>
             <div className={style.listData}>
               <div className={style.item}>
@@ -33,7 +33,7 @@ function AboutUs() {
             </div>
           </div>
           <div className={style.mainAwards}>
-            <h2>Awards</h2>
+            <h2>AWARDS</h2>
             <p>OUR ACHIEVEMENTS</p>
             <div className={style.listData}>
               <div className={style.item}>

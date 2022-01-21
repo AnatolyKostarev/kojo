@@ -1,46 +1,49 @@
 .footer {
-  width: calc(93.75vw - 6.25vw);
-  height: 100px;
-  position: fixed;
-  /* padding-left: 6.25vw; */
-  left: 6.25vw;
-  /* left: 0; */
-  bottom: 0%;
-  display: flex;
-  justify-content: space-between;
+    width: calc(93.75vw - 6.25vw);
+    height: 100px;
+    position: fixed;
+    /* padding-left: 6.25vw; */
+    left: 6.25vw;
+    /* left: 0; */
+    bottom: 0%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .scrollSpy {
-  list-style-type: none;
-  display: flex;
-  gap: 30px;
-  position: relative;
-  overflow: hidden;
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
 }
 
 .scrollSpy>span {
-  width: 11px;
-  height: 11px;
-  /* background: black; */
-/* background: transparent; */
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: 0.2s;
+    width: 11px;
+    height: 11px;
+    /* background: black; */
+    /* background: transparent; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.2s;
 }
 
 .scrollSpy>a {
-  font-size: 16px;
-  text-decoration: none;
-  color: white;
-  width: 11px;
-  height: 11px;
-  border: 2px solid black;
-  z-index: 10;
+    box-sizing: border-box;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    width: 11px;
+    height: 11px;
+    border: 2px solid black;
+    z-index: 10;
 }
-.scrollSpy>a:hover{
-  background: black;
-} 
+
+.scrollSpy>a:hover {
+    background: black;
+}
+
 
 /* .scrollSpy > li > a:hover {
   background: white;
