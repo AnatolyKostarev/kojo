@@ -3,83 +3,87 @@
   padding: 0%;
   box-sizing: border-box;
 } */
+
 .title {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 33.3vh;
-  scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 33.3vh;
+    scroll-snap-align: start;
 }
 
 .mainImage {
-  width: 93.75vw;
-  height: 17vh;
-  background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
-  /* padding-left: 90px; */
-  /* padding-left: 6.25vw; */
-  background-size: 100% 100%;
-  position: relative;
-  overflow: hidden;
+    width: 93.75vw;
+    height: 17vh;
+    background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
+    /* padding-left: 90px; */
+    /* padding-left: 6.25vw; */
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.mainImage > img {
-  position: absolute;
-  top: 0;
-  left: 6.25vw;
-  z-index: 100;
-  height: calc(100% - -2px);
+.mainImage>img {
+    position: absolute;
+    top: 0;
+    left: 6.25vw;
+    z-index: 100;
+    height: calc(100% - -2px);
 }
 
 .boxAnimation {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  background: black;
-  animation: showTitle 0.5s linear;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: showTitle 0.5s linear;
 }
 
 @keyframes showTitle {
-  from {
-    left: -100%;
-  }
-  80% {
-    width: 100%;
-    right: 0%;
-  }
-  to {
-    width: 0%;
-    /* right: 0%; */
-    /* left: 100%; */
-  }
+    from {
+        left: -100%;
+    }
+    80% {
+        width: 100%;
+        right: 0%;
+    }
+    to {
+        width: 0%;
+        /* right: 0%; */
+        /* left: 100%; */
+    }
 }
 
 .mainContent {
-  padding-top: 16vh;
-  padding-left: 6.25vw;
-  display: flex;
-  justify-content: space-between;
+    padding-top: 16vh;
+    padding-left: 6.25vw;
+    display: flex;
+    justify-content: space-between;
 }
 
-.mainContent > div {
-  width: 20vw;
+.mainContent>div {
+    width: 20vw;
 }
 
 .itemTitle {
-  font-size: 5vh;
-  line-height: 5vh;
+    font-size: 5vh;
+    line-height: 5vh;
+    font-family: GothamProBold;
 }
 
 .itemParagph {
-  font-size: 1.3vh;
-  line-height: 1.8vh;
+    font-size: 1.3vh;
+    line-height: 1.8vh;
+    font-family: GothamProMedium;
 }
 
-.itemParagph > p:nth-child(2) {
-  margin-top: 2.4vh;
+.itemParagph>p:nth-child(2) {
+    margin-top: 2.4vh;
 }
 
 .itemText {
-  font-size: 2.2vh;
-  line-height: 2.5vh;
+    font-size: 2.2vh;
+    line-height: 2.5vh;
+    font-family: GothamProBlack;
 }

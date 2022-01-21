@@ -5,11 +5,6 @@
     
 } */
 
-
-
-
-
-
 #title:hover~footer>div>nav>#indicator {
     left: 0px;
     background: black;
@@ -22,9 +17,7 @@
     background: black;
     transition: 0.5s;
     transform: rotate(0deg);
-
 }
-
 
 #form:hover~footer>div>nav>#indicator {
     left: 82px;
@@ -32,8 +25,6 @@
     transition: 0.5s;
     transform: rotate(360deg);
 }
-
-
 
 
 /* footer>div>nav>a[href="#title"]:hover {
