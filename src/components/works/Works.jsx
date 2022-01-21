@@ -23,7 +23,7 @@ export default function Works() {
               </div>
               <div className={styles.works__info}>
                 <h2 className={styles.title}>ODS</h2>
-                <p className={styles.counter}>наша гордость #16</p>
+                <p className={styles.counter}>наша гордость</p>
                 <p className={styles.desc}>
                   Сайт Международного аэропорта "Одесса"
                 </p>
