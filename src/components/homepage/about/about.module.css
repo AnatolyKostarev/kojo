@@ -1,100 +1,99 @@
 .about {
-    width: 100vw;
-    height: 100vh;
-    scroll-snap-align: start;
-    box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
 }
 
 .mainBlock {
-    display: flex;
-    padding-left: 6.25vw;
-    height: 100vh;
-    width: 93.75vw;
-    box-sizing: border-box;
+  display: flex;
+  padding-left: 6.25vw;
+  height: 100vh;
+  width: 93.75vw;
+  box-sizing: border-box;
 }
 
 .mainData {
-    /* height: 100%; */
-    height: 100vh;
-    width: 50%;
-    background: #f9f9f9;
-    padding-top: 30vh;
-    /* background: red; */
-    box-sizing: border-box;
+  /* height: 100%; */
+  height: 100vh;
+  width: 50%;
+  background: #f9f9f9;
+  padding-top: 30vh;
+  /* background: red; */
+  box-sizing: border-box;
 }
 
-.mainData>h2 {
-    font-family: GothamProBold;
-    font-size: 5vh;
-    letter-spacing: 0.1vw;
-    /* line-height: 3.5vh; */
-    /* margin-bottom: 2.9vh; */
+.mainData > h2 {
+  font-family: GothamProBold;
+  font-size: 5vh;
+  letter-spacing: 0.1vw;
+  /* line-height: 3.5vh; */
+  /* margin-bottom: 2.9vh; */
 }
 
-.mainData>p {
-    /* font-size: 1.3vh;
+.mainData > p {
+  /* font-size: 1.3vh;
     line-height: 1.8vh; */
-    line-height: 8vh;
-    font-family: GothamProMedium;
+  line-height: 8vh;
+  font-family: GothamProMedium;
 }
 
 .listData {
-    display: flex;
-    flex-direction: column;
-    gap: 3.7vh;
-    margin-top: 40px;
-    /* margin-top: 10.9629629629629632vh; */
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 3.7vh;
+  margin-top: 40px;
+  /* margin-top: 10.9629629629629632vh; */
+  box-sizing: border-box;
 }
 
 .item {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .label {
-    width: 50%;
-    /* font-size: 1.3vh;
+  width: 50%;
+  /* font-size: 1.3vh;
   line-height: 1.8vh; */
 }
 
 .value {
-    width: 50%;
-    font-size: 2.2vh;
-    letter-spacing: 0.06vw;
-    line-height: 1.6vh;
+  width: 50%;
+  font-size: 2.2vh;
+  letter-spacing: 0.06vw;
+  line-height: 1.6vh;
 }
 
 .valueAwards {
-    font-size: 2.2vh;
-    letter-spacing: 0.06vw;
-    line-height: 1.6vh;
+  font-size: 2.2vh;
+  letter-spacing: 0.06vw;
+  line-height: 1.6vh;
 }
 
-.valueAwards>div:nth-child(2) {
-    margin-top: 25px;
+.valueAwards > div:nth-child(2) {
+  margin-top: 25px;
 }
-
 
 /*  */
 
 .mainAwards {
-    height: 100%;
-    width: 50%;
-    background: #ffffff;
-    padding-top: 30vh;
-    font-family: GothamProBold;
+  height: 100%;
+  width: 50%;
+  background: #ffffff;
+  padding-top: 30vh;
+  font-family: GothamProBold;
 }
 
-.mainAwards>h2 {
-    font-family: GothamProBold;
-    font-size: 5vh;
-    letter-spacing: 0.1vw;
+.mainAwards > h2 {
+  font-family: GothamProBold;
+  font-size: 5vh;
+  letter-spacing: 0.1vw;
 }
 
-.mainAwards>p {
-    font-size: 1.3vh;
-    line-height: 1vh;
-    line-height: 8vh;
-    font-family: GothamProMedium;
+.mainAwards > p {
+  font-size: 1.3vh;
+  line-height: 1vh;
+  line-height: 8vh;
+  font-family: GothamProMedium;
 }
