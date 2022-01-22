@@ -5,7 +5,7 @@ import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
 import Footer from "./footer/footer.jsx";
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
-import Form from "../form/Form";
+// import Form from "../form/Form";
 // import Header from "../../layouts/header/homepage/Header";
 
 export default function Homepage() {
@@ -14,7 +14,7 @@ export default function Homepage() {
       <div className={style.homepage}>
         {/* <div className={style.blockLine}></div> */}
         {/* <Header /> */}
-        <Header2/>
+        <Header2 />
         <Title />
         <AboutUs />
         <MainForm />

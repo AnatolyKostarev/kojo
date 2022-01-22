@@ -22,7 +22,9 @@ export default function Headerworks({ title }) {
               <h1 className={styles.title}>{title}</h1>
             </div>
             <div className={styles.header__btn}>
-              <Button title="Заказать" />
+              <Link to="/contacts">
+                <Button title="Заказать" />
+              </Link>
             </div>
           </div>
         </div>
