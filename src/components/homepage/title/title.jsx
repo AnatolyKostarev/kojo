@@ -13,7 +13,7 @@ function Title() {
     "./img/imgHomepage/4Home.jpg",
     "./img/imgHomepage/5Home.jpg",
     "./img/imgHomepage/10Home.jpg",
-    "./img/imgHomepage/14Home.jpg"
+    "./img/imgHomepage/14Home.jpg",
   ];
 
   return (
@@ -28,26 +28,34 @@ function Title() {
           onMouseOver={() => {
             setIndex(1);
           }}
-          onClick={() => { setIndex(5) }}
-          onDoubleClick={() => { setIndex(6) }}
-
+          onClick={() => {
+            setIndex(5);
+          }}
+          onDoubleClick={() => {
+            setIndex(6);
+          }}
         >
-          <img src="https://zipl.pro/assets/ce6872b3/img/studio.svg" alt="webDesign" />
+          <img
+            src="https://zipl.pro/assets/ce6872b3/img/studio.svg"
+            alt="webDesign"
+          />
 
           <div className={style.boxAnimation}></div>
         </div>
-        <div className={style.mainContent} >
+        <div className={style.mainContent}>
           <div
             className={style.itemTitle}
             onMouseOver={() => {
               setIndex(0);
             }}
           >
-            <p>DESIGN +              <div className={style.boxAnimation}></div>
+            <p>
+              DESIGN + <div className={style.boxAnimation}></div>
             </p>
-            <p> DEVELOPMENT             <div className={style.boxAnimation}></div>
+            <p>
+              {" "}
+              DEVELOPMENT <div className={style.boxAnimation}></div>
             </p>
-           
           </div>
           <div
             className={style.itemParagph}
@@ -70,8 +78,12 @@ function Title() {
               setIndex(3);
             }}
           >
-            <p>16+ <div className={style.boxAnimation}></div></p>
-            <p>AWARDS <div className={style.boxAnimation}></div></p>
+            <p>
+              16+ <div className={style.boxAnimation}></div>
+            </p>
+            <p>
+              AWARDS <div className={style.boxAnimation}></div>
+            </p>
           </div>
         </div>
       </section>
