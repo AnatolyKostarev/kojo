@@ -17,9 +17,12 @@ export default function Headerworks({ title }) {
                     alt="ZIPL"
                     className={styles.logo}
                   />
+                  <div className={styles.logo__animation}></div>
                 </div>
               </Link>
-              <h1 className={styles.title}>{title}</h1>
+              <h1 className={styles.title} data-title="Работа">
+                {title}
+              </h1>
             </div>
             <div className={styles.header__btn}>
               <Link to="/contacts">
