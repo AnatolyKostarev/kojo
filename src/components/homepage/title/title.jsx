@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./title.module.css";
 import "../scrollSpy.css";
-// import style from '../footer/footer.module.css'
 
 function Title() {
   let [index, setIndex] = React.useState(0);
