@@ -15,6 +15,7 @@ export default function Worksitem({
   width,
   height,
   alt,
+  offSetY,
 }) {
   let image = (
     <div
@@ -23,6 +24,9 @@ export default function Worksitem({
       }
     >
       <img
+        style={{
+          transform: `translateY(-${offSetY * 0.065}px)`,
+        }}
         className={styles.works__pic}
         src={src}
         width={width}
@@ -45,6 +49,7 @@ export default function Worksitem({
       <div className={styles.works__item}>
         {imagePosition === "left" && image}
         <div
+          style={{ transform: `translateY(-${offSetY * 0.03}px)` }}
           className={
             imagePosition === "left"
               ? styles.works__info
