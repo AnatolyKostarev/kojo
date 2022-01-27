@@ -5,23 +5,32 @@ import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
 import Footer from "./footer/footer.jsx";
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
-// import Form from "../form/Form";
-// import Header from "../../layouts/header/homepage/Header";
+import { Transition } from 'react-transition-group';
+
+
+
 
 export default function Homepage() {
+  // for header
   let [header, setHeader] = useState(true);
-  const cnahgeHeader= ()=>{setHeader(!header)};
+  const hideHeader = () => { setHeader(false) };
+  const showHeader = () => { setHeader(true) };
+  // transition group
+  //  let [state, setState] = useState(false);
+
+
   return (
     <>
+
       <div className={style.homepage}>
-        {/* <div className={style.blockLine}></div> */}
-        {/* <Header /> */}
-        {/* {header ?  <Header2 />: null} */}
-        <Header2 />
+
+        {header && <Header2 />}
+
+
+        {/* <Header2 /> */}
         <Title />
         <AboutUs />
-        <MainForm cnahgeHeader={cnahgeHeader}/>
-        {/* <Form/> */}
+        <MainForm hideHeader={hideHeader} showHeader={showHeader} />
         <Footer />
       </div>
     </>

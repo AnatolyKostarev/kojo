@@ -1,14 +1,7 @@
-/* * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-} */
-
 .header {
     position: fixed;
     top: 0%;
     left: 0%;
-    /* border: 1px solid red; */
     width: 93.75vw;
 }
 
@@ -22,14 +15,6 @@
 .content {
     position: relative;
 }
-
-
-/* .logotype {
-    position: absolute;
-    z-index: 10;
-    left: 6.25vw;
-    top: 12.345679012345679vh;
-} */
 
 .btn_box {
     position: absolute;
