@@ -1,10 +1,11 @@
 import style from "./form.module.css";
 import "../scrollSpy.css";
 
-function MainForm() {
+function MainForm({cnahgeHeader}) {
+
   return (
     <>
-      <section className={style.form} id="form">
+      <section className={style.form} id="form" onMouseOver={cnahgeHeader} onMouseLeave={cnahgeHeader}>
         <div className={style.mainForm}>
           <div className={style.mainBlock}>
             <div className={style.blockTitle}>

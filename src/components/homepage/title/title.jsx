@@ -7,11 +7,13 @@ function Title() {
   let [index, setIndex] = React.useState(0);
 
   const img = [
-    "https://zipl.pro/assets/ce6872b3/img/mainBg/18.jpg",
-    "https://zipl.pro/assets/ce6872b3/img/mainBg/5.jpg",
-    "https://st2.depositphotos.com/1064024/10769/i/600/depositphotos_107694484-stock-photo-little-boy.jpg",
-    "https://klike.net/uploads/posts/2021-01/1611131113_2.jpg",
-    "https://mirpozitiva.ru/wp-content/uploads/2019/11/1472042719_15.jpg",
+    "./img/imgHomepage/1Home.jpg",
+    "./img/imgHomepage/2Home.jpg",
+    "./img/imgHomepage/3Home.jpg",
+    "./img/imgHomepage/4Home.jpg",
+    "./img/imgHomepage/5Home.jpg",
+    "./img/imgHomepage/10Home.jpg",
+    "./img/imgHomepage/14Home.jpg"
   ];
 
   return (
@@ -22,24 +24,30 @@ function Title() {
           style={{
             backgroundImage: `url(${img[index]})`,
           }}
-          alt=""
+          alt="webDesign"
           onMouseOver={() => {
             setIndex(1);
           }}
+          onClick={() => { setIndex(5) }}
+          onDoubleClick={() => { setIndex(6) }}
+
         >
-          <img src="https://zipl.pro/assets/ce6872b3/img/studio.svg" alt="" />
+          <img src="https://zipl.pro/assets/ce6872b3/img/studio.svg" alt="webDesign" />
 
           <div className={style.boxAnimation}></div>
         </div>
-        <div className={style.mainContent}>
+        <div className={style.mainContent} >
           <div
             className={style.itemTitle}
             onMouseOver={() => {
               setIndex(0);
             }}
           >
-            <p>DESIGN + </p>
-            <p> DEVELOPMENT</p>
+            <p>DESIGN +              <div className={style.boxAnimation}></div>
+            </p>
+            <p> DEVELOPMENT             <div className={style.boxAnimation}></div>
+            </p>
+           
           </div>
           <div
             className={style.itemParagph}
@@ -49,11 +57,11 @@ function Title() {
           >
             <p>
               ZIPL STUDIO IS A HIGH-QUALIFIED TEAM OF TALENTED DEVELOPERS AND
-              DESIGNERS.
+              DESIGNERS.<div className={style.boxAnimation}></div>
             </p>
             <p>
               EVERY PROJECT IS A CHALLENGE TO DO BETTER THAN ANYTHING WE HAVE
-              ALREADY DONE!
+              ALREADY DONE!<div className={style.boxAnimation}></div>
             </p>
           </div>
           <div
@@ -62,8 +70,8 @@ function Title() {
               setIndex(3);
             }}
           >
-            <p>16+ </p>
-            <p>AWARDS</p>
+            <p>16+ <div className={style.boxAnimation}></div></p>
+            <p>AWARDS <div className={style.boxAnimation}></div></p>
           </div>
         </div>
       </section>
