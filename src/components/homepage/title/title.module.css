@@ -9,8 +9,6 @@
                     width: 93.75vw;
                     height: 17vh;
                     background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
-                    /* padding-left: 90px; */
-                    /* padding-left: 6.25vw; */
                     background-size: 100% 100%;
                     position: relative;
                     overflow: hidden;
@@ -69,10 +67,6 @@
                     font-family: GothamProBold;
                 }
                 
-                .itemTitle>p:first-child {
-                    width: 12vw;
-                }
-                
                 .itemTitle>p {
                     position: relative;
                     overflow: hidden;
@@ -101,12 +95,8 @@
                 }
                 
                 .itemText>p {
-                    width: 5vw;
+                    width: 8vw;
                     position: relative;
                     overflow: hidden;
                     line-height: 3.6vh;
-                }
-                
-                .itemText>p:first-child {
-                    width: 2vw;
                 }

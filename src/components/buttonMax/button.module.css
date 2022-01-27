@@ -1,83 +1,82 @@
 #anchor_form {
-  position: fixed;
-  top: 12.3vh;
-  right: 12.5vw;
-  z-index: 10;
+    position: fixed;
+    top: 12.3vh;
+    right: 12.5vw;
+    z-index: 10;
+    background: transparent;
 }
 
 #anchor_from:hover,
 #btn:hover {
-  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
 #btn {
-  position: relative;
-  height: 4.9vh;
-  width: 12.5vw;
-  border: none;
-  background: transparent;
-  overflow: hidden;
-  transition: 0.3s linear;
+    position: relative;
+    height: 4.9vh;
+    width: 12.5vw;
+    border: none;
+    background: transparent;
+    overflow: hidden;
+    transition: 0.3s linear;
 }
 
 #btn:before {
-  content: "ЗАКАЗАТЬ";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  font-size: 3.95vh;
-  line-height: 4.93vh;
-  font-weight: 900;
-  color: #000;
-  background: white;
-  box-sizing: border-box;
-  transition: 0.3s linear;
-  text-align: left;
+    content: "ЗАКАЗАТЬ";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    font-size: 3.95vh;
+    line-height: 4.93vh;
+    font-weight: 900;
+    color: #000;
+    background: transparent;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+    text-align: left;
 }
 
 #btn:after {
-  content: "ЗАКАЗАТЬ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-left: 1.38vw;
-  width: 100%;
-  height: 100%;
-  font-size: 1.48vh;
-  letter-spacing: 0.06vw;
-  line-height: 4.9vh;
-  color: #fff;
-  text-transform: uppercase;
-  background: #000;
-  transition: 0.3s;
-  text-align: left;
-  box-sizing: border-box;
-  animation: showElement 0.5s ease;
-  /* анимация для появление элемента */
+    content: "ЗАКАЗАТЬ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1.38vw;
+    width: 100%;
+    height: 100%;
+    font-size: 1.48vh;
+    letter-spacing: 0.06vw;
+    line-height: 4.9vh;
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    transition: 0.3s;
+    text-align: left;
+    box-sizing: border-box;
+    animation: showElement 0.5s ease;
+    /* анимация для появление элемента */
 }
 
 #btn:hover::before {
-  left: 0%;
+    left: 0%;
 }
 
 #btn:hover::after {
-  left: -100%;
+    left: -100%;
 }
 
 @keyframes showElement {
-  from {
-    left: -100%;
-    color: transparent;
-  }
-
-  90% {
-    left: 0%;
-    color: transparent;
-  }
-
-  to {
-    color: #fff;
-  }
+    from {
+        left: -100%;
+        color: transparent;
+    }
+    90% {
+        left: 0%;
+        color: transparent;
+    }
+    to {
+        color: #fff;
+    }
 }
