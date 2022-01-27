@@ -107,34 +107,38 @@ export default function Works() {
     },
   ];
 
+  const [offSetY, setOffSetY] = React.useState(0);
+
+  const handleScroll = () => setOffSetY(window.pageYOffset);
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <Navigation />
       <Headerworks title="Работы" />
-      <section className={styles.works}>
-        <div className={styles.container}>
-          <div className={styles.works__list}>
-            {worksItem.map((elem, index, arr) => (
-              <Worksitem
-                key={index}
-                imagePosition={elem.imagePosition}
-                buttonPosition={elem.buttonPosition}
-                actionPosition={elem.actionPosition}
-                title={elem.title}
-                counter={`${elem.counter} ${Math.abs((index -= arr.length))}`}
-                desc={elem.desc}
-                action={elem.action}
-                href={elem.href}
-                src={elem.src}
-                width={elem.width}
-                height={elem.height}
-                alt={elem.alt}
-              />
-            ))}
+
+      <main>
+        <Navigation />
+        <section className={styles.works}>
+          <div className={styles.container}>
+            <div className={styles.works__list}>
+              {worksItem.map((elem, index, arr) => (
+                <Worksitem
+                  {...elem}
+                  offSetY={offSetY}
+                  key={index}
+                  counter={`${elem.counter} ${Math.abs((index -= arr.length))}`}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-      <Footerworks />
+        </section>
+      </main>
+
+      <Footerworks offSetY={offSetY} />
     </>
   );
 }

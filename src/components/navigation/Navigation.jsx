@@ -22,7 +22,7 @@ export default function Navigation() {
                 key={index}
               >
                 <Link className={styles.nav__item} to={elem.linkto}>
-                  {elem.title}
+                  <div className={styles.nav__div}>{elem.title}</div>
                 </Link>
               </li>
             ))}
