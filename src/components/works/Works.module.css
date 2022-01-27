@@ -138,3 +138,22 @@
 .btn__wraper_left {
   justify-content: flex-end;
 }
+
+@keyframes slideCoverInfo {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
