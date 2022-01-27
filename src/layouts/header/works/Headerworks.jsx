@@ -26,7 +26,7 @@ export default function Headerworks({ title }) {
             </div>
             <div className={styles.header__btn}>
               <Link to="/contacts">
-                <Button title="Заказать" />
+                <Button title="Заказать" addStyle="animated_btn" />
               </Link>
             </div>
           </div>
