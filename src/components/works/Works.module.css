@@ -94,13 +94,22 @@
   line-height: 1.9vh;
   text-align: left;
   text-transform: uppercase;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.7s;
+  animation-delay: 365ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   overflow: hidden;
 }
 
 .title::before,
 .counter::before,
 .desc::before,
-.action:before {
+.action:before,
+.counter__left::before,
+.desc__left::before,
+.action__left:before {
   content: "";
   position: absolute;
   top: 0;
