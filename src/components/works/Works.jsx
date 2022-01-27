@@ -128,9 +128,9 @@ export default function Works() {
               {worksItem.map((elem, index, arr) => (
                 <Worksitem
                   {...elem}
-                  offSetY={offSetY}
                   key={index}
                   counter={`${elem.counter} ${Math.abs((index -= arr.length))}`}
+                  offSetY={offSetY}
                 />
               ))}
             </div>
