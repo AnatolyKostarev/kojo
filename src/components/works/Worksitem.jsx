@@ -85,6 +85,7 @@ export default function Worksitem({
               title="смотр."
               href={href}
               buttonPosition={buttonPosition}
+              addStyle="animated_btn"
             />
           </div>
         </div>

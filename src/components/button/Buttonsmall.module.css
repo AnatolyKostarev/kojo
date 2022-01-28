@@ -68,3 +68,21 @@
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   transition: 0.4s linear;
 }
+
+.btn__icon {
+  animation: showBtn;
+  animation-duration: 0.8s;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
