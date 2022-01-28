@@ -39,7 +39,7 @@ header {
   background: #fff;
   animation: showLogo;
   animation-duration: 0.5s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
 }
 
 .header__img:hover {
@@ -60,9 +60,9 @@ header {
   text-transform: uppercase;
   color: transparent;
   animation: showTitle;
-  animation-duration: 0.7s;
-  animation-delay: 365ms;
-  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  animation-delay: 550ms;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   overflow: hidden;
 }
@@ -76,8 +76,8 @@ header {
   height: 100%;
   background: #000;
   animation: slideCoverTitle;
-  animation-duration: 0.7s;
-  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
 }
 
 .header__btn {
@@ -87,8 +87,8 @@ header {
 
 [data-style="animated_btn"] {
   animation: showBtn;
-  animation-duration: 0.7s;
-  animation-delay: 365ms;
+  animation-duration: 0.8s;
+  animation-delay: 500ms;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   opacity: 0;
@@ -103,8 +103,8 @@ header {
   height: 100%;
   background: #000;
   animation: slideCoverTitle;
-  animation-duration: 0.7s;
-  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
   z-index: 1;
 }
 
