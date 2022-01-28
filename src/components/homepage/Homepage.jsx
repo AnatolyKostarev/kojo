@@ -5,6 +5,7 @@ import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
 import Footer from "./footer/footer.jsx";
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
+import Navigation from "../navigation/Navigation";
 // import { Transition } from 'react-transition-group';
 
 export default function Homepage() {
@@ -21,6 +22,7 @@ export default function Homepage() {
 
   return (
     <>
+      <Navigation />
       <div className={style.homepage}>
         {header && <Header2 />}
 

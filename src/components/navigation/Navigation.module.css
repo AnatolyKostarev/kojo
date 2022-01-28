@@ -24,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 50px;
   width: 100%;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
@@ -45,7 +46,8 @@
 }
 
 .nav__items:hover::before {
-  left: -100%;
+  left: -550%;
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
@@ -54,9 +56,9 @@
   position: absolute;
   bottom: 0;
   top: 0;
-  right: -34px;
+  left: 0;
   max-width: 200px;
-  transform: rotate(90deg) translateY(550%);
+  transform: rotate(90deg) translateY(520%);
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
   font-family: "GothamProBlack", sans-serif;
   font-size: 96px;
@@ -67,6 +69,7 @@
 .nav__items:hover::after {
   top: 0;
   bottom: 0;
-  transform: rotate(90deg) translateY(-600%);
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  transform: rotate(90deg) translateY(-720%);
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }
