@@ -16,15 +16,15 @@ export default function Navigation() {
         <nav>
           <ul className={styles.nav__list}>
             {navSideBar.map((elem, index) => (
-              <li
-                className={styles.nav__items}
-                data-text={elem.title}
-                key={index}
-              >
-                <Link className={styles.nav__item} to={elem.linkto}>
-                  <div className={styles.nav__div}>{elem.title}</div>
-                </Link>
-              </li>
+              <Link className={styles.nav__item} to={elem.linkto}>
+                <li
+                  className={styles.nav__items}
+                  data-text={elem.title}
+                  key={index}
+                >
+                  {elem.title}
+                </li>
+              </Link>
             ))}
           </ul>
         </nav>

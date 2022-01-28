@@ -118,10 +118,10 @@ export default function Works() {
 
   return (
     <>
+      <Navigation />
       <Headerworks title="Работы" />
 
       <main>
-        <Navigation />
         <section className={styles.works}>
           <div className={styles.container}>
             <div className={styles.works__list}>
