@@ -6,13 +6,13 @@ function Title() {
   let [index, setIndex] = React.useState(0);
 
   const img = [
-    "./img/imgHomepage/1Home.jpg",
-    "./img/imgHomepage/2Home.jpg",
-    "./img/imgHomepage/3Home.jpg",
-    "./img/imgHomepage/4Home.jpg",
-    "./img/imgHomepage/5Home.jpg",
-    "./img/imgHomepage/10Home.jpg",
-    "./img/imgHomepage/14Home.jpg",
+    "./img/imgHomepage/1Home.webp",
+    "./img/imgHomepage/2Home.webp",
+    "./img/imgHomepage/3Home.webp",
+    "./img/imgHomepage/4Home.webp",
+    "./img/imgHomepage/5Home.webp",
+    "./img/imgHomepage/10Home.webp",
+    "./img/imgHomepage/14Home.webp",
   ];
 
   return (
