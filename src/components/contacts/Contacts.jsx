@@ -31,13 +31,17 @@ export default function Contacts() {
                   <li className={styles.contacts__row_top} key={index}>
                     <p className={styles.contacts__label}>{elem.label}:</p>
                     <div className={styles.contacts__link}>
-                      <a href={`mailto:${elem.email}`}>
-                        <span
+                      <a href={`mailto:${elem.email}`}
                           data-hover={elem.email}
-                          className={styles.contacts__item}
+                          className={styles.contacts__item_top}
                         >
                           {elem.email}
-                        </span>
+                      </a>
+                      <a href={`mailto:${elem.email}`}
+                          data-hover={elem.email}
+                          className={styles.contacts__item_bottom}
+                        >
+                          {elem.email}
                       </a>
                     </div>
                   </li>
