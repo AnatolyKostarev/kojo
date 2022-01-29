@@ -16,12 +16,8 @@ export default function Navigation() {
         <nav>
           <ul className={styles.nav__list}>
             {navSideBar.map((elem, index) => (
-              <Link className={styles.nav__item} to={elem.linkto}>
-                <li
-                  className={styles.nav__items}
-                  data-text={elem.title}
-                  key={index}
-                >
+              <Link className={styles.nav__item} to={elem.linkto} key={index}>
+                <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
                 </li>
               </Link>
