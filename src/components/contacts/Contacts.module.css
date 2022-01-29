@@ -45,6 +45,18 @@
     line-height: 2.8vh;
   }
 
+  .contacts__link {
+    display: block;
+    transform: translateY(0%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .contacts__link:hover {
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
+  }
+
   .contacts__links {
     display: block;
     transform: translateY(0%);
@@ -59,13 +71,16 @@
 
   .contacts__row_top {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    column-gap: 180px;
+    column-gap: 160px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    overflow-y: hidden;
+    max-height: 2.4vh;
+    line-height: 2.8vh;
   }
 
   .contacts__label {
-    min-width: 80px;
+    min-width: 100px;
     font-size: 1.35vh;
     text-align: left;
     text-transform: uppercase;
@@ -75,7 +90,7 @@
     font-family: "GothamProBlack", sans-serif;
     font-size: 2.22vh;
     letter-spacing: 0.07vh;
-    /* line-height: 1.19vh; */
+    line-height: 2.22vh;
     text-align: left;
     text-transform: uppercase;
   }
@@ -98,7 +113,7 @@
 
   .contacts__social {
     display: flex;
-    column-gap: 180px;
+    column-gap: 160px;
   }
 
   .contacts__message {
@@ -162,6 +177,7 @@
   .contacts__list {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     row-gap: 30px;
   }
 
@@ -173,6 +189,18 @@
     max-height: 2.4vh;
     line-height: 2.8vh;
     text-align: right;
+  }
+
+  .contacts__link {
+    display: block;
+    transform: translateY(0%);
+    transition: 0.3s ease-in-out;
+  }
+
+  .contacts__link:hover {
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+    transform: translateY(-100%);
+    transition: 0.3s ease-in-out;
   }
 
   .contacts__links {
@@ -190,7 +218,12 @@
   .contacts__row_top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    column-gap: 160px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    overflow-y: hidden;
+    max-height: 2.4vh;
+    line-height: 2.8vh;
   }
 
   .contacts__label {
@@ -205,7 +238,7 @@
     font-family: "GothamProBlack", sans-serif;
     font-size: 2.22vh;
     letter-spacing: 0.07vh;
-    line-height: 1.19vh;
+    line-height: 2.22vh;
     text-align: left;
     text-transform: uppercase;
   }

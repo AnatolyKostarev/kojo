@@ -8,13 +8,11 @@
     width: 27.7vw;
     height: 8vh;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
     text-transform: uppercase;
   }
 
   .textarea {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 8vh;
     padding: 3vh 0 0;
     overflow: hidden;
@@ -27,6 +25,72 @@
 
   .item:hover {
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
+
+  .borders:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .borders {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .focus {
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .focus_consent {
+    color: red;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+  }
+
+  .consent {
+    display: flex;
+    margin: 30px 0 0;
+    cursor: url("/public/img/header/cursor.png") 6 6, auto;
+  }
+  .policy_text {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+
+  .policy_text > a {
+    text-decoration: underline;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkfake {
+    display: block;
+    transform: translateY(80%);
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000;
+  }
+
+  .checkfake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translateX(-20%);
+    transform: translateY(-20%);
+    width: 10px;
+    height: 10px;
+    background: url("/public/img/form/checkmark.svg");
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .checkbox:checked + .checkfake::before {
+    opacity: 1;
   }
 
   [data-style="form_btn"] {
@@ -48,13 +112,11 @@
     width: 100%;
     height: 55px;
     border: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
     text-transform: uppercase;
   }
 
   .textarea {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     height: 55px;
     padding: 20px 0;
     overflow: hidden;
@@ -68,6 +130,71 @@
 
   .item:hover {
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
+
+  .borders:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .borders {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .focus {
+    color: red;
+    text-transform: uppercase;
+  }
+
+  .focus_consent {
+    color: red;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+  }
+
+  .consent {
+    display: flex;
+    margin: 30px 0 0;
+    cursor: url("/public/img/header/cursor.png") 6 6, auto;
+  }
+  .policy_text {
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+  }
+
+  .policy_text > a {
+    text-decoration: underline;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
+
+  .checkbox {
+    display: none;
+  }
+
+  .checkfake {
+    display: block;
+    transform: translateY(75%);
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000;
+  }
+
+  .checkfake::before {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translateX(-20%);
+    width: 12px;
+    height: 10px;
+    background-color: #000;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+
+  .checkbox:checked + .checkfake::before {
+    opacity: 1;
   }
 
   .btn {
