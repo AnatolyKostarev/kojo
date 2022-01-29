@@ -1,8 +1,3 @@
-/* * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-} */
 .title {
   width: 100vw;
   height: 100vh;
@@ -14,8 +9,6 @@
   width: 93.75vw;
   height: 17vh;
   background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
-  /* padding-left: 90px; */
-  /* padding-left: 6.25vw; */
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
@@ -27,6 +20,11 @@
   left: 6.25vw;
   z-index: 100;
   height: calc(100% - -2px);
+  /* pointer-events: none; */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .boxAnimation {
@@ -49,8 +47,6 @@
   }
   to {
     width: 0%;
-    /* right: 0%; */
-    /* left: 100%; */
   }
 }
 
@@ -68,11 +64,23 @@
 .itemTitle {
   font-size: 5vh;
   line-height: 5vh;
+  font-family: GothamProBold;
+}
+
+.itemTitle > p {
+  position: relative;
+  overflow: hidden;
 }
 
 .itemParagph {
   font-size: 1.3vh;
   line-height: 1.8vh;
+  font-family: GothamProMedium;
+}
+
+.itemParagph > p {
+  position: relative;
+  overflow: hidden;
 }
 
 .itemParagph > p:nth-child(2) {
@@ -82,4 +90,13 @@
 .itemText {
   font-size: 2.2vh;
   line-height: 2.5vh;
+  font-family: GothamProBlack;
+  line-height: 3.6vh;
+}
+
+.itemText > p {
+  width: 8vw;
+  position: relative;
+  overflow: hidden;
+  line-height: 3.6vh;
 }

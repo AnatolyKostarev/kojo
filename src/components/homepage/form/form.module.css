@@ -1,32 +1,48 @@
 .form {
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
 }
+
 .mainForm {
-  height: 100vh;
-  width:93.75vw ;
-  padding-left: 6.25vw;
-  padding-top: 12.3vh;
+    height: 100vh;
+    width: 93.75vw;
+    padding-left: 6.25vw;
+    padding-top: 12.3vh;
+    box-sizing: border-box;
 }
+
 .mainBlock {
-  /* background: lightpink; */
-  width: 100%;
-  height: 100%;
-  display: flex;
+    /* background: lightpink; */
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
+
 .blockTitle {
-  font-size: 9.8vh;
-  letter-spacing: 0.13vw;
-  /* line-height: 6.9vh; */
-  height: 54.3vh;
-  padding-top: 0.86vh;
-  width: 47.9vw;
-  /* margin-left: -0.34vw; */
+    font-size: 9.8vh;
+    letter-spacing: 0.13vw;
+    /* line-height: 6.9vh; */
+    height: 54.3vh;
+    padding-top: 0.86vh;
+    width: 47.9vw;
+    /* margin-left: -0.34vw; */
 }
-.blockFrom{
-  height: 54.3vh;
-  padding-top: 0.86vh;
-  width: 47.9vw;
-  background: rgb(191, 136, 243);
+
+.blockTitle>div {
+    font-weight: 900;
+}
+
+.blockFrom {
+    /* height: 54.3vh;
+    padding-top: 0.86vh;
+    width: 47.9vw;
+    background: rgb(191, 136, 243); */
+}
+
+.blockFrom>p {
+    margin-bottom: 7.8vh;
+    width: 19vw;
+    line-height: 1.8vh;
+    font-size: 1.3vh;
 }

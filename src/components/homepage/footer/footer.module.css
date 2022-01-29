@@ -18,18 +18,19 @@
   overflow: hidden;
 }
 
-.scrollSpy>span {
+.scrollSpy > span {
   width: 11px;
   height: 11px;
   /* background: black; */
-/* background: transparent; */
+  /* background: transparent; */
   position: absolute;
   top: 0px;
   left: 0px;
   transition: 0.2s;
 }
 
-.scrollSpy>a {
+.scrollSpy > a {
+  box-sizing: border-box;
   font-size: 16px;
   text-decoration: none;
   color: white;
@@ -38,9 +39,10 @@
   border: 2px solid black;
   z-index: 10;
 }
-.scrollSpy>a:hover{
+
+.scrollSpy > a:hover {
   background: black;
-} 
+}
 
 /* .scrollSpy > li > a:hover {
   background: white;

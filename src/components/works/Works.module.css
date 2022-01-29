@@ -4,65 +4,204 @@
   box-sizing: content-box;
 }
 
-.works {
-}
-
 .works__item {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-bottom: 5vh;
   max-width: 1560px;
   box-sizing: content-box;
 }
 
 .works__img {
+  position: relative;
   flex-basis: 54%;
+  overflow: hidden;
+}
+
+.works__img_left {
+  position: relative;
+  margin-top: -17vh;
+  max-width: 37.5vw;
+  height: auto;
   overflow: hidden;
 }
 
 .works__pic {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
   transition: 0.5s linear;
   object-fit: cover;
 }
 
 .works__pic:hover {
-  transform: scale(1.05);
   transition: 0.5s linear;
 }
 
 .works__info {
-  flex-basis: 46%;
-  padding: 128px 0 0 127px;
+  margin-bottom: 4vh;
+  padding: 10vh 0 0 6vw;
+  width: 37.5vw;
+}
+
+.works__info_left {
+  padding: 10vh 6vw 0 0;
+  width: 43.75vw;
+  text-align: right;
 }
 
 .title {
+  position: relative;
   margin-bottom: 40px;
   font-family: "GothamProBold", sans-serif;
-  font-size: 53px;
+  font-size: 5vh;
+  text-transform: uppercase;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.8s;
+  animation-delay: 365ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  overflow: hidden;
 }
 
-.counter {
+.counter,
+.counter__left {
+  position: relative;
   margin-bottom: 15px;
   font-family: "GothamProMedium", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 1.2vh;
+  line-height: 1.2vh;
   text-align: left;
   text-transform: uppercase;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.8s;
+  animation-delay: 550ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  overflow: hidden;
 }
 
-.desc {
-  font-size: 14px;
-  line-height: 16px;
+.counter__left {
+  text-align: right;
+}
+
+.desc,
+.action,
+.desc__left,
+.action__left {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 4vh;
+  font-size: 1.4vh;
+  line-height: 1.9vh;
   text-align: left;
   text-transform: uppercase;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.8s;
+  animation-delay: 550ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+}
+
+.title::before,
+.counter::before,
+.desc::before,
+.action:before,
+.counter__left::before,
+.desc__left::before,
+.action__left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation-name: slideCoverInfo;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+}
+
+.desc__left,
+.action__left {
+  text-align: right;
 }
 
 .action {
-  font-size: 14px;
-  line-height: 16px;
+  margin-left: 20%;
   text-align: right;
-  text-transform: uppercase;
+}
+
+.action__left {
+  margin-right: 50%;
+}
+
+.btn__wraper,
+.btn__wraper_left {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.5vw;
+  overflow: hidden;
+}
+
+.btn__wraper_left {
+  justify-content: flex-end;
+}
+
+.btn__wraper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: slideCoverInfo;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  z-index: 1;
+}
+
+[data-style="animated_btn"] {
+  animation: showBtn;
+  animation-duration: 0.8s;
+  animation-delay: 500ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes slideCoverInfo {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -24,83 +24,122 @@ header {
   overflow: hidden;
 }
 
-.logo {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 .header__img {
   position: relative;
-  animation: show_title;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-  opacity: 0;
   overflow: hidden;
 }
 
-.header__img:after {
-  position: absolute;
+.header__img::before {
   content: "";
+  position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
-  background: #000;
-  animation: slide;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
-  opacity: 0;
+  background: #fff;
+  animation: showLogo;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
 }
 
 .header__img:hover {
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .title {
   position: relative;
   font-family: "GothamProBold";
-  font-size: 4.938271604938272vh;
-  line-height: 4.691358024691358vh;
+  font-size: 4.9vh;
+  line-height: 4.7vh;
   text-transform: uppercase;
-  animation: show_title;
-  animation-duration: 1.5s;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.8s;
+  animation-delay: 550ms;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
-  opacity: 0;
+  overflow: hidden;
 }
 
-.title:after {
+.title:before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   background: #000;
-  animation: slide;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
+  animation: slideCoverTitle;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+}
+
+.header__btn {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-style="animated_btn"] {
+  animation: showBtn;
+  animation-duration: 0.8s;
+  animation-delay: 500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   opacity: 0;
 }
 
-@keyframes slide {
+.header__btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: slideCoverTitle;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+  z-index: 1;
+}
+
+@keyframes slideCoverTitle {
   0% {
-    opacity: 1;
-    transform: translateX(0);
+    left: -100%;
   }
 
   100% {
-    transform: translateX(100%);
+    left: 100%;
   }
 }
 
-@keyframes show_title {
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@keyframes showLogo {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showBtn {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 1;
   }

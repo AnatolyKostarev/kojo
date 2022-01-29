@@ -1,26 +1,32 @@
 import style from "./form.module.css";
 import "../scrollSpy.css";
+import Form from '../../form/Form.jsx';
 
-function MainForm() {
+function MainForm({hideHeader, showHeader}) {
+
   return (
     <>
-      <section className={style.form} id="form">
+      <section className={style.form} id="form" onMouseOver={hideHeader} onMouseOut={showHeader}>
         <div className={style.mainForm}>
           <div className={style.mainBlock}>
             <div className={style.blockTitle}>
-              <div>Send us a </div>
-              <div>request to </div>
-              <div>create </div>
-              <div>unique </div>
-              <div>project </div>
-              <div>for you </div>
+              <div>SEND US A</div>
+              <div>REQUEST TO
+</div>
+              <div>CREATE </div>
+              <div>UNIQUE </div>
+              <div>PROJECT </div>
+              <div>FOR YOU
+ </div>
             </div>
-            <form className={style.blockFrom}>
+            {/* <form className={style.blockFrom}> */}
+            <div className={style.blockFrom}>
               <p>
-                HIRE US NOW - WE'RE HERE TO ASSIST YOU. DROP US A LINE, AND
-                WE'LL GET BACK TO YOU IN A BLINK OF AN EYE.
+              HIRE US NOW - WE'RE HERE TO ASSIST YOU. DROP US A LINE, AND WE'LL GET BACK TO YOU IN A BLINK OF AN EYE.
               </p>
-            </form>
+            <Form/>
+            </div>
+            {/* </form> */}
           </div>
         </div>
       </section>

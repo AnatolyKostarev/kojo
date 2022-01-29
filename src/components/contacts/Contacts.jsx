@@ -1,6 +1,7 @@
 import React from "react";
 import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import Form from "../form/Form";
+import Navigation from "../navigation/Navigation";
 import styles from "./Contacts.module.css";
 
 export default function Contacts() {
@@ -17,7 +18,10 @@ export default function Contacts() {
 
   return (
     <>
-    <Headercontacts title="контакты" />
+      <Navigation />
+
+      <Headercontacts title="контакты" />
+
       <section className={styles.contacts}>
         <div className={styles.container}>
           <div className={styles.contacts__wraper}>
