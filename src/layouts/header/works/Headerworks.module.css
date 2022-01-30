@@ -1,4 +1,4 @@
-header {
+#header {
   margin-bottom: 150px;
 }
 
@@ -55,8 +55,8 @@ header {
 .title {
   position: relative;
   font-family: "GothamProBold";
-  font-size: 4.9vh;
-  line-height: 4.7vh;
+  font-size: 4.93vh;
+  line-height: 4.69vh;
   text-transform: uppercase;
   color: transparent;
   animation: showTitle;
@@ -67,7 +67,7 @@ header {
   overflow: hidden;
 }
 
-.title:before {
+.title::before {
   content: "";
   position: absolute;
   top: 0;
