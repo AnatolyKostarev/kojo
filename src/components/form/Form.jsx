@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Button from "../button/Button";
 import styles from "./Form.module.css";
@@ -99,7 +100,7 @@ export default function Form() {
         />
         <span className={styles.checkfake}></span>
         <span className={styles.policy_text}>
-          Я соглашаюсь с политикой о <a>персональных данных</a>
+          Я соглашаюсь с политикой о <Link to="/">персональных данных</Link>
         </span>
         <div className={styles.focus_consent}>
           {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
