@@ -29,26 +29,34 @@ export default function Contacts() {
               <ul className={styles.contacts__info}>
                 {contactsList.map((elem, index) => (
                   <li className={styles.contacts__row_top} key={index}>
-                    <p className={styles.contacts__label}>{elem.label}:</p>
+                    <p className={styles.contacts__label}>
+                      <span className={styles.contacts__span}>
+                        {elem.label}:
+                      </span>
+                    </p>
                     <div className={styles.contacts__link}>
-                      <a href={`mailto:${elem.email}`}
-                          data-hover={elem.email}
-                          className={styles.contacts__item_top}
-                        >
-                          {elem.email}
+                      <a
+                        href={`mailto:${elem.email}`}
+                        data-hover={elem.email}
+                        className={styles.contacts__item_top}
+                      >
+                        {elem.email}
                       </a>
-                      <a href={`mailto:${elem.email}`}
-                          data-hover={elem.email}
-                          className={styles.contacts__item_bottom}
-                        >
-                          {elem.email}
+                      <a
+                        href={`mailto:${elem.email}`}
+                        data-hover={elem.email}
+                        className={styles.contacts__item_bottom}
+                      >
+                        {elem.email}
                       </a>
                     </div>
                   </li>
                 ))}
               </ul>
               <div className={styles.contacts__social}>
-                <p className={styles.contacts__label}>Мы в сети:</p>
+                <p className={styles.contacts__label}>
+                  <span className={styles.contacts__span}>Мы в сети:</span>
+                </p>
                 <ul className={styles.contacts__list}>
                   {socialList.map((elem, index) => (
                     <li className={styles.contacts__row} key={index}>
