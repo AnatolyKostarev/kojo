@@ -13,8 +13,8 @@
   }
 
   .textarea {
-    height: 8vh;
     padding: 3vh 0 0;
+    height: 8vh;
     overflow: hidden;
     resize: none;
   }
@@ -36,16 +36,16 @@
   }
 
   .focus {
-    color: red;
     text-transform: uppercase;
+    color: red;
   }
 
   .focus_consent {
-    color: red;
     position: relative;
     top: 10px;
     left: 10px;
     text-transform: uppercase;
+    color: red;
   }
 
   .consent {
@@ -53,10 +53,11 @@
     margin: 30px 0 0;
     cursor: url("/public/img/header/cursor.png") 6 6, auto;
   }
+
   .policy_text {
     padding: 10px;
-    color: rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
   }
 
   .policy_text > a {
@@ -70,22 +71,22 @@
 
   .checkfake {
     display: block;
-    transform: translateY(80%);
     width: 12px;
     height: 12px;
     border: 2px solid #000;
+    transform: translateY(80%);
   }
 
   .checkfake::before {
     content: "";
     position: absolute;
     display: block;
-    transform: translateX(-20%);
-    transform: translateY(-20%);
     width: 10px;
     height: 10px;
     background: url("/public/img/form/checkmark.svg");
     opacity: 0;
+    transform: translateX(-20%);
+    transform: translateY(-20%);
     transition: 0.3s ease-in-out;
   }
 
@@ -141,16 +142,16 @@
   }
 
   .focus {
-    color: red;
     text-transform: uppercase;
+    color: red;
   }
 
   .focus_consent {
-    color: red;
     position: relative;
     top: 10px;
     left: 10px;
     text-transform: uppercase;
+    color: red;
   }
 
   .consent {
@@ -158,6 +159,7 @@
     margin: 30px 0 0;
     cursor: url("/public/img/header/cursor.png") 6 6, auto;
   }
+
   .policy_text {
     padding: 10px;
     color: rgba(0, 0, 0, 0.5);
@@ -185,11 +187,11 @@
     content: "";
     position: absolute;
     display: block;
-    transform: translateX(-20%);
     width: 12px;
     height: 10px;
     background-color: #000;
     opacity: 0;
+    transform: translateX(-20%);
     transition: 0.3s ease-in-out;
   }
 
@@ -198,18 +200,18 @@
   }
 
   .btn {
-    border: 0;
+    margin: 0 0 100px;
+    padding: 20px;
     width: 100%;
     height: 60px;
-    margin: 0 0 100px;
-    background-color: #000;
-    color: #fff;
-    text-align: left;
-    padding: 20px;
+    font-family: "GothamProMedium", sans-serif;
     font-size: 14px;
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: GothamProMedium;
+    border: 0;
+    background-color: #000;
+    color: #fff;
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   }
 }
