@@ -261,5 +261,33 @@
     background-color: #000;
     color: #fff;
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  } */
+}
+
+@keyframes showLogo {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showBtn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideCoverTitle {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
   }
 }
