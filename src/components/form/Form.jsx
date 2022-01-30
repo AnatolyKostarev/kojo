@@ -82,7 +82,7 @@ export default function Form() {
             required: "Это поле обязательно",
             minLength: {
               value: 10,
-              message: "Минимум 10 символа",
+              message: "Минимум 10 символов",
             },
             maxLength: {
               value: 500,
