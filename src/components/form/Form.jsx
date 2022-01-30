@@ -120,7 +120,10 @@ export default function Form() {
         </div>
       </label>
       <div className={styles.submitWrapper}>
-        <Button title="Отправить" addStyle="form_btn" />
+        <div></div>
+        <div className={styles.form__btn}>
+          <Button title="Отправить" addStyle="form_btn" />
+        </div>
       </div>
     </form>
   );

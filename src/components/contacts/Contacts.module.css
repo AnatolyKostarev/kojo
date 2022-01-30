@@ -84,6 +84,39 @@
     font-size: 1.35vh;
     text-align: left;
     text-transform: uppercase;
+    overflow: hidden;
+  }
+
+  .contacts__span,
+  .contacts__item_top,
+  .contacts__message,
+  .contacts__text,
+  .contacts__copyright {
+    position: relative;
+    color: transparent;
+    animation: showTitle;
+    animation-duration: 0.8s;
+    animation-delay: 520ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+  }
+
+  .contacts__span::before,
+  .contacts__item_top::before,
+  .contacts__message::before,
+  .contacts__text::before,
+  .contacts__copyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    animation: slideCoverTitle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
   }
 
   .contacts__link {
@@ -118,7 +151,7 @@
 
   .contacts__message {
     margin-top: 50px;
-    font-size: 1.4vh;
+    font-size: 10px;
     line-height: 1.9vh;
     text-align: left;
     text-transform: uppercase;
@@ -295,5 +328,24 @@
   }
   .contacts__form {
     margin-top: 5vh;
+  }
+}
+
+@keyframes slideCoverTitle {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
   }
 }
