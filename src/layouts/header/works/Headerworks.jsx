@@ -6,7 +6,7 @@ import styles from "./Headerworks.module.css";
 export default function Headerworks({ title }) {
   return (
     <>
-      <header id="header">
+      <header id={styles.header}>
         <div className={styles.container}>
           <div className={styles.header}>
             <div className={styles.header__logo}>
