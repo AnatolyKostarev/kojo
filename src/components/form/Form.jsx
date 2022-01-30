@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import Button from "../button/Button";
 import styles from "./Form.module.css";
@@ -12,6 +13,7 @@ export default function Form() {
   } = useForm({
     mode: "onBlur",
   });
+
   const onSubmit = (data) => {
     console.log(data);
     reset();
@@ -38,7 +40,11 @@ export default function Form() {
           placeholder="Имя"
         />
         <div className={styles.focus}>
-          {errors?.name && <p>{errors?.name?.message || "Error!"}</p>}
+          {errors?.name && (
+            <p style={{ marginBottom: "20px" }}>
+              {errors?.name?.message || "Error!"}
+            </p>
+          )}
         </div>
       </div>
       <div className={styles.borders}>
@@ -62,7 +68,11 @@ export default function Form() {
           placeholder="Email"
         />
         <div className={styles.focus}>
-          {errors?.email && <p>{errors?.email?.message || "Error!"}</p>}
+          {errors?.email && (
+            <p style={{ marginBottom: "20px" }}>
+              {errors?.email?.message || "Error!"}
+            </p>
+          )}
         </div>
       </div>
       <div className={styles.borders}>
@@ -72,7 +82,7 @@ export default function Form() {
             required: "Это поле обязательно",
             minLength: {
               value: 10,
-              message: "Минимум 10 символа",
+              message: "Минимум 10 символов",
             },
             maxLength: {
               value: 500,
@@ -84,7 +94,11 @@ export default function Form() {
           placeholder="Сообщение"
         ></textarea>
         <div className={styles.focus}>
-          {errors?.message && <p>{errors?.message?.message || "Error!"}</p>}
+          {errors?.message && (
+            <p style={{ marginBottom: "20px" }}>
+              {errors?.message?.message || "Error!"}
+            </p>
+          )}
         </div>
       </div>
       <label className={styles.consent}>
@@ -99,7 +113,7 @@ export default function Form() {
         />
         <span className={styles.checkfake}></span>
         <span className={styles.policy_text}>
-          Я соглашаюсь с политикой о <a>персональных данных</a>
+          Я соглашаюсь с политикой о <Link to="/">персональных данных</Link>
         </span>
         <div className={styles.focus_consent}>
           {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}

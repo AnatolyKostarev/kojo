@@ -5,7 +5,7 @@ import Button from "../../../../components/buttonMax/button.jsx";
 export function Header2({ state }) {
   return (
     <header className={style.header}>
-      <div class={style.content}>
+      <div className={style.content}>
         <h1 id={style.h1}>WEB DEVELOPER</h1>
         <div className={style.logoWrapper}>
           <div className={style.logoWrapperBox}>
@@ -13,7 +13,7 @@ export function Header2({ state }) {
             <div className={style.logoBoxAnimate}></div>
           </div>
         </div>
-        <div class={style.btn_box}>
+        <div className={style.btn_box}>
           <Button />
         </div>
       </div>
