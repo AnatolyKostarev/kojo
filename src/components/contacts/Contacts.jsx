@@ -18,8 +18,6 @@ export default function Contacts() {
 
   return (
     <>
-      <Navigation />
-
       <Headercontacts title="контакты" />
 
       <section className={styles.contacts}>
@@ -101,6 +99,7 @@ export default function Contacts() {
           </div>
         </div>
       </section>
+      <Navigation />
     </>
   );
 }
