@@ -118,7 +118,6 @@ export default function Works() {
 
   return (
     <>
-      <Navigation />
       <Headerworks title="Работы" />
 
       <main>
@@ -137,6 +136,7 @@ export default function Works() {
           </div>
         </section>
       </main>
+      <Navigation />
 
       <Footerworks offSetY={offSetY} />
     </>
