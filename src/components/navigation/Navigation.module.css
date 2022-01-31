@@ -87,3 +87,9 @@
   transition: all 0.3s;
   opacity: 0.3;
 }
+
+@media (max-width: 992px) {
+  .nav__sidebar {
+    display: none;
+  }
+}
