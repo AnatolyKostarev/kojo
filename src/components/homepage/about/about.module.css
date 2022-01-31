@@ -24,7 +24,7 @@
 }
 
 .mainData > h2 {
-  font-family: GothamProBold;
+  font-family: "GothamProBold", sans-serif;
   font-size: 5vh;
   letter-spacing: 0.1vw;
   /* line-height: 3.5vh; */
