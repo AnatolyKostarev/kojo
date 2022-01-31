@@ -22,7 +22,6 @@ export default function Homepage() {
 
   return (
     <>
-      <Navigation />
       <div className={style.homepage}>
         {header && <Header2 />}
 
@@ -30,6 +29,7 @@ export default function Homepage() {
         <Title />
         <AboutUs />
         <MainForm hideHeader={hideHeader} showHeader={showHeader} />
+        <Navigation />
         <Footer />
       </div>
     </>
