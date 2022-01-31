@@ -37,6 +37,13 @@ export default function Navigation() {
             ))}
           </ul>
         </nav>
+        <div className={styles.nav__screen} onClick={toggleFullScreen}>
+          {isIcon ? (
+            <img src="/img/header/fullscreen.svg" alt="icon" />
+          ) : (
+            <img src="/img/header/fullscreen_close.svg" alt="icon" />
+          )}
+        </div>
       </aside>
     </>
   );
