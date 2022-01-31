@@ -10,6 +10,19 @@ export default function Navigation() {
     { linkto: "/contacts", title: "Контакты" },
   ];
 
+  const [isIcon, setIcon] = React.useState(true);
+
+  const toggleFullScreen = () => {
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen();
+    } else {
+      if (document.fullscreenEnabled) {
+        document.exitFullscreen();
+      }
+    }
+    setIcon(!isIcon);
+  };
+
   return (
     <>
       <aside className={styles.nav__sidebar}>
