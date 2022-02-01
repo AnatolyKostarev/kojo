@@ -17,7 +17,7 @@ export default function Worksitem({
   alt,
   offSetY,
 }) {
-  let image = (
+  const image = (
     <div
       className={
         imagePosition === "left" ? styles.works__img : styles.works__img_left
@@ -36,7 +36,7 @@ export default function Worksitem({
     </div>
   );
 
-  let actionElem = (
+  const actionElem = (
     <p
       className={imagePosition === "left" ? styles.action : styles.action__left}
     >
