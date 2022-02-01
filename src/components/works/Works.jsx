@@ -108,6 +108,7 @@ export default function Works() {
   ];
 
   const [offSetY, setOffSetY] = React.useState(0);
+  const [hide, setHide] = React.useState(true);
 
   const handleScroll = () => setOffSetY(window.pageYOffset);
 
@@ -116,29 +117,38 @@ export default function Works() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const hideContent = (e) => {
+    console.log(e.currentTarget);
+    setHide(!hide);
+  };
+
   return (
     <>
-      <Headerworks title="Работы" />
-
-      <main>
-        <section className={styles.works}>
-          <div className={styles.container}>
-            <div className={styles.works__list}>
-              {worksItem.map((elem, index, arr) => (
-                <Worksitem
-                  {...elem}
-                  key={index}
-                  counter={`${elem.counter} ${Math.abs((index -= arr.length))}`}
-                  offSetY={offSetY}
-                />
-              ))}
+      {hide && <Headerworks title="Работы" />}
+      {hide && (
+        <main>
+          <section className={styles.works}>
+            <div className={styles.container}>
+              <div className={styles.works__list}>
+                {worksItem.map((elem, index, arr) => (
+                  <Worksitem
+                    {...elem}
+                    key={index}
+                    counter={`${elem.counter} ${Math.abs(
+                      (index -= arr.length)
+                    )}`}
+                    offSetY={offSetY}
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-      <Navigation />
+          </section>
+        </main>
+      )}
 
-      <Footerworks offSetY={offSetY} />
+      <Navigation hideContent={hideContent} />
+
+      {hide && <Footerworks offSetY={offSetY} />}
     </>
   );
 }
