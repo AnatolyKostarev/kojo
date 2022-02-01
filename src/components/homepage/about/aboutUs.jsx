@@ -1,10 +1,10 @@
 import style from "./about.module.css";
 import "../scrollSpy.css";
 
-function AboutUs() {
+function AboutUs({showHeader}) {
   return (
     <>
-      <section className={style.about} id="about">
+      <section className={style.about} id="about" onMouseOver={showHeader}>
         <div className={style.mainBlock}>
           <div className={style.mainData}>
             <h2>DATA</h2>
