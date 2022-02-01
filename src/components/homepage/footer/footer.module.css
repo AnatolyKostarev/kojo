@@ -2,9 +2,7 @@
   width: calc(93.75vw - 6.25vw);
   height: 100px;
   position: fixed;
-  /* padding-left: 6.25vw; */
   left: 6.25vw;
-  /* left: 0; */
   bottom: 0%;
   display: flex;
   justify-content: space-between;
@@ -21,13 +19,12 @@
 .scrollSpy > span {
   width: 11px;
   height: 11px;
-  /* background: black; */
-  /* background: transparent; */
   position: absolute;
   top: 0px;
   left: 0px;
   transition: 0.2s;
 }
+
 
 .scrollSpy > a {
   box-sizing: border-box;
@@ -39,13 +36,12 @@
   border: 2px solid black;
   z-index: 10;
 }
+.scrollSpy:hover{
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 
+}
 .scrollSpy > a:hover {
   background: black;
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
-/* .scrollSpy > li > a:hover {
-  background: white;
-  border: 1px solid black;
-  color: black;
-} */

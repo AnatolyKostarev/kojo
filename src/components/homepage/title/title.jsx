@@ -2,7 +2,7 @@ import React from "react";
 import style from "./title.module.css";
 import "../scrollSpy.css";
 
-function Title() {
+function Title({ showHeader }) {
   let [index, setIndex] = React.useState(0);
 
   const img = [
@@ -17,7 +17,9 @@ function Title() {
 
   return (
     <>
-      <section className={style.title} id="title">
+      <section className={style.title} id="title"
+        onMouseOver={showHeader}
+      >
         <div
           className={style.mainImage}
           style={{
@@ -49,11 +51,11 @@ function Title() {
             }}
           >
             <p>
-              DESIGN + <div className={style.boxAnimation}></div>
+              DESIGN + <span className={style.boxAnimation}></span>
             </p>
             <p>
               {" "}
-              DEVELOPMENT <div className={style.boxAnimation}></div>
+              DEVELOPMENT <span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -64,11 +66,11 @@ function Title() {
           >
             <p>
               ZIPL STUDIO IS A HIGH-QUALIFIED TEAM OF TALENTED DEVELOPERS AND
-              DESIGNERS.<div className={style.boxAnimation}></div>
+              DESIGNERS.<span className={style.boxAnimation}></span>
             </p>
             <p>
               EVERY PROJECT IS A CHALLENGE TO DO BETTER THAN ANYTHING WE HAVE
-              ALREADY DONE!<div className={style.boxAnimation}></div>
+              ALREADY DONE!<span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -78,10 +80,10 @@ function Title() {
             }}
           >
             <p>
-              16+ <div className={style.boxAnimation}></div>
+              16+ <span className={style.boxAnimation}></span>
             </p>
             <p>
-              AWARDS <div className={style.boxAnimation}></div>
+              AWARDS <span className={style.boxAnimation}></span>
             </p>
           </div>
         </div>

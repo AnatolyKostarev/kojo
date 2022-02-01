@@ -80,7 +80,7 @@
 .mainAwards {
   height: 100%;
   width: 50%;
-  background: #ffffff;
+  /* background: #ffffff; */
   padding-top: 30vh;
   font-family: GothamProBold;
 }
