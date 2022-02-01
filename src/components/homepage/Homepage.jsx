@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import style from "./Homepage.module.css";
 import Title from "./title/title";
 import AboutUs from "./about/aboutUs";
@@ -7,32 +7,36 @@ import MainForm from "./form/form.jsx";
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
 import Navigation from "../navigation/Navigation";
 import ScrollSpy from "./scrollSpy/scrollSpy";
-import FooterHomepage from './footer/footerHomepage/footerHomepage'
+import FooterHomepage from "./footer/footerHomepage/footerHomepage";
 
 export default function Homepage() {
   // for header
   let [header, setHeader] = useState(true);
+  const [hide, setHide] = React.useState(true);
+
   const hideHeader = () => {
     setHeader(false);
-    console.log(header)
+    console.log(header);
   };
+
   const showHeader = () => {
-          setHeader(true);
+    setHeader(true);
   };
 
+  const hideContent = () => {
+    setHide(!hide);
+  };
 
-
-  
   return (
     <>
       <div className={style.homepage}>
-        {header && <Header2 />}
-        <Title showHeader={showHeader}/>
-        <AboutUs showHeader={showHeader}/>
-        <MainForm hideHeader={hideHeader}  />
-        <Navigation />
-        <FooterHomepage />
-        <ScrollSpy />
+        {hide && header && <Header2 />}
+        {hide && <Title showHeader={showHeader} />}
+        {hide && <AboutUs showHeader={showHeader} />}
+        {hide && <MainForm hideHeader={hideHeader} />}
+        <Navigation hideContent={hideContent} />
+        {hide && <FooterHomepage />}
+        {hide && <ScrollSpy />}
       </div>
     </>
   );
