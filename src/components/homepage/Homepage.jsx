@@ -3,7 +3,7 @@ import style from "./Homepage.module.css";
 import Title from "./title/title";
 import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
-import Footer from "./footer/footer.jsx";
+// import Footer from "./footer/footer.jsx"; we must delete this component
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
 import Navigation from "../navigation/Navigation";
 import ScrollSpy from "./scrollSpy/scrollSpy";
