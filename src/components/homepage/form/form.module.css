@@ -2,6 +2,7 @@
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start;
+    background-color: white;
 }
 
 .mainForm {
@@ -13,7 +14,6 @@
 }
 
 .mainBlock {
-    /* background: lightpink; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,11 +22,9 @@
 .blockTitle {
     font-size: 9.8vh;
     letter-spacing: 0.13vw;
-    /* line-height: 6.9vh; */
     height: 54.3vh;
     padding-top: 0.86vh;
     width: 47.9vw;
-    /* margin-left: -0.34vw; */
 }
 
 .blockTitle>div {

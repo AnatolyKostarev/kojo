@@ -9,7 +9,6 @@ function MainForm({ hideHeader, showHeader }) {
         className={style.form}
         id="form"
         onMouseOver={hideHeader}
-        onMouseOut={showHeader}
       >
         <div className={style.mainForm}>
           <div className={style.mainBlock}>
