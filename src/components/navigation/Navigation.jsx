@@ -33,13 +33,7 @@ export default function Navigation({ hideContent }) {
             onMouseOut={hideContent}
           >
             {navSideBar.map((elem, index) => (
-              <Link
-                className={styles.nav__item}
-                to={elem.linkto}
-                key={index}
-                // onMouseOver={hideContent}
-                // onMouseOut={hideContent}
-              >
+              <Link className={styles.nav__item} to={elem.linkto} key={index}>
                 <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
                 </li>

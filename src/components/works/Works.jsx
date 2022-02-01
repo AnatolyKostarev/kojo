@@ -112,15 +112,14 @@ export default function Works() {
 
   const handleScroll = () => setOffSetY(window.pageYOffset);
 
+  const hideContent = () => {
+    setHide(!hide);
+  };
+
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const hideContent = (e) => {
-    console.log(e.currentTarget);
-    setHide(!hide);
-  };
 
   return (
     <>
