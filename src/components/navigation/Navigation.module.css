@@ -6,7 +6,7 @@
   row-gap: 25vh;
   top: 0;
   right: 0;
-  padding-top: 12.3vh;
+  padding-top: 12.34vh;
   width: 6.25vw;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
@@ -17,18 +17,22 @@
   z-index: 102;
 }
 
+.nav__sidebar:hover {
+  border: 0;
+}
+
 .nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 30px;
+  row-gap: 2.9vh;
 }
 
 .nav__items {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 55px;
+  padding: 0 2.86vw;
   width: 100%;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
@@ -46,7 +50,7 @@
   left: 50%;
   transform: translate(-50%);
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .nav__items:hover::before {
@@ -61,12 +65,12 @@
   bottom: 0;
   top: 0;
   left: 0;
-  max-width: 200px;
+  max-width: 10.42vw;
   transform: rotate(90deg) translateY(520%);
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
   font-family: "GothamProBlack", sans-serif;
-  font-size: 96px;
-  line-height: 66px;
+  font-size: 8vh;
+  line-height: 5.5vh;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -74,7 +78,7 @@
   top: 0;
   bottom: 0;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transform: rotate(90deg) translateY(-720%);
+  transform: rotate(90deg) translateY(-545%);
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
