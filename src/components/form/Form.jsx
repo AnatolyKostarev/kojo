@@ -41,7 +41,7 @@ export default function Form() {
         />
         <div className={styles.focus}>
           {errors?.name && (
-            <p style={{ marginBottom: "20px" }}>
+            <p style={{ marginBottom: "10px" }}>
               {errors?.name?.message || "Error!"}
             </p>
           )}
@@ -69,7 +69,7 @@ export default function Form() {
         />
         <div className={styles.focus}>
           {errors?.email && (
-            <p style={{ marginBottom: "20px" }}>
+            <p style={{ marginBottom: "10px" }}>
               {errors?.email?.message || "Error!"}
             </p>
           )}
@@ -95,7 +95,7 @@ export default function Form() {
         ></textarea>
         <div className={styles.focus}>
           {errors?.message && (
-            <p style={{ marginBottom: "20px" }}>
+            <p style={{ marginBottom: "10px" }}>
               {errors?.message?.message || "Error!"}
             </p>
           )}
@@ -106,17 +106,21 @@ export default function Form() {
           name="Feedback[consent]"
           type="checkbox"
           {...register("consent", {
-            required: "И это тоже",
+            required: "Подтвердите свое согласие для отправки формы",
           })}
           id="feedback-consent"
           className={styles.checkbox}
         />
         <span className={styles.checkfake}></span>
         <span className={styles.policy_text}>
-          Я соглашаюсь с политикой о <Link to="/">персональных данных</Link>
+          Я даю согласие на обработку <Link to="/">персональных данных</Link>
         </span>
         <div className={styles.focus_consent}>
-          {errors?.consent && <p>{errors?.consent?.message || "Error!"}</p>}
+          {errors?.consent && (
+            <p style={{ marginBottom: "10px" }}>
+              {errors?.consent?.message || "Error!"}
+            </p>
+          )}
         </div>
       </label>
       <div className={styles.submitWrapper}>
