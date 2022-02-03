@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 25vh;
+  row-gap: 33.42vh;
   top: 0;
   right: 0;
   padding-top: 12.34vh;
   width: 6.25vw;
   height: 100%;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
   font-family: "GothamProMedium", sans-serif;
   font-size: 12px;
   text-transform: uppercase;
@@ -18,14 +18,14 @@
 }
 
 .nav__sidebar:hover {
-  border: 0;
+  outline: 0;
 }
 
 .nav__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.9vh;
+  row-gap: 2.66vh;
 }
 
 .nav__items {
