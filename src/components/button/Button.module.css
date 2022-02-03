@@ -44,7 +44,7 @@
   font-family: "GothamProBlack";
   font-size: 3.5vh;
   line-height: 4.9vh;
-  letter-spacing: 0.06vw;
+  letter-spacing: -0.02vw;
   color: #000;
   box-sizing: border-box;
   transform: translateX(-100%);
