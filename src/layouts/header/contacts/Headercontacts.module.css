@@ -1,25 +1,21 @@
 @media screen and (min-width: 1240px) {
   #header {
-    max-width: 860px;
-    margin-bottom: 150px;
+    width: 100vw;
+    margin-bottom: 17.25vh;
+    padding-top: 12.34vh;
   }
 
   .container {
-    max-width: 860px;
-    padding: 0 120px 0;
-    box-sizing: content-box;
-  }
-
-  .header {
-    margin-bottom: 140px;
-    padding-top: 140px;
+    width: 50vw;
+    padding: 0 0 0 6.25vw;
+    box-sizing: border-box;
   }
 
   .header__logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 180px;
+    column-gap: 8.33vw;
     overflow: hidden;
   }
 
