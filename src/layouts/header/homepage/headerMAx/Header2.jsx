@@ -9,7 +9,10 @@ export function Header2({ state }) {
         <h1 id={style.h1}>WEB DEVELOPER</h1>
         <div className={style.logoWrapper}>
           <div className={style.logoWrapperBox}>
+            <a href="#title">
             <img src="./img/header/icon-logo.svg" alt=" " />
+
+            </a>
             <div className={style.logoBoxAnimate}></div>
           </div>
         </div>
