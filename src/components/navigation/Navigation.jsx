@@ -15,13 +15,26 @@ export default function Navigation({ hideContent }) {
   const toggleFullScreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
+      // setIcon(!isIcon);
     } else {
       if (document.fullscreenEnabled) {
         document.exitFullscreen();
+        // setIcon(isIcon);
       }
     }
     setIcon(!isIcon);
+    return console.log(isIcon);
   };
+
+  // React.useEffect(() => {
+  //   function handleScreen() {
+  //     if (isIcon === false) {
+  //       setIcon(!isIcon);
+  //     }
+  //     return console.log(isIcon);
+  //   }
+  //   window.addEventListener("resize", handleScreen);
+  // });
 
   return (
     <>

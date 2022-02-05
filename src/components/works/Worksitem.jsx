@@ -35,7 +35,7 @@ export default function Worksitem({
       />
     </div>
   );
-
+  console.log(bic);
   const actionElem = (
     <p
       className={imagePosition === "left" ? styles.action : styles.action__left}
