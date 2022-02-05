@@ -10,31 +10,15 @@ export default function Navigation({ hideContent }) {
     { linkto: "/contacts", title: "Контакты" },
   ];
 
-  const [isIcon, setIcon] = React.useState(true);
-
   const toggleFullScreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
-      // setIcon(!isIcon);
     } else {
       if (document.fullscreenEnabled) {
         document.exitFullscreen();
-        // setIcon(isIcon);
       }
     }
-    setIcon(!isIcon);
-    return console.log(isIcon);
   };
-
-  // React.useEffect(() => {
-  //   function handleScreen() {
-  //     if (isIcon === false) {
-  //       setIcon(!isIcon);
-  //     }
-  //     return console.log(isIcon);
-  //   }
-  //   window.addEventListener("resize", handleScreen);
-  // });
 
   return (
     <>
@@ -54,13 +38,7 @@ export default function Navigation({ hideContent }) {
             ))}
           </ul>
         </nav>
-        <div className={styles.nav__screen} onClick={toggleFullScreen}>
-          {isIcon ? (
-            <img src="/img/header/fullscreen.svg" alt="icon" />
-          ) : (
-            <img src="/img/header/fullscreen_close.svg" alt="icon" />
-          )}
-        </div>
+        <div className={styles.nav__screen} onClick={toggleFullScreen}></div>
       </aside>
     </>
   );
