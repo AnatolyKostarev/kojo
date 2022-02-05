@@ -83,7 +83,16 @@
 }
 
 .nav__screen {
-  transition: all 0.3s;
+  background: url("../../../public/img/header/fullscreen.svg") center no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+}
+
+html:fullscreen .nav__screen {
+  background: url("../../../public/img/header/fullscreen_close.svg") center
+    no-repeat;
+  background-size: cover;
 }
 
 .nav__screen:hover {
