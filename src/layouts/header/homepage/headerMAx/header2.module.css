@@ -54,7 +54,7 @@
     animation: showLogo 0.4s;
 }
 
-.logoWrapper>.logoWrapperBox>img {
+.logoWrapper>.logoWrapperBox>a>img {
     height: 3.7vh;
 }
 

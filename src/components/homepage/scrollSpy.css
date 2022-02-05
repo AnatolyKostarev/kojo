@@ -22,6 +22,11 @@
     transition: 0.5s;
     transform: rotate(360deg); 
 }
+footer:hover~div>nav>#indicator{
+  background: black;
+  width: 100%;
+ 
+}
 
 /* #title:hover~footer>div>nav>#indicator {
     left: 0px;
