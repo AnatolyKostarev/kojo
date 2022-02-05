@@ -35,7 +35,6 @@ export default function Worksitem({
       />
     </div>
   );
-  console.log(bic);
   const actionElem = (
     <p
       className={imagePosition === "left" ? styles.action : styles.action__left}
@@ -49,7 +48,7 @@ export default function Worksitem({
       <div className={styles.works__item}>
         {imagePosition === "left" && image}
         <div
-          style={{ transform: `translateY(-${offSetY * 0.03}px)` }}
+          style={{ transform: `translateY(-${offSetY * 0.08}px)` }}
           className={
             imagePosition === "left"
               ? styles.works__info
