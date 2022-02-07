@@ -2,20 +2,10 @@ import React from "react";
 import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import Form from "../form/Form";
 import Navigation from "../navigation/Navigation";
+import { socialList, contactsList } from "../../store";
 import styles from "./Contacts.module.css";
 
 export default function Contacts() {
-  const socialList = [
-    { social: "Фэйсбук", href: "https://facebook.com/" },
-    { social: "Инстаграм", href: "https://instagram.com/" },
-    { social: "Беханс", href: "https://www.behance.net/" },
-  ];
-
-  const contactsList = [
-    { label: "основной", email: "mail@zipl.pro" },
-    { label: "продажи", email: "sales@zipl.pro" },
-  ];
-
   const [hide, setHide] = React.useState(true);
 
   const hideContent = () => {
