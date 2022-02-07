@@ -1,12 +1,8 @@
 import React from "react";
+import { footerWorksNav } from "../../../store";
 import styles from "./Footerworks.module.css";
 
 export default function Footerworks() {
-  const footerWorksNav = [
-    { social: "/ фэйсбук", href: "https://facebook.com" },
-    { social: "/ инстаграм", href: "https://instagram.com" },
-    { social: "/ вконтакте", href: "https://vk.com" },
-  ];
   return (
     <>
       <footer>

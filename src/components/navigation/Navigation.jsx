@@ -1,15 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { navSideBar } from "../../store";
 import styles from "./Navigation.module.css";
 
 export default function Navigation({ hideContent }) {
-  const navSideBar = [
-    { linkto: "/", title: "Главная" },
-    { linkto: "/works", title: "Работы" },
-    { linkto: "/services", title: "Услуги" },
-    { linkto: "/contacts", title: "Контакты" },
-  ];
-
   const toggleFullScreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
