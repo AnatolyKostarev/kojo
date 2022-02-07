@@ -41,7 +41,7 @@ export default function Form() {
         />
         <div className={styles.focus}>
           {errors?.name && (
-            <p style={{ marginBottom: "10px" }}>
+            <p className={styles.trans}>
               {errors?.name?.message || "Error!"}
             </p>
           )}
@@ -69,7 +69,7 @@ export default function Form() {
         />
         <div className={styles.focus}>
           {errors?.email && (
-            <p style={{ marginBottom: "10px" }}>
+            <p>
               {errors?.email?.message || "Error!"}
             </p>
           )}
@@ -95,7 +95,7 @@ export default function Form() {
         ></textarea>
         <div className={styles.focus}>
           {errors?.message && (
-            <p style={{ marginBottom: "10px" }}>
+            <p>
               {errors?.message?.message || "Error!"}
             </p>
           )}
@@ -115,14 +115,14 @@ export default function Form() {
         <span className={styles.policy_text}>
           Я даю согласие на обработку <Link to="/">персональных данных</Link>
         </span>
+      </label>
         <div className={styles.focus_consent}>
           {errors?.consent && (
-            <p style={{ marginBottom: "10px" }}>
+            <p>
               {errors?.consent?.message || "Error!"}
             </p>
           )}
         </div>
-      </label>
       <div className={styles.submitWrapper}>
         <div></div>
         <div className={styles.form__btn}>
