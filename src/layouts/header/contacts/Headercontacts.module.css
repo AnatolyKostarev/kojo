@@ -1,4 +1,4 @@
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1024px) {
   #header {
     width: 100vw;
     margin-bottom: 17.25vh;
@@ -76,20 +76,20 @@
   }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1023px) {
   .title {
-    position: absolute;
-    font-family: "GothamProBold";
+    position: relative;
+    font-family: "GothamProBold", sans-serif;
     padding: 0 20px;
     margin: 40px 0 100px;
     font-size: 40px;
     line-height: 28px;
     text-transform: uppercase;
-    animation: show_title;
+    animation: showTitle;
     animation-duration: 1.5s;
+    animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     animation-delay: 1s;
-    opacity: 0;
   }
 
   .header__img {

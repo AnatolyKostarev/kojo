@@ -43,7 +43,6 @@
   .focus_consent {
     position: relative;
     top: 10px;
-    left: 10px;
     text-transform: uppercase;
     color: red;
   }
@@ -192,12 +191,12 @@
   .focus {
     text-transform: uppercase;
     color: red;
+    margin-bottom: 10px;
   }
 
   .focus_consent {
     position: relative;
     top: 10px;
-    left: 10px;
     text-transform: uppercase;
     color: red;
   }
@@ -235,11 +234,12 @@
     content: "";
     position: absolute;
     display: block;
-    width: 12px;
+    width: 10px;
     height: 10px;
-    background-color: #000;
+    background: url("/public/img/form/checkmark.svg");
     opacity: 0;
     transform: translateX(-20%);
+    transform: translateY(-20%);
     transition: 0.3s ease-in-out;
   }
 
