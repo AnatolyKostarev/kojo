@@ -1,0 +1,41 @@
+.layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.layout.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  background: #ffffff;
+  transition: 0.4s all;
+}
+
+.success {
+  position: relative;
+  font-family: "GothamProBold", sans-serif;
+  margin: 40px;
+  text-align: center;
+  font-size: 1.35vh;
+  line-height: 42px;
+  text-transform: uppercase;
+}
