@@ -38,6 +38,7 @@
   .focus {
     text-transform: uppercase;
     color: red;
+    margin-bottom: 10px;
   }
 
   .focus_consent {
