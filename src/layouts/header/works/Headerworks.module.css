@@ -57,6 +57,7 @@
 
 .title {
   position: relative;
+  display: block;
   font-family: "GothamProBold";
   font-size: 4.94vh;
   line-height: 4.69vh;
