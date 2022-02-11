@@ -86,3 +86,13 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+
+  .btn::before {
+    font-size: 1.5vh;
+  }
+}
