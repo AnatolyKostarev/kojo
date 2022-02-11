@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Buttonsmall.module.css";
 
 export default function Buttonsmall({ title, addStyle, buttonPosition, href }) {
-  let smallBtnIcon = (
+  const smallBtnIcon = (
     <a href={href} target="_blank" rel="noreferrer">
       <img
         className={styles.btn__icon}
