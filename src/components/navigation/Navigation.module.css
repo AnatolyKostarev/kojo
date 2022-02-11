@@ -82,6 +82,18 @@
   transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
+html:-webkit-full-screen .nav__items:hover::after {
+  transform: rotate(90deg) translateY(-635%);
+}
+
+html:-moz-full-screen .nav__items:hover::after {
+  transform: rotate(90deg) translateY(-635%);
+}
+
+html:-ms-fullscreen .nav__items:hover::after {
+  transform: rotate(90deg) translateY(-635%);
+}
+
 .nav__screen {
   background: url("../../../public/img/header/fullscreen.svg") center no-repeat;
   background-size: cover;
