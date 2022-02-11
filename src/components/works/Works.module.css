@@ -251,3 +251,36 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 1227px) {
+  .works__info {
+    padding: 6vh 0 0 6vw;
+  }
+
+  .works__img_left {
+    margin-top: -10vh;
+  }
+
+  .title {
+    margin-bottom: 2.5vh;
+  }
+
+  .desc {
+    margin-bottom: 1vh;
+  }
+
+  .action {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+
+  .works__list {
+    display: none;
+  }
+}
