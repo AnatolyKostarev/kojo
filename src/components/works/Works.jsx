@@ -4,6 +4,7 @@ import Footerworks from "../../layouts/footer/works/Footerworks";
 import Navigation from "../navigation/Navigation";
 import styles from "./Works.module.css";
 import Worksitem from "./Worksitem";
+import { Worksitemresponsive } from "./Worksitemresponsive";
 import { worksItem } from "../../store";
 
 export default function Works() {
@@ -40,13 +41,13 @@ export default function Works() {
                   />
                 ))}
               </div>
+
+              <Worksitemresponsive elem={worksItem} />
             </div>
           </section>
         </main>
       )}
-
       <Navigation hideContent={hideContent} />
-
       {hide && <Footerworks offSetY={offSetY} />}
     </>
   );
