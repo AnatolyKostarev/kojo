@@ -80,10 +80,10 @@
   .title {
     position: relative;
     font-family: "GothamProBold", sans-serif;
-    padding: 0 20px;
-    margin: 40px 0 100px;
-    font-size: 40px;
-    line-height: 28px;
+    padding: 0 1.04vw; /* 0 20px*/
+    margin: 3.33vh 0 8.33vh; /*40px 0 100px*/
+    font-size: 4.93vh; /*40px*/
+    line-height: 2.33vh; /*28px*/
     text-transform: uppercase;
     animation: showTitle;
     animation-duration: 1.5s;

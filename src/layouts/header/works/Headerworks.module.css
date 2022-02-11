@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 3.7vh;
+  min-height: 3.7vh;
   overflow: hidden;
 }
 
@@ -57,6 +57,7 @@
 
 .title {
   position: relative;
+  display: block;
   font-family: "GothamProBold";
   font-size: 4.94vh;
   line-height: 4.69vh;
@@ -145,5 +146,41 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  #header {
+    margin-bottom: 12.08vh;
+    padding-top: 2.42vh;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .header__logo {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .header__logo a {
+    margin-right: 0;
+    margin-bottom: 5.55vh;
+  }
+
+  .header__logo div {
+    align-self: center;
+  }
+
+  .header__btn {
+    margin-top: 4.83vh;
+    width: 100%;
   }
 }

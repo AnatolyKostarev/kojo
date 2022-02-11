@@ -20,9 +20,11 @@ export default function Headerworks({ title }) {
                   <div className={styles.logo__animation}></div>
                 </div>
               </Link>
-              <h1 className={styles.title} data-title="Работа">
-                {title}
-              </h1>
+              <div>
+                <h1 className={styles.title} data-title="Работа">
+                  {title}
+                </h1>
+              </div>
             </div>
             <div className={styles.header__btn}>
               <Link to="/contacts">

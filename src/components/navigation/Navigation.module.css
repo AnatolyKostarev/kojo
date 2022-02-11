@@ -113,7 +113,7 @@ html:-ms-fullscreen .nav__screen {
   opacity: 0.3;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
   .nav__sidebar {
     display: none;
   }

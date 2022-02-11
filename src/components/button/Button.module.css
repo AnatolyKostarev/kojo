@@ -30,7 +30,7 @@
   color: #fff;
   box-sizing: border-box;
   transform: translateX(0);
-  transition: 0.4s linear;
+  transition: 0.5s linear;
 }
 
 .btn::before {
@@ -38,25 +38,38 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-left: 1.51vw;
+  /* padding-left: 1.3vw; */
   width: 100%;
   height: 100%;
   font-family: "GothamProBlack";
   font-size: 3.5vh;
   line-height: 4.9vh;
-  letter-spacing: -0.02vw;
+  letter-spacing: -0.05vw;
   color: #000;
   box-sizing: border-box;
   transform: translateX(-100%);
-  transition: 0.4s linear;
+  transition: 0.5s linear;
 }
 
 .btn:hover::after {
   transform: translateX(-100%);
-  transition: 0.4s linear;
+  transition: 0.5s linear;
 }
 
 .btn:hover::before {
   transform: translateX(0);
-  transition: 0.4s linear;
+  transition: 0.5s linear;
+}
+
+@media (max-width: 1023px) {
+  .btn {
+    padding: 1vh 0;
+    width: 100%;
+  }
+
+  .btn::after {
+    padding: 1vh calc(50% - 47px);
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
