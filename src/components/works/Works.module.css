@@ -69,6 +69,18 @@
   width: 37.5vw;
 }
 
+html:-webkit-full-screen .works__info {
+  padding: 5vh 0 0 6vw;
+}
+
+html:-moz-full-screen .works__info {
+  padding: 5vh 0 0 6vw;
+}
+
+html:-ms-full-screen .works__info {
+  padding: 5vh 0 0 6vw;
+}
+
 .works__info_left {
   padding: 10vh 6vw 0 0;
   width: 43.75vw;
@@ -88,6 +100,18 @@
   animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   overflow: hidden;
+}
+
+html:-webkit-full-screen .title {
+  margin-bottom: 1.33vh;
+}
+
+html:-moz-full-screen .title {
+  margin-bottom: 1.33vh;
+}
+
+html:-ms-fullscreen .title {
+  margin-bottom: 1.33vh;
 }
 
 .counter,
@@ -156,9 +180,39 @@
   text-align: right;
 }
 
+html:-webkit-full-screen .desc {
+  margin-bottom: 1vh;
+}
+
+html:-moz-full-screen .desc {
+  margin-bottom: 1vh;
+}
+
+html:-ms-full-screen .desc {
+  margin-bottom: 1vh;
+}
+
 .action {
   margin-left: 2.2vw;
   text-align: right;
+}
+
+html:-webkit-full-screen .action {
+  display: block;
+  margin: 0 0 4vh 0;
+  text-align: left;
+}
+
+html:-moz-full-screen .action {
+  display: block;
+  margin: 0 0 4vh 0;
+  text-align: left;
+}
+
+html:-ms-full-screen .action {
+  display: block;
+  margin: 0 0 4vh 0;
+  text-align: left;
 }
 
 .action__left {

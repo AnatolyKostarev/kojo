@@ -109,6 +109,7 @@ export const navSideBar = [
 ];
 
 // Array of object for Footerworks.jsx component
+
 export const footerWorksNav = [
   { social: "/ фэйсбук", href: "https://facebook.com" },
   { social: "/ инстаграм", href: "https://instagram.com" },
@@ -116,6 +117,7 @@ export const footerWorksNav = [
 ];
 
 // Array of object for Contacts.jsx component
+
 export const socialList = [
   { social: "Фэйсбук", href: "https://facebook.com/" },
   { social: "Инстаграм", href: "https://instagram.com/" },
