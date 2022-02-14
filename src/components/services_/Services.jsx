@@ -1,4 +1,5 @@
 import React from "react";
+import Headerservice from "../../layouts/header/services_/Headerservice";
 import Navigation from "../navigation/Navigation";
 import styles from "./Services.module.css";
 
@@ -11,14 +12,11 @@ export default function Services() {
 
   return (
     <>
+      {hide && <Headerservice title="Услуги" />}
       {hide && (
         <main>
           <section className={styles.service}>
-            <div className={styles.container}>
-              <h1 className={styles.title}>
-                service page is under the construction
-              </h1>
-            </div>
+            <div className={styles.container}></div>
           </section>
         </main>
       )}
