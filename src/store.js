@@ -128,3 +128,40 @@ export const contactsList = [
   { label: "основной", email: "mail@zipl.pro" },
   { label: "продажи", email: "sales@zipl.pro" },
 ];
+
+// Array of titles for ServicesInfo.jsx
+export const servicesInfo = [
+  {
+    title: "Наша команда специализируется на разработке сайтов",
+  },
+  {
+    title:
+      "Мы используем передовые технологии и подходы в создании сайтов, что гарантирует их эффектность, качество и практичность.",
+  },
+  {
+    title: "Вы можете заказать комплексное решение или раздельные услуги.",
+  },
+];
+
+// Array of titles for ServicesList.jsx
+
+export const servicesList = [
+  {
+    title: "интернет-магазины",
+  },
+  {
+    title: "корпоративные сайты",
+  },
+  {
+    title: "брэндовые сайты",
+  },
+  {
+    title: "промо сайты",
+  },
+  {
+    title: "лэндинги",
+  },
+  {
+    title: "веб приложения",
+  },
+];
