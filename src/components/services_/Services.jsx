@@ -8,16 +8,19 @@ export default function Services() {
   const hideContent = () => {
     setHide(!hide);
   };
+
   return (
     <>
       {hide && (
-        <section className={styles.service}>
-          <div className={styles.container}>
-            <h1 className={styles.title}>
-              service page is under the construction
-            </h1>
-          </div>
-        </section>
+        <main>
+          <section className={styles.service}>
+            <div className={styles.container}>
+              <h1 className={styles.title}>
+                service page is under the construction
+              </h1>
+            </div>
+          </section>
+        </main>
       )}
       <Navigation hideContent={hideContent} />
     </>
