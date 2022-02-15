@@ -93,6 +93,11 @@
   animation-timing-function: ease-in;
 }
 
+.subtitle {
+  height: 4.94vh;
+  overflow-y: hidden;
+}
+
 .header__btn {
   position: relative;
   overflow: hidden;
