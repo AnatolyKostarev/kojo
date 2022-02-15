@@ -1,29 +1,18 @@
 import React from "react";
+import { homepageBackgroundImages } from "../../../store";
 import style from "./title.module.css";
 import "../scrollSpy.css";
 
 function Title({ showHeader }) {
   let [index, setIndex] = React.useState(0);
 
-  const img = [
-    "./img/imgHomepage/1Home.webp",
-    "./img/imgHomepage/2Home.webp",
-    "./img/imgHomepage/3Home.webp",
-    "./img/imgHomepage/4Home.webp",
-    "./img/imgHomepage/5Home.webp",
-    "./img/imgHomepage/10Home.webp",
-    "./img/imgHomepage/14Home.webp",
-  ];
-
   return (
     <>
-      <section className={style.title} id="title"
-        onMouseOver={showHeader}
-      >
+      <section className={style.title} id="title" onMouseOver={showHeader}>
         <div
           className={style.mainImage}
           style={{
-            backgroundImage: `url(${img[index]})`,
+            backgroundImage: `url(${homepageBackgroundImages[index]})`,
           }}
           alt="webDesign"
           onMouseOver={() => {

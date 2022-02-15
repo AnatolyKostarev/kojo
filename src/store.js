@@ -165,3 +165,30 @@ export const servicesList = [
     title: "веб приложения",
   },
 ];
+
+// Array of titles for AboutUs.jsx
+
+export const aboutUsInfo = [
+  { label: "страна", value: "россия" },
+  { label: "год", value: "2021" },
+  { label: "тип", value: "веб студия" },
+  { label: "акцент", value: "уникальность" },
+  { label: "цвета", value: "#fff, #000" },
+];
+
+export const awards = [
+  { label: "беханс", value: "6x featured in interaction" },
+  { label: "cssдизайнавардс", value: "1x kudos" },
+];
+
+// Array of src for title.jsx
+
+export const homepageBackgroundImages = [
+  "./img/imgHomepage/1Home.webp",
+  "./img/imgHomepage/2Home.webp",
+  "./img/imgHomepage/3Home.webp",
+  "./img/imgHomepage/4Home.webp",
+  "./img/imgHomepage/5Home.webp",
+  "./img/imgHomepage/10Home.webp",
+  "./img/imgHomepage/14Home.webp",
+];

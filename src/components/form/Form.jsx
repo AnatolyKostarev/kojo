@@ -19,7 +19,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     console.log(data);
-    setActiveModal(true)
+    setActiveModal(true);
     reset();
   };
 
