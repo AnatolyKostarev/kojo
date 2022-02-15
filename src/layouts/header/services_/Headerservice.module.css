@@ -57,7 +57,7 @@
   height: 3.7vh;
 }
 
-.title {
+.header__title {
   width: 19.79vw;
   margin-right: 10.07vw;
 }
@@ -65,8 +65,8 @@
 .title,
 .subtitle {
   position: relative;
-  display: block;
-  font-family: "GothamProBold";
+  display: inline-block;
+  font-family: "GothamProBold", sans-serif;
   font-size: 4.94vh;
   line-height: 4.69vh;
   text-transform: uppercase;
