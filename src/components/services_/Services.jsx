@@ -4,6 +4,7 @@ import Navigation from "../navigation/Navigation";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import styles from "./Services.module.css";
 import ServicesWeb from "./services_web/ServicesWeb";
+import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 
 export default function Services() {
   const [hide, setHide] = React.useState(true);
@@ -17,6 +18,7 @@ export default function Services() {
       {hide && <Headerservice title="Услуги" />}
       {hide && (
         <main>
+          <ServiceScrollBar />
           <ServicesWeb />
         </main>
       )}
