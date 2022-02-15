@@ -166,6 +166,44 @@ export const servicesList = [
   },
 ];
 
+// Array of titles for ServiceRulesInfo.jsx
+
+export const servicesRulesInfo = [
+  {
+    title:
+      "Чтобы сэкономить наше и ваше время, мы составили для Вас список того, с чем мы не работаем и как.",
+  },
+  {
+    title: "С уважением, команда «kojo»",
+  },
+];
+
+// Array of titles for ServiceRulesList.jsx
+
+export const serviceRulesList = [
+  {
+    title: "бесплатно",
+  },
+  {
+    title: "с нереальными сроками",
+  },
+  {
+    title: "без утвержденного технического задания",
+  },
+  {
+    title: "без предоплаты",
+  },
+  {
+    title: "с проектами о насилии и порнографии",
+  },
+  {
+    title: "баннеры",
+  },
+  {
+    title: "не доделываем чужой код/дизайн после других специалистов",
+  },
+];
+
 // Array of titles for AboutUs.jsx
 
 export const aboutUsInfo = [

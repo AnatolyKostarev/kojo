@@ -1,0 +1,104 @@
+#service__rule {
+  height: 100vh;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 0 6.25vw 0;
+  box-sizing: content-box;
+}
+
+.service__rules {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 6.25vw;
+  font-size: 1.36vh;
+  line-height: 1.85vh;
+}
+
+.service__rules_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.empty {
+  width: 10.81vw;
+}
+
+.service__rules_info {
+  margin-right: 11.07vw;
+  margin-left: 1.95vw;
+  width: 19.79vw;
+  text-align: left;
+  text-transform: uppercase;
+  box-sizing: content-box;
+}
+
+html:-webkit-full-screen .service__rules_info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
+html:-moz-full-screen .service__rules_info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
+html:-ms-full-screen .service__rules_info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
+.service__rules_info > ul > li:first-child {
+  margin-bottom: 2.86vh;
+}
+
+.service__rules_list {
+  text-align: left;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.service__rules_list > ul {
+  display: list-item;
+  list-style-type: disc;
+}
+
+.service__rules_list > ul > li {
+  padding-left: 1vw;
+  margin-bottom: 1.67vh;
+}
+
+.service__rules_list > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.service__rules_img {
+  position: relative;
+  background: url("/public/img/service/fun.gif") center no-repeat #ccc;
+  background-size: 150%;
+  width: 12.5vw;
+  height: 33.33vh;
+  border: 1px solid #000;
+  z-index: 99;
+}
+
+.service__rules_img:hover {
+  border: 0;
+}
+
+.service__rules_img::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 1);
+}
+
+.service__rules_img:hover::before {
+  background: rgba(255, 255, 255, 0);
+}
