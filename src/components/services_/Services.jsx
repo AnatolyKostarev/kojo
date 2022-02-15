@@ -15,7 +15,7 @@ export default function Services() {
   };
 
   return (
-    <>
+    <div className={styles.service__scroll}>
       {hide && <Headerservice title="Услуги" />}
       {hide && (
         <main>
@@ -26,6 +26,6 @@ export default function Services() {
       )}
       <Navigation hideContent={hideContent} />
       <div className={styles.footer}>{hide && <Footerworks />}</div>
-    </>
+    </div>
   );
 }

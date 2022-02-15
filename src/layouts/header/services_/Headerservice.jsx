@@ -25,7 +25,10 @@ const Headerservice = ({ title }) => {
                   {title}
                 </h1>
               </div>
-              <div className={styles.subtitle}>ВЕБ</div>
+              <div className={styles.subtitle}>
+                <p>веб</p>
+                <p>правила</p>
+              </div>
             </div>
             <div className={styles.header__btn}>
               <Link to="/contacts">

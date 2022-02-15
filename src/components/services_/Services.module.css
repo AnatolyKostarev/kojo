@@ -1,3 +1,12 @@
+.service__scroll {
+  height: 100vh;
+  /* scroll-padding-top: 32.5vh; */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
 .footer {
   position: fixed;
   left: 0;
