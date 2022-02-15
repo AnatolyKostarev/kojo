@@ -9,9 +9,14 @@ const ServicesWeb = () => {
     <section id={styles.service}>
       <div className={styles.container}>
         <div className={styles.service}>
-          <ServicesInfo />
-          <ServicesList />
-          <ServicesImg />
+          <div className={styles.service__left}>
+            <div className={styles.empty}></div>
+            <ServicesInfo />
+            <ServicesList />
+          </div>
+          <div className={styles.service__right}>
+            <ServicesImg />
+          </div>
         </div>
       </div>
     </section>
