@@ -4,6 +4,7 @@ import Navigation from "../navigation/Navigation";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import styles from "./Services.module.css";
 import ServicesWeb from "./services_web/ServicesWeb";
+import ServiceRules from "./service_rules/ServiceRules";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 
 export default function Services() {
@@ -20,6 +21,7 @@ export default function Services() {
         <main>
           <ServiceScrollBar />
           <ServicesWeb />
+          <ServiceRules />
         </main>
       )}
       <Navigation hideContent={hideContent} />
