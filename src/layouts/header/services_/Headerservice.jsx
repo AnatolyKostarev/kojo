@@ -20,7 +20,7 @@ const Headerservice = ({ title }) => {
                   <div className={styles.logo__animation}></div>
                 </div>
               </Link>
-              <div>
+              <div className={styles.header__title}>
                 <h1 className={styles.title} data-title="Услуги">
                   {title}
                 </h1>
