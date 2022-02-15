@@ -1,3 +1,7 @@
+#service {
+  height: 100vh;
+}
+
 .container {
   max-width: 100vw;
   padding: 0 6.25vw 0;
@@ -6,21 +10,48 @@
 
 .service {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: flex-start;
-  /* padding-left: 10.69vw; */
-  /* max-height: 18.83vh; */
+  padding-right: 6.25vw;
   font-size: 1.36vh;
   line-height: 1.85vh;
 }
 
-.service__info {
-  margin-right: 10.21vw;
+.service__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.service__info,
+.empty {
+  width: 10.81vw;
+}
+
+.service__info {
+  margin-right: 11.07vw;
+  margin-left: 1.95vw;
+  width: 19.79vw;
+  text-align: left;
+  text-transform: uppercase;
+  box-sizing: content-box;
+}
+
+html:-webkit-full-screen .service__info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
+html:-moz-full-screen .service__info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
+html:-ms-full-screen .service__info {
+  margin-right: 11.2vw;
+  margin-left: 2.65vw;
+}
+
 .service__list {
-  max-width: 19.79vw;
   text-align: left;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -36,7 +67,7 @@
 }
 
 .service__list > ul > li {
-  padding-left: 1.25vw;
+  padding-left: 1vw;
   margin-bottom: 1.67vh;
 }
 
@@ -46,17 +77,16 @@
 
 .service__img {
   position: relative;
-  margin-left: 15.26vw;
-  background: url("/public/img/service/bear.gif") center no-repeat #ccc;
+  background: url("/public/img/service/developer.gif") center no-repeat #ccc;
   background-size: cover;
   width: 12.5vw;
   height: 12.96vh;
-  outline: 1px solid #000;
+  border: 1px solid #000;
   z-index: 99;
 }
 
 .service__img:hover {
-  outline: 1px solid transparent;
+  border: 0;
 }
 
 .service__img::before {
@@ -87,11 +117,3 @@
 .service__img:hover::after {
   content: "";
 }
-
-/* .service__img > p {
-  padding: 2.25vh 0 0 1.41vw;
-}
-
-.service__img > p:hover {
-  opacity: 0;
-} */
