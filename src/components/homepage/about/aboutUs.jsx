@@ -1,20 +1,8 @@
 import style from "./about.module.css";
+import { aboutUsInfo, awards } from "../../../store";
 import "../scrollSpy.css";
 
 function AboutUs({ showHeader }) {
-  const aboutUsInfo = [
-    { label: "страна", value: "россия" },
-    { label: "год", value: "2021" },
-    { label: "тип", value: "веб студия" },
-    { label: "акцент", value: "уникальность" },
-    { label: "цвета", value: "#fff, #000" },
-  ];
-
-  const awards = [
-    { label: "беханс", value: "6x featured in interaction" },
-    { label: "cssдизайнавардс", value: "1x kudos" },
-  ];
-
   return (
     <>
       <section className={style.about} id="about" onMouseOver={showHeader}>
