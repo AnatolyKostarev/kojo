@@ -25,7 +25,7 @@ export default function Services() {
     <div className={styles.service__scroll}>
       {hide && <Headerservice title="Услуги" />}
       {hide && (
-        <main>
+        <main id={styles.main}>
           <ServiceScrollBar />
           <ServicesWeb />
           <ServiceRules />
