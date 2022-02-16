@@ -2,11 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Button from "../../../components/button/Button";
 import styles from "./Headerservice.module.css";
+import "../../../components/services_/ServiceScrollBar.css";
 
 const Headerservice = ({ title }) => {
   return (
     <>
-      <header id={styles.header}>
+      <header id="header__service" className={styles.header__service}>
         <div className={styles.container}>
           <div className={styles.header}>
             <div className={styles.header__logo}>
