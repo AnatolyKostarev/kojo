@@ -1,6 +1,7 @@
 import React from "react";
 import { footerWorksNav } from "../../../store";
 import styles from "./Footerworks.module.css";
+import "../../../components/services_/ServiceScrollBar.css";
 
 export default function Footerworks() {
   return (
