@@ -1,12 +1,21 @@
 import React from "react";
-import styles from "./Services.module.css";
+import "./ServiceScrollBar.css";
 
 export const ServiceScrollBar = () => {
   return (
-    <div className={styles.service__scroll_bar}>
-      <span></span>
-      <span></span>
-      <span></span>
+    <div className="service__scroll_bar">
+      <div className="service__scroll_link">
+        <a href="#service">
+          <span className="service__scroll_span"></span>
+        </a>
+        <a href="#service__rule">
+          <span className="service__scroll_span"></span>
+        </a>
+        {/* <a href="#service">
+          <span className="service__scroll_span"></span>
+        </a> */}
+        <span id="indicator"></span>
+      </div>
     </div>
   );
 };
