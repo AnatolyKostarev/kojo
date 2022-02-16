@@ -1,27 +1,21 @@
-/* #title:hover ~ footer>div>nav>a[href="#title"],
-#about:hover ~ footer>div>nav>a[href="#about"],
-#form:hover ~ footer>div>nav>a[href="#form"]{
-    transition: 0.2s;
-    
-} */
 #title:hover ~ div > nav > #indicator {
   left: 0px;
   background: #000;
-  transition: 0.5s;
+  transition: 0.5s linear;
   transform: rotate(360deg);
 }
 
 #about:hover ~ div > nav > #indicator {
   left: 41px;
   background: #000;
-  transition: 0.5s;
+  transition: 0.5s linear;
   transform: rotate(0deg);
 }
 
 #form:hover ~ div > nav > #indicator {
   left: 82px;
   background: #000;
-  transition: 0.5s;
+  transition: 0.5s linear;
   transform: rotate(360deg);
 }
 
@@ -29,29 +23,6 @@ footer:hover ~ div > nav > #indicator {
   background: #000;
   width: 100%;
 }
-
-/* #title:hover~footer>div>nav>#indicator {
-    left: 0px;
-    background: black;
-    transition: 0.5s;
-    transform: rotate(360deg);
-}
-
-
-#about:hover~footer>div>nav>#indicator {
-    left: 41px;
-    background: black;
-    transition: 0.5s;
-    transform: rotate(0deg);
-}
-
-
-#form:hover~footer>div>nav>#indicator {
-    left: 82px;
-    background: black;
-    transition: 0.5s;
-    transform: rotate(360deg);
-} */
 
 /*  */
 .blockSpy {

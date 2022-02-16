@@ -3,10 +3,11 @@ import ServiceRulesInfo from "./ServiceRulesInfo";
 import ServiceRulesList from "./ServiceRulesList";
 import ServiceRulesImg from "./ServiceRulesImg";
 import styles from "./ServiceRules.module.css";
+import "../ServiceScrollBar.css";
 
 const ServiceRules = () => {
   return (
-    <section id={styles.service__rule}>
+    <section id="service__rule" className={styles.service__rule}>
       <div className={styles.container}>
         <div className={styles.service__rules}>
           <div className={styles.service__rules_left}>

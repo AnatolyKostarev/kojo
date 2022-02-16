@@ -1,4 +1,4 @@
-#service {
+.services {
   height: 100vh;
   padding-top: 32.5vh;
   scroll-snap-align: start;

@@ -6,6 +6,7 @@ import styles from "./Services.module.css";
 import ServicesWeb from "./services_web/ServicesWeb";
 import ServiceRules from "./service_rules/ServiceRules";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
+import "./ServiceScrollBar.css";
 
 export default function Services() {
   const [hide, setHide] = React.useState(true);
@@ -14,25 +15,20 @@ export default function Services() {
     setHide(!hide);
   };
 
-  // const scrollWindow = () => console.log("scroll");
-
-  // React.useEffect(() => {
-  //   window.addEventListener("scroll", scrollWindow);
-  //   return window.removeEventListener("scroll", scrollWindow);
-  // }, []);
-
   return (
     <div className={styles.service__scroll}>
       {hide && <Headerservice title="Услуги" />}
       {hide && (
-        <main id={styles.main}>
-          <ServiceScrollBar />
+        <>
           <ServicesWeb />
           <ServiceRules />
-        </main>
+        </>
       )}
       <Navigation hideContent={hideContent} />
-      <div className={styles.footer}>{hide && <Footerworks />}</div>
+      <div id="service__footer" className={styles.footer}>
+        {hide && <Footerworks />}
+      </div>
+      {hide && <ServiceScrollBar />}
     </div>
   );
 }

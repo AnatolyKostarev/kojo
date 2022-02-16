@@ -1,0 +1,74 @@
+.service__scroll_bar {
+  position: fixed;
+  top: 32.5vh;
+  left: 6.25vw;
+}
+
+.service__scroll_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 14.75vh; /*14.75vh*/
+  overflow: hidden;
+}
+
+.service__scroll_span {
+  display: block;
+  width: 11px;
+  height: 11px;
+  font-size: 16px;
+  border: 2px solid #000;
+  color: #fff;
+  box-sizing: border-box;
+  /* z-index: 10; */
+}
+
+#indicator {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 11px;
+  transition: 0.2s linear;
+  z-index: -1;
+}
+
+.service__scroll_link:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+
+.service__scroll_span:hover {
+  background: #000;
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+
+#service:hover ~ div > div > #indicator {
+  top: 0;
+  background: #000;
+  transition: 0.2s linear;
+  transform: rotate(0deg);
+  z-index: 0;
+}
+
+#service__rule:hover ~ div > div > #indicator {
+  top: 16vh;
+  background: #000;
+  transition: 0.2s linear;
+  transform: rotate(0deg);
+  z-index: 0;
+}
+
+#service__footer:hover ~ div > div > #indicator {
+  top: 0;
+  background: #000;
+  height: 100%;
+}
+
+#header__service:hover ~ div > div > #indicator {
+  top: 0;
+  background: #000;
+  height: 100%;
+}
