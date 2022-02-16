@@ -14,6 +14,13 @@ export default function Services() {
     setHide(!hide);
   };
 
+  // const scrollWindow = () => console.log("scroll");
+
+  // React.useEffect(() => {
+  //   window.addEventListener("scroll", scrollWindow);
+  //   return window.removeEventListener("scroll", scrollWindow);
+  // }, []);
+
   return (
     <div className={styles.service__scroll}>
       {hide && <Headerservice title="Услуги" />}

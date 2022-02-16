@@ -5,8 +5,10 @@ import { ServicesList } from "./ServicesList";
 import styles from "./ServicesWeb.module.css";
 
 const ServicesWeb = () => {
+  const elemetScroll = () => console.log("scroll");
+
   return (
-    <section id={styles.service}>
+    <section id={styles.service} onScroll={elemetScroll}>
       <div className={styles.container}>
         <div className={styles.service}>
           <div className={styles.service__left}>
