@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   overflow-y: auto;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .footer {
@@ -16,6 +17,7 @@
 
 .service__scroll_bar {
   position: fixed;
+  top: 32.5vh;
   left: 6.25vw;
   display: flex;
   flex-direction: column;
