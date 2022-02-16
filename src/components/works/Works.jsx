@@ -11,7 +11,7 @@ export default function Works() {
   const [offSetY, setOffSetY] = React.useState(0);
   const [hide, setHide] = React.useState(true);
 
-  const handleScroll = () => setOffSetY(window.pageYOffset);
+  const handleScroll = () => setOffSetY(window.scrollY);
 
   const hideContent = () => {
     setHide(!hide);
@@ -21,6 +21,7 @@ export default function Works() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  console.log(offSetY);
 
   return (
     <>
