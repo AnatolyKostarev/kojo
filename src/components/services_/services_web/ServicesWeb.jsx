@@ -3,12 +3,11 @@ import { ServicesImg } from "./ServicesImg";
 import { ServicesInfo } from "./ServicesInfo";
 import { ServicesList } from "./ServicesList";
 import styles from "./ServicesWeb.module.css";
+import "../ServiceScrollBar.css";
 
 const ServicesWeb = () => {
-  const elemetScroll = () => console.log("scroll");
-
   return (
-    <section id={styles.service} onScroll={elemetScroll}>
+    <section id="service" className={styles.services}>
       <div className={styles.container}>
         <div className={styles.service}>
           <div className={styles.service__left}>
