@@ -54,7 +54,7 @@
 }
 
 #service__rule:hover ~ div > div > #indicator {
-  top: 16vh;
+  top: 15.9vh;
   background: #000;
   transition: 0.2s linear;
   transform: rotate(0deg);
