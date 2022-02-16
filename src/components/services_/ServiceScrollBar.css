@@ -61,6 +61,18 @@
   z-index: 0;
 }
 
+html:-webkit-full-screen #service__rule:hover ~ div > div > #indicator {
+  top: 15.9vh;
+}
+
+html:-moz-full-screen #service__rule:hover ~ div > div > #indicator {
+  top: 15.9vh;
+}
+
+html:-ms-full-screen #service__rule:hover ~ div > div > #indicator {
+  top: 15.9vh;
+}
+
 #service__footer:hover ~ div > div > #indicator {
   top: 0;
   background: #000;
