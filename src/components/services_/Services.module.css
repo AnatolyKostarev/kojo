@@ -14,21 +14,3 @@
   bottom: 0;
   width: 100%;
 }
-
-.service__scroll_bar {
-  position: fixed;
-  top: 32.5vh;
-  left: 6.25vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  row-gap: 14.75vh;
-}
-
-.service__scroll_bar span {
-  display: block;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #000;
-}
