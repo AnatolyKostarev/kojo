@@ -31,6 +31,8 @@ export default function Homepage() {
     <>
       <div className={style.homepage}>
         {hide && header && <Header2 />}
+        {hide && <div className={style.vertical_line}></div>}
+        
         {hide && <Title showHeader={showHeader} />}
         {hide && <AboutUs showHeader={showHeader} />}
         {hide && <MainForm hideHeader={hideHeader} />}
