@@ -12,11 +12,11 @@ import FooterHomepage from "./footer/footerHomepage/footerHomepage";
 export default function Homepage() {
   // for header
   let [header, setHeader] = useState(true);
-  const [hide, setHide] = React.useState(true);
+  const [hide, setHide] = useState(true);
 
   const hideHeader = () => {
     setHeader(false);
-    console.log(header);
+    // console.log(header);
   };
 
   const showHeader = () => {
@@ -32,7 +32,7 @@ export default function Homepage() {
       <div className={style.homepage}>
         {hide && header && <Header2 />}
         {hide && <div className={style.vertical_line}></div>}
-        
+
         {hide && <Title showHeader={showHeader} />}
         {hide && <AboutUs showHeader={showHeader} />}
         {hide && <MainForm hideHeader={hideHeader} />}
