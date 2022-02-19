@@ -9,12 +9,13 @@
     height: 8vh;
     border: 0;
     outline: none;
+    font-size: 11px;
     text-transform: uppercase;
   }
 
   .textarea {
-    padding: 3vh 0 0;
     height: 8vh;
+    line-height: 8vh;
     overflow: hidden;
     resize: none;
   }
@@ -162,6 +163,7 @@
     height: 55px;
     border: 0;
     outline: none;
+    font-size: 11px;
     text-transform: uppercase;
   }
 

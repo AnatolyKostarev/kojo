@@ -72,7 +72,7 @@
 
   .contacts__row_top {
     display: flex;
-    column-gap: 8.33vw;
+    column-gap: 7.33vw;
     position: relative;
     transition: 0.3s ease-in-out;
     overflow-y: hidden;
@@ -81,7 +81,7 @@
   }
 
   .contacts__label {
-    min-width: 4.2vw;
+    width: 5.2vw;
     font-size: 1.35vh;
     text-align: left;
     text-transform: uppercase;
@@ -147,7 +147,7 @@
 
   .contacts__social {
     display: flex;
-    column-gap: 8.33vw;
+    column-gap: 7.33vw;
   }
 
   .contacts__message {
@@ -182,6 +182,36 @@
     line-height: 8px;
     text-transform: uppercase;
   }
+
+  .title {
+    position: absolute;
+    top: 12.59vh;
+    left: 18.59vw;
+    font-family: "GothamProBold", sans-serif;
+    font-size: 4.93vh;
+    line-height: 4.69vh;
+    text-transform: uppercase;
+    color: transparent;
+    animation: showTitle;
+    animation-duration: 0.8s;
+    animation-delay: 550ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+  }
+
+  .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    animation: slideCoverTitle;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -190,6 +220,8 @@
   }
 
   .container {
+    position: relative;
+    top: 110px;
     max-width: 100vw;
     padding: 0 20px;
     box-sizing: content-box;
@@ -328,6 +360,32 @@
   }
   .contacts__form {
     margin-top: 5vh;
+  }
+
+  .title {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 84px;
+  }
+}
+
+@keyframes slideCoverTitle {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
   }
 }
 
