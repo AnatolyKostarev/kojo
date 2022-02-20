@@ -44,8 +44,8 @@ export default function Form() {
             className={styles.input}
             placeholder="Имя"
           />
-          <div className={styles.focus}>
-            {errors?.name && <p>{errors?.name?.message || "Error!"}</p>}
+          <div>
+            {errors?.name && <p className={styles.focus}>{errors?.name?.message || "Error!"}</p>}
           </div>
         </div>
         <div className={styles.borders}>
@@ -68,8 +68,8 @@ export default function Form() {
             type="email"
             placeholder="Email"
           />
-          <div className={styles.focus}>
-            {errors?.email && <p>{errors?.email?.message || "Error!"}</p>}
+          <div>
+            {errors?.email && <p className={styles.focus}>{errors?.email?.message || "Error!"}</p>}
           </div>
         </div>
         <div className={styles.borders}>
@@ -90,8 +90,8 @@ export default function Form() {
             className={styles.textarea}
             placeholder="Сообщение"
           ></textarea>
-          <div className={styles.focus}>
-            {errors?.message && <p>{errors?.message?.message || "Error!"}</p>}
+          <div>
+            {errors?.message && <p className={styles.focus}>{errors?.message?.message || "Error!"}</p>}
           </div>
         </div>
         <label className={styles.consent}>

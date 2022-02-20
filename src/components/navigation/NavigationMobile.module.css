@@ -1,0 +1,22 @@
+@media screen and (max-width: 1023px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 11;
+        padding: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .nav__list {
+        margin-top: 73.1px;
+        text-align: center;
+        padding: 10px;
+    }
+}

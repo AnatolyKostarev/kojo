@@ -2,7 +2,7 @@
   #header {
     width: 100vw;
     margin-bottom: 17.25vh;
-    padding-top: 12.34vh;
+    padding-top: 12.59vh;
   }
 
   .container {
@@ -77,6 +77,18 @@
 }
 
 @media screen and (max-width: 1023px) {
+
+  .header {
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .title {
     position: relative;
     font-family: "GothamProBold", sans-serif;
