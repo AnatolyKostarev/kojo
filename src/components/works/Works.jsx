@@ -26,7 +26,15 @@ export default function Works({ showMenu, isOpen, toggleMobileMenu }) {
 
   return (
     <>
-      {hide && <Headerworks title="Работы" />}
+      {hide && (
+        <Headerworks
+          title="Работы"
+          toggleMobileMenu={toggleMobileMenu}
+          isOpen={isOpen}
+          showMenu={showMenu}
+        />
+      )}
+
       {hide && (
         <main>
           <section className={styles.works}>
