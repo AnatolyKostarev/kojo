@@ -41,7 +41,7 @@ export default function Homepage() {
         {hide && <FooterHomepage />}
         {hide && <ScrollSpy />}
       </div>
-        {/* <HomePageMobile/> */}
+      {/* <HomePageMobile/> */}
     </>
   );
 }
