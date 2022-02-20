@@ -51,14 +51,16 @@ export default function Works({ showMenu, isOpen, toggleMobileMenu }) {
                   />
                 ))}
               </div>
-
-              <Worksitemresponsive elem={worksItem} />
+              <Worksitemresponsive elem={worksItem} showMenu={showMenu} />
+              {!showMenu && (
+                <NavigationMobile toggleMobileMenu={toggleMobileMenu} />
+              )}
             </div>
           </section>
         </main>
       )}
       <Navigation hideContent={hideContent} />
-      {hide && <Footerworks offSetY={offSetY} />}
+      {hide && showMenu && <Footerworks offSetY={offSetY} />}
     </>
   );
 }
