@@ -4,7 +4,7 @@ import Button from "../../../components/button/Button";
 import styles from "./Headerservice.module.css";
 import "../../../components/services_/ServiceScrollBar.css";
 
-const Headerservice = ({ title }) => {
+const Headerservice = ({ title, isTitle }) => {
   return (
     <>
       <header id="header__service" className={styles.header__service}>
