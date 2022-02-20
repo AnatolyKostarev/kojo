@@ -30,8 +30,14 @@ const Headerservice = ({ title, isTitle }) => {
                 <p
                   style={
                     isTitle === 100
-                      ? { transform: "translateY(-100%)", transition: "0.5s" }
-                      : { transform: "translateY(0)", transition: "0.5s" }
+                      ? {
+                          transform: "translateY(-100%)",
+                          transition: "0.9s linear",
+                        }
+                      : {
+                          transform: "translateY(0)",
+                          transition: "0.9s linear",
+                        }
                   }
                 >
                   веб
@@ -39,8 +45,14 @@ const Headerservice = ({ title, isTitle }) => {
                 <p
                   style={
                     isTitle === 100
-                      ? { transform: "translateY(-100%)", transition: "0.5s" }
-                      : { transform: "translateY(0)", transition: "0.5s" }
+                      ? {
+                          transform: "translateY(-100%)",
+                          transition: "0.9s linear",
+                        }
+                      : {
+                          transform: "translateY(0)",
+                          transition: "0.9s linear",
+                        }
                   }
                 >
                   правила
