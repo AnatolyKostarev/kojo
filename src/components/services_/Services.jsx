@@ -10,18 +10,22 @@ import "./ServiceScrollBar.css";
 
 export default function Services() {
   const [hide, setHide] = React.useState(true);
+  const [isTitle, setTitle] = React.useState(0);
 
   const hideContent = () => {
     setHide(!hide);
   };
 
+  const wheelDown = () => setTitle(100);
+  const wheelUp = () => setTitle(0);
+
   return (
     <div className={styles.service__scroll}>
-      {hide && <Headerservice title="Услуги" />}
+      {hide && <Headerservice title="Услуги" isTitle={isTitle} />}
       {hide && (
         <>
-          <ServicesWeb />
-          <ServiceRules />
+          <ServicesWeb wheelDown={wheelDown} />
+          <ServiceRules wheelUp={wheelUp} />
         </>
       )}
       <Navigation hideContent={hideContent} />
