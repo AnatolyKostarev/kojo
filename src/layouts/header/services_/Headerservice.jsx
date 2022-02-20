@@ -4,7 +4,7 @@ import Button from "../../../components/button/Button";
 import styles from "./Headerservice.module.css";
 import "../../../components/services_/ServiceScrollBar.css";
 
-const Headerservice = ({ title }) => {
+const Headerservice = ({ title, isTitle }) => {
   return (
     <>
       <header id="header__service" className={styles.header__service}>
@@ -27,8 +27,24 @@ const Headerservice = ({ title }) => {
                 </h1>
               </div>
               <div className={styles.subtitle}>
-                <p>веб</p>
-                <p>правила</p>
+                <p
+                  style={
+                    isTitle === 100
+                      ? { transform: "translateY(-100%)", transition: "0.5s" }
+                      : { transform: "translateY(0)", transition: "0.5s" }
+                  }
+                >
+                  веб
+                </p>
+                <p
+                  style={
+                    isTitle === 100
+                      ? { transform: "translateY(-100%)", transition: "0.5s" }
+                      : { transform: "translateY(0)", transition: "0.5s" }
+                  }
+                >
+                  правила
+                </p>
               </div>
             </div>
             <div className={styles.header__btn}>

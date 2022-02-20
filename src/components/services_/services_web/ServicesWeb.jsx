@@ -5,9 +5,9 @@ import { ServicesList } from "./ServicesList";
 import styles from "./ServicesWeb.module.css";
 import "../ServiceScrollBar.css";
 
-const ServicesWeb = () => {
+const ServicesWeb = ({ wheelDown }) => {
   return (
-    <section id="service" className={styles.services}>
+    <section id="service" className={styles.services} onWheel={wheelDown}>
       <div className={styles.container}>
         <div className={styles.service}>
           <div className={styles.service__left}>
