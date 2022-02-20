@@ -2,12 +2,13 @@ import React from "react";
 import Headerworks from "../../layouts/header/works/Headerworks";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Navigation from "../navigation/Navigation";
-import styles from "./Works.module.css";
 import Worksitem from "./Worksitem";
 import { Worksitemresponsive } from "./Worksitemresponsive";
+import NavigationMobile from "../navigation/NavigationMobile";
 import { worksItem } from "../../store";
+import styles from "./Works.module.css";
 
-export default function Works() {
+export default function Works({ showMenu, isOpen, toggleMobileMenu }) {
   const [offSetY, setOffSetY] = React.useState(0);
   const [hide, setHide] = React.useState(true);
 
