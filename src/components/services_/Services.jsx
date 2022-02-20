@@ -16,16 +16,15 @@ export default function Services() {
     setHide(!hide);
   };
 
-  const wheelDown = () => setTitle(100);
-  const wheelUp = () => setTitle(0);
+  const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(100) : setTitle(0));
 
   return (
     <div className={styles.service__scroll}>
       {hide && <Headerservice title="Услуги" isTitle={isTitle} />}
       {hide && (
         <>
-          <ServicesWeb wheelDown={wheelDown} />
-          <ServiceRules wheelUp={wheelUp} />
+          <ServicesWeb toggleWheel={toggleWheel} />
+          <ServiceRules toggleWheel={toggleWheel} />
         </>
       )}
       <Navigation hideContent={hideContent} />

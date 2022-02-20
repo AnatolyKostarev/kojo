@@ -5,12 +5,12 @@ import ServiceRulesImg from "./ServiceRulesImg";
 import styles from "./ServiceRules.module.css";
 import "../ServiceScrollBar.css";
 
-const ServiceRules = ({ wheelUp }) => {
+const ServiceRules = ({ toggleWheel }) => {
   return (
     <section
       id="service__rule"
       className={styles.service__rule}
-      onWheel={wheelUp}
+      onWheel={toggleWheel}
     >
       <div className={styles.container}>
         <div className={styles.service__rules}>
