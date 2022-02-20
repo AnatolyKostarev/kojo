@@ -2,12 +2,13 @@ import React from "react";
 import Headerworks from "../../layouts/header/works/Headerworks";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Navigation from "../navigation/Navigation";
-import styles from "./Works.module.css";
 import Worksitem from "./Worksitem";
 import { Worksitemresponsive } from "./Worksitemresponsive";
+import NavigationMobile from "../navigation/NavigationMobile";
 import { worksItem } from "../../store";
+import styles from "./Works.module.css";
 
-export default function Works() {
+export default function Works({ showMenu, isOpen, toggleMobileMenu }) {
   const [offSetY, setOffSetY] = React.useState(0);
   const [hide, setHide] = React.useState(true);
 
@@ -25,7 +26,15 @@ export default function Works() {
 
   return (
     <>
-      {hide && <Headerworks title="Работы" />}
+      {hide && (
+        <Headerworks
+          title="Работы"
+          toggleMobileMenu={toggleMobileMenu}
+          isOpen={isOpen}
+          showMenu={showMenu}
+        />
+      )}
+
       {hide && (
         <main>
           <section className={styles.works}>
@@ -42,14 +51,16 @@ export default function Works() {
                   />
                 ))}
               </div>
-
-              <Worksitemresponsive elem={worksItem} />
+              <Worksitemresponsive elem={worksItem} showMenu={showMenu} />
+              {!showMenu && (
+                <NavigationMobile toggleMobileMenu={toggleMobileMenu} />
+              )}
             </div>
           </section>
         </main>
       )}
       <Navigation hideContent={hideContent} />
-      {hide && <Footerworks offSetY={offSetY} />}
+      {hide && showMenu && <Footerworks offSetY={offSetY} />}
     </>
   );
 }

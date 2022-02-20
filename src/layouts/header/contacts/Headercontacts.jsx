@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Headercontacts.module.css";
 import { MenuToggle } from "./MenuToggle";
 
 export default function Headercontacts({ toggleMobileMenu, isOpen }) {
-
   return (
     <>
       <header id={styles.header}>
@@ -21,10 +20,7 @@ export default function Headercontacts({ toggleMobileMenu, isOpen }) {
                 </div>
               </Link>
             </div>
-            <MenuToggle
-              toggleMobileMenu={toggleMobileMenu}
-              isOpen={isOpen}
-            />
+            <MenuToggle toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
           </div>
         </div>
       </header>

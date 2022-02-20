@@ -9,6 +9,7 @@
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +111,13 @@
   animation-duration: 0.8s;
   animation-timing-function: ease-in;
   z-index: 1;
+}
+
+.header__burger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 105;
 }
 
 @keyframes slideCoverTitle {

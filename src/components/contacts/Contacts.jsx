@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import Form from "../form/Form";
 import Navigation from "../navigation/Navigation";
@@ -6,18 +6,11 @@ import { socialList, contactsList } from "../../store";
 import styles from "./Contacts.module.css";
 import NavigationMobile from "../navigation/NavigationMobile";
 
-export default function Contacts() {
+export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = React.useState(true);
-  const [showMenu, setShowMenu] = React.useState(true);
-  const [isOpen, setOpen] = React.useState(false);
 
   const hideContent = () => {
     setHide(!hide);
-  };
-
-  const toggleMobileMenu = () => {
-    setShowMenu(!showMenu);
-    setOpen(!isOpen);
   };
 
   return (
@@ -111,7 +104,7 @@ export default function Contacts() {
           )}
         </section>
       )}
-      {!showMenu && <NavigationMobile />}
+      {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
       <Navigation hideContent={hideContent} />
     </>
   );

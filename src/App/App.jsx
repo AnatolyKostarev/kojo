@@ -7,13 +7,39 @@ import Homepage from "../components/homepage/Homepage";
 import "./App.module.css";
 
 function App() {
+  const [showMenu, setShowMenu] = React.useState(true);
+  const [isOpen, setOpen] = React.useState(false);
+
+  const toggleMobileMenu = () => {
+    setShowMenu(!showMenu);
+    setOpen(!isOpen);
+  };
+
   return (
     <>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="works" element={<Works />} />
+        <Route
+          path="works"
+          element={
+            <Works
+              showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}
+            />
+          }
+        />
         <Route path="services" element={<Services />} />
-        <Route path="contacts" element={<Contacts />} />
+        <Route
+          path="contacts"
+          element={
+            <Contacts
+              showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}
+            />
+          }
+        />
       </Routes>
     </>
   );
