@@ -104,7 +104,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
           )}
         </section>
       )}
-      {!showMenu && <NavigationMobile />}
+      {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
       <Navigation hideContent={hideContent} />
     </>
   );
