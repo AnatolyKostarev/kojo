@@ -3,7 +3,7 @@
   /* scroll-padding-top: 32.5vh; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   box-sizing: border-box;
 }
