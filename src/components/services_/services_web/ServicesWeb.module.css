@@ -193,6 +193,10 @@ html:-ms-full-screen .service__info {
     padding: 0;
   }
 
+  .services {
+    padding-top: 16vh;
+  }
+
   .service {
     padding: 0;
   }
@@ -203,12 +207,33 @@ html:-ms-full-screen .service__info {
 
   .service__info,
   .service__list {
-    margin: 0 0 12.5vh 0;
+    margin: 0 0 60px 0;
     width: 100%;
   }
 
   .service__list {
-    margin: 0 auto;
+    margin: 0;
+  }
+
+  .service__list > ul > li {
+    position: relative;
+    padding-left: 4vw;
+  }
+
+  .service__list > ul {
+    list-style-type: none;
+  }
+
+  .service__list > ul > li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
   }
 
   .service__right,

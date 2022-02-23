@@ -106,3 +106,57 @@ html:-ms-full-screen .service__rules_info {
 .service__rules_img:hover::before {
   background: rgba(255, 255, 255, 0);
 }
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+
+  .service__rule {
+    padding-top: 16vh;
+  }
+
+  .service__rules {
+    padding: 0;
+  }
+
+  .service__rules_left {
+    flex-direction: column;
+  }
+
+  .service__rules_info,
+  .service__rules_list {
+    margin: 0 0 60px 0;
+    width: 100%;
+  }
+
+  .service__rules_list {
+    margin: 0;
+  }
+
+  .service__rules_list > ul > li {
+    position: relative;
+    padding-left: 4vw;
+  }
+
+  .service__rules_list > ul {
+    list-style-type: none;
+  }
+
+  .service__rules_list > ul > li::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+
+  .service__rules_img,
+  .empty {
+    display: none;
+  }
+}
