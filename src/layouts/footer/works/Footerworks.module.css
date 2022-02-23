@@ -150,14 +150,14 @@ footer {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1023px) {
   .container {
     padding: 0 20px;
   }
 
   .footer {
     flex-direction: column;
-    padding-bottom: 5.5vh;
+    padding-bottom: 100px;
     max-width: 100%;
   }
 
