@@ -1,22 +1,69 @@
 @media screen and (max-width: 1023px) {
-    .menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 11;
-        padding: 20px;
-    }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    padding: 0 20px;
+  }
 
-    .nav {
-        width: 100%;
-        min-height: 50vh;
-    }
+  .nav {
+    width: 100%;
+    min-height: 330px;
+    height: 40vh;
+  }
 
-    .nav__list {
-        margin-top: 73.1px;
-        text-align: center;
-        padding: 10px;
-    }
+  .nav__list {
+    margin-top: 73.1px;
+    text-align: center;
+  }
+
+  .nav__item {
+    display: flex;
+    justify-content: center;
+    font-family: "GothamProBlack";
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  }
+
+  .nav__item:first-child {
+    padding-top: 50px;
+  }
+
+  .nav__item:hover {
+    color: #fff;
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .item {
+    list-style-type: none;
+    font-family: "GothamProMedium";
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  .link__social,
+  .nav__item {
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  }
+
+  .contacts__copyright {
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 13px;
+    float: right;
+  }
 }
