@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { navSideBar } from "../../store";
 import styles from "./Navigation.module.css";
 
@@ -24,11 +24,16 @@ export default function Navigation({ hideContent }) {
             onMouseOut={hideContent}
           >
             {navSideBar.map((elem, index) => (
-              <Link className={styles.nav__item} to={elem.linkto} key={index}>
+              <NavLink
+                className={styles.nav__item}
+                to={elem.linkto}
+                key={index}
+                activeStyle={{ color: "#000" }}
+              >
                 <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
                 </li>
-              </Link>
+              </NavLink>
             ))}
           </ul>
         </nav>
