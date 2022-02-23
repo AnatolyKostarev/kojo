@@ -29,7 +29,16 @@ function App() {
             />
           }
         />
-        <Route path="services" element={<Services />} />
+        <Route
+          path="services"
+          element={
+            <Services
+              showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}
+            />
+          }
+        />
         <Route
           path="contacts"
           element={

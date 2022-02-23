@@ -1,6 +1,5 @@
 .service__scroll {
   height: 100vh;
-  /* scroll-padding-top: 32.5vh; */
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
@@ -13,4 +12,16 @@
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+/* @media (max-width: 1023px) {
+  .service__scroll {
+    display: none;
+  }
+} */
+
+@media (max-width: 1023px) {
+  .service__scroll {
+    padding: 20px;
+  }
 }
