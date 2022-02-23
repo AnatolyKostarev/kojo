@@ -177,9 +177,9 @@
   .contacts__copyright {
     position: absolute;
     bottom: 0;
-    right: 6.25vw;
-    font-size: 10px;
-    line-height: 8px;
+    right: 11.25vw;
+    font-size: 11px;
+    line-height: 11px;
     text-transform: uppercase;
   }
 
@@ -330,8 +330,8 @@
 
   .contacts__message {
     margin-top: 5vh;
-    font-size: 1.4vh;
-    line-height: 1.9vh;
+    font-size: 11px;
+    line-height: 15px;
     text-align: left;
     text-transform: uppercase;
   }
@@ -342,21 +342,16 @@
 
   .contacts__text {
     position: absolute;
-    top: -15vh;
+    top: -11vh;
     left: 0;
-    font-size: 1.4vh;
-    line-height: 1.9vh;
+    font-size: 11px;
+    line-height: 15px;
     text-align: left;
     text-transform: uppercase;
   }
 
   .contacts__copyright {
-    position: absolute;
-    bottom: 0;
-    right: 120px;
-    font-size: 10px;
-    line-height: 8px;
-    text-transform: uppercase;
+    display: none;
   }
   .contacts__form {
     margin-top: 5vh;

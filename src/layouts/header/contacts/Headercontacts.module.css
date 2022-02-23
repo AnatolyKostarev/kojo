@@ -107,6 +107,7 @@
   .header__img {
     position: relative;
     overflow: hidden;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   }
 
   .header__img::before {
