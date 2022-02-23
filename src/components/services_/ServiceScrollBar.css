@@ -84,3 +84,9 @@ html:-ms-full-screen #service__rule:hover ~ div > div > #indicator {
   background: #000;
   height: 100%;
 }
+
+@media (max-width: 1023px) {
+  .service__scroll_bar {
+    display: none;
+  }
+}
