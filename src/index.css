@@ -47,6 +47,10 @@ a {
   cursor: url("/public/img/header/cursor.png") 6 6, auto;
 }
 
+a.active {
+  color: #000;
+}
+
 ul,
 ol {
   list-style-type: none;

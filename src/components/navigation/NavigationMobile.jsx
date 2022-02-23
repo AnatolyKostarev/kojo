@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { navSideBar } from "../../store";
+import { NavLink } from "react-router-dom";
+import { navSideBar, footerWorksNav } from "../../store";
 import styles from "./NavigationMobile.module.css";
 import Button from "../button/Button";
 
@@ -11,20 +11,40 @@ export default function NavigationMobile({ toggleMobileMenu }) {
         <nav className={styles.nav}>
           <ul className={styles.nav__list}>
             {navSideBar.map((elem, index) => (
-              <Link
-                className={styles.nav__item}
+              <NavLink
                 to={elem.linkto}
+                className={styles.nav__item}
+                activeClassName={styles.nav__item_active}
                 key={index}
                 onClick={toggleMobileMenu}
               >
                 <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
                 </li>
-              </Link>
+              </NavLink>
             ))}
           </ul>
         </nav>
+        <div class={styles.social}>
+          {footerWorksNav.map((elem, index) => (
+            <li className={styles.item} key={index}>
+              <div className={styles.link}>
+                <a
+                  href={elem.href}
+                  className={styles.link__social}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {elem.social}
+                </a>
+              </div>
+            </li>
+          ))}
+        </div>
         <Button title="заказать" />
+        <p className={styles.contacts__copyright}>
+          {new Date().getFullYear()} &copy; "kojo" студия
+        </p>
       </div>
     </>
   );
