@@ -38,6 +38,7 @@
   text-align: left;
   text-transform: uppercase;
   box-sizing: content-box;
+  overflow: hidden;
 }
 
 html:-webkit-full-screen .service__info {
@@ -55,14 +56,38 @@ html:-ms-full-screen .service__info {
   margin-left: 2.65vw;
 }
 
+.service__info > ul > li:nth-child(2) {
+  margin: 2.86vh 0;
+}
+
+.service__info > ul > li {
+  position: relative;
+  color: transparent;
+  animation: showTitle;
+  animation-duration: 0.8s;
+  animation-delay: 550ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+.service__info > ul > li::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  transform: translateX(-100%);
+  animation: slideCoverTitle;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
+}
+
 .service__list {
   text-align: left;
   text-transform: uppercase;
   box-sizing: border-box;
-}
-
-.service__info > ul > li:nth-child(2) {
-  margin: 2.86vh 0;
 }
 
 .service__list > ul {
@@ -79,6 +104,16 @@ html:-ms-full-screen .service__info {
   margin-bottom: 0;
 }
 
+.service__img_wraper {
+  position: relative;
+  border-left: 1px solid #000;
+  overflow: hidden;
+}
+
+.service__img_wraper:hover {
+  border-left: 0;
+}
+
 .service__img {
   position: relative;
   background: url("/public/img/service/developer.gif") center no-repeat #ccc;
@@ -86,6 +121,12 @@ html:-ms-full-screen .service__info {
   width: 12.5vw;
   height: 12.96vh;
   border: 1px solid #000;
+  border-left: 0;
+  animation: slideCoverImg;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  transform: translateX(-100%);
+  transform: translateX(0%);
   z-index: 99;
 }
 
@@ -120,4 +161,58 @@ html:-ms-full-screen .service__info {
 
 .service__img:hover::after {
   content: "";
+}
+
+@keyframes slideCoverImg {
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideCoverTitle {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes showTitle {
+  0% {
+    color: #000;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0;
+  }
+
+  .service {
+    padding: 0;
+  }
+
+  .service__left {
+    flex-direction: column;
+  }
+
+  .service__info,
+  .service__list {
+    margin: 0 0 12.5vh 0;
+    width: 100%;
+  }
+
+  .service__list {
+    margin: 0 auto;
+  }
+
+  .service__right,
+  .empty {
+    display: none;
+  }
 }
