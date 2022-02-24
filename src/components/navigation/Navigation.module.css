@@ -67,7 +67,7 @@
   left: 0;
   max-width: 10.42vw;
   transform: rotate(90deg) translateY(520%);
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: all 1.2s cubic-bezier(0.6, 0, 0.5, 1);
   font-family: "GothamProBlack", sans-serif;
   font-size: 8vh;
   line-height: 5.5vh;
@@ -79,7 +79,7 @@
   bottom: 0;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   transform: rotate(90deg) translateY(-545%);
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 html:-webkit-full-screen .nav__items:hover::after {
