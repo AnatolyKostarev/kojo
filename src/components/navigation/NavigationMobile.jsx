@@ -14,7 +14,6 @@ export default function NavigationMobile({ toggleMobileMenu }) {
               <NavLink
                 to={elem.linkto}
                 className={styles.nav__item}
-                activeClassName={styles.nav__item_active}
                 key={index}
                 onClick={toggleMobileMenu}
               >
