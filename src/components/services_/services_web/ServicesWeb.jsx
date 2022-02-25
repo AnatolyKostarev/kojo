@@ -4,6 +4,7 @@ import { ServicesInfo } from "./ServicesInfo";
 import { ServicesList } from "./ServicesList";
 import styles from "./ServicesWeb.module.css";
 import "../ServiceScrollBar.css";
+import "../services_mobile/ServiceMobileNavBar.css";
 
 const ServicesWeb = ({ toggleWheel }) => {
   return (

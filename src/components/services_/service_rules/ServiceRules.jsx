@@ -4,6 +4,7 @@ import ServiceRulesList from "./ServiceRulesList";
 import ServiceRulesImg from "./ServiceRulesImg";
 import styles from "./ServiceRules.module.css";
 import "../ServiceScrollBar.css";
+import "../services_mobile/ServiceMobileNavBar.css";
 
 const ServiceRules = ({ toggleWheel }) => {
   return (

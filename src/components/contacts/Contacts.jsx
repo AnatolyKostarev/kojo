@@ -106,15 +106,18 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                   </div>
                 </div>
               </div>
-              <div className={styles.footer}>
-              <Footerworks />
-              </div>
             </>
           )}
         </section>
       )}
       {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
       <Navigation hideContent={hideContent} />
+
+      {showMenu && (
+        <div className={styles.footer}>
+          <Footerworks />
+        </div>
+      )}
     </>
   );
 }

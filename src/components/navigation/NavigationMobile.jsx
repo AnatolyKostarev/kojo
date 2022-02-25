@@ -24,7 +24,7 @@ export default function NavigationMobile({ toggleMobileMenu }) {
             ))}
           </ul>
         </nav>
-        <div class={styles.social}>
+        <div className={styles.social}>
           {footerWorksNav.map((elem, index) => (
             <li className={styles.item} key={index}>
               <div className={styles.link}>

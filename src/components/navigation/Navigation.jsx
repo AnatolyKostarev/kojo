@@ -28,7 +28,7 @@ export default function Navigation({ hideContent }) {
                 className={styles.nav__item}
                 to={elem.linkto}
                 key={index}
-                activeStyle={{ color: "#000" }}
+                activestyle={{ color: "#000" }}
               >
                 <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
