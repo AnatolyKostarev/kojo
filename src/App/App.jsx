@@ -25,7 +25,7 @@ function App() {
   React.useEffect(() => {
     window.addEventListener("resize", hideMobileMenu);
     return () => window.removeEventListener("resize", hideMobileMenu);
-  });
+  }, []);
 
   return (
     <>
