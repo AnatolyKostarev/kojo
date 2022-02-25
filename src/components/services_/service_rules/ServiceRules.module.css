@@ -2,7 +2,7 @@
   height: 100vh;
   padding-top: 32.5vh;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
+  scroll-snap-stop: always;
   overflow-y: scroll;
 }
 

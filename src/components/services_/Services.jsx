@@ -8,7 +8,7 @@ import ServiceRules from "./service_rules/ServiceRules";
 import NavigationMobile from "../navigation/NavigationMobile";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 import "./ServiceScrollBar.css";
-import "./services_mobile/ServiceMobileNavBar.css";
+// import "./services_mobile/ServiceMobileNavBar.css";
 import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
 
 export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
@@ -33,11 +33,11 @@ export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
         />
       )}
       {hide && showMenu && (
-        <div>
+        <>
           <ServiceMobileNavBar />
           <ServicesWeb toggleWheel={toggleWheel} />
           <ServiceRules toggleWheel={toggleWheel} />
-        </div>
+        </>
       )}
       <Navigation hideContent={hideContent} />
       {showMenu && (

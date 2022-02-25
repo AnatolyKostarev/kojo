@@ -229,7 +229,7 @@
     max-width: 100vw;
     padding: 0 20px;
     box-sizing: content-box;
-    padding-bottom: 180px;
+    /* padding-bottom: 180px; */
   }
 
   .contacts__wraper {
@@ -358,6 +358,7 @@
   .contacts__copyright {
     display: none;
   }
+
   .contacts__form {
     margin-top: 5vh;
   }
@@ -371,6 +372,7 @@
 
   .footer {
     display: block;
+    margin-top: 180px;
   }
 }
 
