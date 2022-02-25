@@ -15,6 +15,18 @@ function App() {
     setOpen(!isOpen);
   };
 
+  const hideMobileMenu = (e) => {
+    if (e.target.innerWidth > 1023) {
+      setShowMenu(true);
+      setOpen(false);
+    }
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", hideMobileMenu);
+    return () => window.removeEventListener("resize", hideMobileMenu);
+  });
+
   return (
     <>
       <Routes>
