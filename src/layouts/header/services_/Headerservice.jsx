@@ -30,7 +30,7 @@ const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
               <div className={styles.header__subtitle}>
                 <p
                   style={
-                    isTitle === 100
+                    isTitle
                       ? {
                           transform: "translateY(-100%)",
                           transition: "0.8s ease-in-out",
@@ -45,7 +45,7 @@ const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
                 </p>
                 <p
                   style={
-                    isTitle === 100
+                    isTitle
                       ? {
                           transform: "translateY(-100%)",
                           transition: "0.8s ease-in-out",
