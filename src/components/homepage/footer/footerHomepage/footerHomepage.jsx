@@ -6,7 +6,7 @@ export default function FooterHomepage({ hideHeader, showHeader }) {
   const footerWorksNav = [
     { social: "/ фэйсбук", href: "https://facebook.com" },
     { social: "/ инстаграм", href: "https://instagram.com" },
-    { social: "/ вконтакте", href: "https://vk.com" },
+    // { social: "/ вконтакте", href: "https://vk.com" },
   ];
 
   return (
