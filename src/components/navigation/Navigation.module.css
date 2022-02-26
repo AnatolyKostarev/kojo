@@ -29,34 +29,22 @@
 }
 
 .nav__items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 2.86vw;
   width: 100%;
   transform: rotate(180deg);
   writing-mode: vertical-lr;
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 .nav__item {
-  color: transparent;
-}
-
-.nav__items::before {
-  content: attr(data-text);
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%);
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
   color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
-.nav__items:hover::before {
-  left: -550%;
+.nav__item:hover {
+  color: transparent;
+  transition: all 0.1s cubic-bezier(0.6, 0, 0.5, 1);
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transition: all 0.5s cubic-bezier(0.6, 0, 0.5, 1);
 }
 
 .nav__items::after {
@@ -67,11 +55,12 @@
   left: 0;
   max-width: 10.42vw;
   transform: rotate(90deg) translateY(520%);
-  transition: all 1.2s cubic-bezier(0.6, 0, 0.5, 1);
+  transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   font-family: "GothamProBlack", sans-serif;
   font-size: 8vh;
   line-height: 5.5vh;
   color: rgba(0, 0, 0, 1);
+  z-index: 105;
 }
 
 .nav__items:hover::after {
@@ -80,6 +69,7 @@
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   transform: rotate(90deg) translateY(-545%);
   transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
+  z-index: 105;
 }
 
 html:-webkit-full-screen .nav__items:hover::after {

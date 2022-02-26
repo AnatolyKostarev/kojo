@@ -2,14 +2,13 @@ import React from "react";
 import Headerservice from "../../layouts/header/services_/Headerservice";
 import Navigation from "../navigation/Navigation";
 import Footerworks from "../../layouts/footer/works/Footerworks";
-import styles from "./Services.module.css";
 import ServicesWeb from "./services_web/ServicesWeb";
 import ServiceRules from "./service_rules/ServiceRules";
 import NavigationMobile from "../navigation/NavigationMobile";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
-import "./ServiceScrollBar.css";
-// import "./services_mobile/ServiceMobileNavBar.css";
 import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
+import styles from "./Services.module.css";
+import "./ServiceScrollBar.css";
 
 export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = React.useState(true);
