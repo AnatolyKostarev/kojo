@@ -67,7 +67,7 @@
   top: 0;
   bottom: 0;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  transform: rotate(90deg) translateY(-545%);
+  transform: rotate(90deg) translateY(-625%);
   transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
   z-index: 105;
 }
