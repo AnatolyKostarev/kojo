@@ -6,6 +6,6 @@
 
 @media screen and (max-width: 1023px) {
   .burger {
-    cursor: pointer;
+    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
   }
 }
