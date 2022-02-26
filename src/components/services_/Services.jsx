@@ -12,14 +12,27 @@ import "./ServiceScrollBar.css";
 
 export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = React.useState(true);
-  const [isTitle, setTitle] = React.useState(0);
+  const [isTitle, setTitle] = React.useState(false);
+  const [btnColor, setBtnColor] = React.useState(false);
 
   const hideContent = () => {
     setHide(!hide);
     setTitle(0);
   };
 
-  const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(100) : setTitle(0));
+  // const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(true) : setTitle(false));
+  const toggleWheel = (e) => {
+    if (e.deltaY > 0) {
+      setTitle(true);
+      setBtnColor(true);
+    } else {
+      setTitle(false);
+      setBtnColor(false);
+    }
+  };
+
+  const changeWebBtn = () => setBtnColor(false);
+  const changeRuleBtn = () => setBtnColor(true);
 
   return (
     <div className={styles.service__scroll}>
@@ -33,7 +46,12 @@ export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
       )}
       {hide && showMenu && (
         <>
-          <ServiceMobileNavBar />
+          <ServiceMobileNavBar
+            isTitle={isTitle}
+            btnColor={btnColor}
+            webButton={changeWebBtn}
+            rulesButton={changeRuleBtn}
+          />
           <ServicesWeb toggleWheel={toggleWheel} />
           <ServiceRules toggleWheel={toggleWheel} />
         </>
