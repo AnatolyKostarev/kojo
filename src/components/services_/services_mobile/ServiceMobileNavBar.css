@@ -12,6 +12,7 @@
     padding: 20px;
     width: 100%;
     transform: translateX(-50%);
+    z-index: 110;
   }
 
   .service__mobile_nav > ul {
@@ -25,7 +26,19 @@
   }
 
   .service__mobile_nav > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
+    height: 38px;
     text-align: center;
+  }
+
+  .service__mobile_nav > ul > li > a {
+    display: block;
+    width: 100%;
+    font-size: 11px;
+    line-height: 38px;
+    text-transform: uppercase;
   }
 }
