@@ -1,6 +1,6 @@
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .formcontrol {
-    font-size: 11.3580246913580247vh;
+    font-size: 11.35vh;
   }
 
   .input,
@@ -57,6 +57,7 @@
 
   .policy_text {
     padding: 10px;
+    line-height: 15px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.5);
   }
@@ -148,7 +149,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media (max-width: 1023px) {
   .form {
     width: 100%;
   }
@@ -211,6 +212,7 @@
   }
 
   .policy_text {
+    line-height: 15px;
     padding: 10px;
     color: rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
@@ -249,22 +251,6 @@
   .checkbox:checked + .checkfake::before {
     opacity: 1;
   }
-
-  /* .btn {
-    margin: 0 0 100px;
-    padding: 20px;
-    width: 100%;
-    height: 60px;
-    font-family: "GothamProMedium", sans-serif;
-    font-size: 14px;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    border: 0;
-    background-color: #000;
-    color: #fff;
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  } */
 }
 
 @keyframes showLogo {

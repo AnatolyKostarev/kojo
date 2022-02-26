@@ -97,6 +97,10 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                       Заполните поля ниже и мы свяжемся с вами как можно
                       быстрее.
                     </p>
+                    <p className={styles.contacts__message_right}>
+                      Кто-то из нашей команды работает даже на выходных. Пишите
+                      нам в любое время.
+                    </p>
                     <div className={styles.contacts__form}>
                       <Form />
                     </div>
