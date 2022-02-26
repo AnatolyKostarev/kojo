@@ -57,7 +57,7 @@
   transform: rotate(90deg) translateY(520%);
   transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   font-family: "GothamProBlack", sans-serif;
-  font-size: 8vh;
+  font-size: 9vh;
   line-height: 5.5vh;
   color: rgba(0, 0, 0, 1);
   z-index: 105;
