@@ -46,7 +46,12 @@ export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
       )}
       {hide && showMenu && (
         <>
-          <ServiceMobileNavBar />
+          <ServiceMobileNavBar
+            isTitle={isTitle}
+            btnColor={btnColor}
+            webButton={changeWebBtn}
+            rulesButton={changeRuleBtn}
+          />
           <ServicesWeb toggleWheel={toggleWheel} />
           <ServiceRules toggleWheel={toggleWheel} />
         </>
