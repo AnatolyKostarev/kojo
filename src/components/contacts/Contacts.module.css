@@ -11,7 +11,7 @@
   }
 
   .container {
-    width: 93.75vw;
+    max-width: 93.75vw;
     padding: 0 6.25vw;
     box-sizing: content-box;
   }
@@ -153,13 +153,13 @@
 
   .contacts__wraper_right {
     position: relative;
-    padding: 0 12.5vw;
+    padding: 0 7.25vw;
   }
 
   .contacts__text {
     position: absolute;
     top: -20.25vh;
-    left: 12.5vw;
+    left: 7.25vw;
     max-width: 27.5vw;
     font-size: 11px;
     line-height: 15px;
@@ -192,7 +192,6 @@
     animation-iteration-count: infinite;
     overflow: hidden;
   }
-  
 
   .title::before {
     content: "";
@@ -220,8 +219,12 @@
     top: 0;
     height: 1px;
     top: 566px;
-    width: 130vh;
+    width: 100%;
     background: rgba(0, 0, 0, 0.1);
+  }
+
+  .styleLine::before {
+    display: block;
   }
 
   .container {
@@ -305,7 +308,8 @@
     margin-top: 200px;
   }
 
-  .contacts__text, .contacts__message_right {
+  .contacts__text,
+  .contacts__message_right {
     position: relative;
     margin-bottom: 20px;
     font-size: 11px;

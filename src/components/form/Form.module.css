@@ -151,7 +151,7 @@
 
 @media (max-width: 1023px) {
   .form {
-    width: 100%;
+    max-width: 100vw;
   }
 
   .formcontrol {
@@ -160,7 +160,7 @@
 
   .input,
   .textarea {
-    width: 100%;
+    max-width: 100vw;
     height: 55px;
     border: 0;
     outline: none;

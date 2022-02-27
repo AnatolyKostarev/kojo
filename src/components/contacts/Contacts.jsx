@@ -20,7 +20,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
         <Headercontacts toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
       )}
       {hide && (
-        <section className={styles.contacts}>
+        <section className={showMenu ? styles.contacts : styles.styleLine}>
           {showMenu && (
             <>
               <div className={styles.container}>
