@@ -6,7 +6,7 @@ export default function FooterHomepage({ hideHeader, showHeader }) {
   const footerWorksNav = [
     { social: "/ фэйсбук", href: "https://facebook.com" },
     { social: "/ инстаграм", href: "https://instagram.com" },
-    { social: "/ вконтакте", href: "https://vk.com" },
+    // { social: "/ вконтакте", href: "https://vk.com" },
   ];
 
   return (
@@ -45,16 +45,6 @@ export default function FooterHomepage({ hideHeader, showHeader }) {
                 ))}
               </ul>
             </div>
-            {/* <div className="blockSpy">
-                            <nav className={styles.scrollSpy}>
-                                <a href="#title" id="title_btn"></a>
-
-                                <a href="#about" id="about_btn"></a>
-
-                                <a href="#form" id="form_btn"></a>
-                                <span id="indicator"></span>
-                            </nav>
-                        </div> */}
             <div className={styles.copyright}>
               {new Date().getFullYear()} &copy; "kojo" студия
             </div>
