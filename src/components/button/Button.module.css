@@ -61,6 +61,12 @@
   transition: 0.5s linear;
 }
 
+@media (max-width: 1800px) {
+  .btn::before {
+    font-size: 2.4vh;
+  }
+}
+
 @media (max-width: 1023px) {
   .btn {
     padding: 1vh 0;
