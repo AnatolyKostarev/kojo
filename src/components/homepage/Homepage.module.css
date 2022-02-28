@@ -1,13 +1,14 @@
-.homepage {
+@media(min-width: 1025px) {
+  .homepage {
     position: relative;
     height: 100vh;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     overflow-y: auto;
     overflow-x: hidden;
-}
+  }
 
-.vertical_line {
+  .vertical_line {
     width: 1px;
     height: 17.28vh;
     position: absolute;
@@ -15,16 +16,23 @@
     left: 39.93vw;
     background: #000;
     animation: showLine 0.5s ease;
-}
+  }
 
-@keyframes showLine {
+  @keyframes showLine {
     from {
-        top: -100%;
+      top: -100%;
     }
     to {
-        top: 0;
+      top: 0;
     }
+  }
 }
+@media(max-width: 1025px) {
+.homepage{
+  display: none;
+}
+}
+
 
 
 /* .blockLine {

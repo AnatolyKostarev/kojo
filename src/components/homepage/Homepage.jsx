@@ -7,9 +7,10 @@ import Navigation from "../navigation/Navigation";
 import FooterHomepage from "./footer/footerHomepage/footerHomepage";
 import style from "./Homepage.module.css";
 import ScrollSpy from "./scrollSpy/scrollSpy";
-// import HomePageMobile from "./HomePageMobil";
+import HomePageMobile from "./HomePageMobil";
 
-export default function Homepage() {
+
+export default function Homepage({showMenu, isOpen, toggleMobileMenu}) {
   // for header
   let [header, setHeader] = useState(true);
   const [hide, setHide] = useState(true);
@@ -38,8 +39,12 @@ export default function Homepage() {
         <Navigation hideContent={hideContent} />
         {hide && <FooterHomepage />}
         {hide && <ScrollSpy />}
-      </div>
-      {/* <HomePageMobile/> */}
+      </div> 
+      
+      <HomePageMobile  showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}/>
+
     </>
   );
 }

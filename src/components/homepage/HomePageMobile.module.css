@@ -1,15 +1,12 @@
-/* * {
-    scroll-behavior: smooth;
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    text-transform: uppercase;
-    font-family: "GothamProMedium", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-} */
-
 .text_bld {
   font-family: "GothamProBlack";
 }
+@media (min-width: 1025px) {
+  .mobileBlock {
+    display: none;
+  }
+}
+
 
 @media (max-width: 1025px) {
   /* header */
@@ -17,18 +14,7 @@
     position: fixed;
     width: 100%;
   }
-  /* main {
-        scroll-snap-type: Y mandatory;
-        overflow-y: scroll;
-        width: 100vw;
-        height: 100vh;
-        border: 5px solid black;
-    }
-    section {
-        scroll-snap-align: start;
-        height: 100vh;
-        width: 100vw;
-    } */
+
   .header {
     padding: 20px;
     display: flex;

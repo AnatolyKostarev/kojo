@@ -50,7 +50,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Homepage  showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}/>} />
         <Route
           path="works"
           element={
