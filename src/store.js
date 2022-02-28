@@ -229,3 +229,11 @@ export const homepageBackgroundImages = [
   "./img/imgHomepage/10Home.webp",
   "./img/imgHomepage/14Home.webp",
 ];
+
+export const showServices = {
+  display: "block",
+};
+
+export const hideServices = {
+  display: "none",
+};
