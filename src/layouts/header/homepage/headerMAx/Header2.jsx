@@ -1,5 +1,5 @@
-import style from "./header2.module.css";
 import Button from "../../../../components/buttonMax/button.jsx";
+import style from "./header2.module.css";
 
 export function Header2() {
   return (
@@ -9,7 +9,7 @@ export function Header2() {
         <div className={style.logoWrapper}>
           <div className={style.logoWrapperBox}>
             <a href="#title">
-              <img src="./img/header/icon-logo.svg" alt="kojo_logo" />
+              <img src="./img/header/icon-logo.svg" alt="kojo_icon" />
             </a>
             <div className={style.logoBoxAnimate}></div>
           </div>
