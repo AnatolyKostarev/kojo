@@ -39,15 +39,19 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                           </p>
                           <div className={styles.contacts__link}>
                             <a
-                              href={`mailto:${elem.email}`}
+                              href={elem.href}
                               data-hover={elem.email}
+                              target="_blank"
+                              rel="noreferrer"
                               className={styles.contacts__item_top}
                             >
                               {elem.email}
                             </a>
                             <a
-                              href={`mailto:${elem.email}`}
+                              href={elem.href}
                               data-hover={elem.email}
+                              target="_blank"
+                              rel="noreferrer"
                               className={styles.contacts__item_bottom}
                             >
                               {elem.email}
