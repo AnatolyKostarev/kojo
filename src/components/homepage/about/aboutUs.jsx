@@ -8,8 +8,8 @@ function AboutUs({ showHeader }) {
       <section className={style.about} id="about" onMouseOver={showHeader}>
         <div className={style.mainBlock}>
           <div className={style.mainData}>
-            <h2>инфо</h2>
-            <p>информация про нас</p>
+            <h2>кто мы</h2>
+            <p>общая информация</p>
             <div className={style.listData}>
               {aboutUsInfo.map((elem, index) => (
                 <div className={style.item} key={index}>
@@ -20,14 +20,15 @@ function AboutUs({ showHeader }) {
             </div>
           </div>
           <div className={style.mainAwards}>
-            <h2>награды</h2>
-            <p>наши достижения</p>
+            <h2>принципы</h2>
+            <p>нашей работы</p>
             <div className={style.listData}>
               <div className={style.item}>
-                <div className={style.label}>авввардс:</div>
+                <div className={style.label}>первый:</div>
                 <div className={style.valueAwards}>
-                  <div>8X HONORABLE MENTION</div>
-                  <div>1X SITE OF THE DAY</div>
+                  <div>Помогаем клиенту сформулировать задачу так,
+                    как знаем насколько сложно это сделать, когда
+                    не сталкиваешься с этим каждый день</div>
                 </div>
               </div>
               {awards.map((elem, index) => (

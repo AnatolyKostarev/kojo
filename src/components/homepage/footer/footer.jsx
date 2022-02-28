@@ -8,7 +8,7 @@ function Footer({ showHeader, hideHeader }) {
       {/* <footer className={style.footer} id="footerHomepage" onMouseOver={hideHeader}
         onMouseOut={showHeader}>
         <div>
-          SOCIAL: / <a>BEHANCE</a> / <a>FACEBOOK</a> / <a>INSTAGRAM</a>
+          SOCIAL: / <a>ВКОНАКТЕ</a> / <a>FACEBOOK</a> / <a>INSTAGRAM</a>
         </div>
         <div>
           <nav className={style.scrollSpy}>
@@ -20,7 +20,7 @@ function Footer({ showHeader, hideHeader }) {
             <span id="indicator"></span>
           </nav>
         </div>
-        <div>2022 © "ZIPL" STUDIO</div>
+        <div>2022 © СТУДИЯ KOJO</div>
       </footer> */}
       {/* <Footerworks/> */}
       <FooterHomepage />
