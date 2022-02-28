@@ -139,7 +139,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                         <marquee>place for form</marquee>
                     </section>
                 </main >
-            </div>
+           
             {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
             <Navigation hideContent={hideContent} />
             {showMenu && (
@@ -147,6 +147,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                     <Footerworks />
                 </div>
             )}
+             </div>
         </>
     )
 }

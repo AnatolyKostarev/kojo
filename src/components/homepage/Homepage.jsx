@@ -39,7 +39,8 @@ export default function Homepage({showMenu, isOpen, toggleMobileMenu}) {
         <Navigation hideContent={hideContent} />
         {hide && <FooterHomepage />}
         {hide && <ScrollSpy />}
-      </div>
+      </div> 
+      
       <HomePageMobile  showMenu={showMenu}
               isOpen={isOpen}
               toggleMobileMenu={toggleMobileMenu}/>
