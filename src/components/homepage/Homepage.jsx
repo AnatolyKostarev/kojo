@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import style from "./Homepage.module.css";
 import Title from "./title/title";
 import AboutUs from "./about/aboutUs";
 import MainForm from "./form/form.jsx";
-// import Footer from "./footer/footer.jsx"; we must delete this component
 import { Header2 } from "../../layouts/header/homepage/headerMAx/Header2";
 import Navigation from "../navigation/Navigation";
-import ScrollSpy from "./scrollSpy/scrollSpy";
 import FooterHomepage from "./footer/footerHomepage/footerHomepage";
-import HomePageMobile from "./HomePageMobil";
+import style from "./Homepage.module.css";
+import ScrollSpy from "./scrollSpy/scrollSpy";
+// import HomePageMobile from "./HomePageMobil";
 
 export default function Homepage() {
   // for header
@@ -17,7 +16,6 @@ export default function Homepage() {
 
   const hideHeader = () => {
     setHeader(false);
-    // console.log(header);
   };
 
   const showHeader = () => {
