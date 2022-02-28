@@ -10,29 +10,25 @@ import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
 import styles from "./Services.module.css";
 import "./ServiceScrollBar.css";
 
-export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
+export default function Services({
+  showMenu,
+  isOpen,
+  btnColor,
+  isWebContent,
+  isRuleContent,
+  toggleMobileMenu,
+  changeWebBtn,
+  changeRuleBtn,
+}) {
   const [hide, setHide] = React.useState(true);
   const [isTitle, setTitle] = React.useState(false);
-  const [btnColor, setBtnColor] = React.useState(false);
 
   const hideContent = () => {
     setHide(!hide);
     setTitle(0);
   };
 
-  // const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(true) : setTitle(false));
-  const toggleWheel = (e) => {
-    if (e.deltaY > 0) {
-      setTitle(true);
-      setBtnColor(true);
-    } else {
-      setTitle(false);
-      setBtnColor(false);
-    }
-  };
-
-  const changeWebBtn = () => setBtnColor(false);
-  const changeRuleBtn = () => setBtnColor(true);
+  const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(true) : setTitle(false));
 
   return (
     <div className={styles.service__scroll}>
@@ -47,13 +43,20 @@ export default function Services({ showMenu, isOpen, toggleMobileMenu }) {
       {hide && showMenu && (
         <>
           <ServiceMobileNavBar
-            isTitle={isTitle}
             btnColor={btnColor}
             webButton={changeWebBtn}
             rulesButton={changeRuleBtn}
           />
-          <ServicesWeb toggleWheel={toggleWheel} />
-          <ServiceRules toggleWheel={toggleWheel} />
+          <div className={styles.services__wraper}>
+            <ServicesWeb
+              toggleWheel={toggleWheel}
+              isWebContent={isWebContent}
+            />
+            <ServiceRules
+              toggleWheel={toggleWheel}
+              isRuleContent={isRuleContent}
+            />
+          </div>
         </>
       )}
       <Navigation hideContent={hideContent} />
