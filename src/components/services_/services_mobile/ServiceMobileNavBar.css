@@ -6,7 +6,7 @@
 @media (max-width: 1023px) {
   .service__mobile_nav {
     position: fixed;
-    top: 80px;
+    top: 70px;
     left: 50%;
     display: block;
     padding: 20px;
@@ -34,7 +34,7 @@
     text-align: center;
   }
 
-  .service__mobile_nav > ul > li > a {
+  .service__mobile_nav > ul > li > span {
     display: block;
     width: 100%;
     font-size: 11px;
