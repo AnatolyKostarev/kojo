@@ -1,7 +1,7 @@
 import React from "react";
 import "./ServiceMobileNavBar.css";
 
-const ServiceMobileNavBar = ({ isTitle, btnColor, webButton, rulesButton }) => {
+const ServiceMobileNavBar = ({ btnColor, webButton, rulesButton }) => {
   const blackBtn = {
     background: "#000",
     color: "#fff",
@@ -15,27 +15,11 @@ const ServiceMobileNavBar = ({ isTitle, btnColor, webButton, rulesButton }) => {
   return (
     <div className="service__mobile_nav">
       <ul>
-        <li
-          onClick={webButton}
-          style={!btnColor && !isTitle ? blackBtn : whiteBtn}
-        >
-          <a
-            style={!btnColor && !isTitle ? blackBtn : whiteBtn}
-            href="#service"
-          >
-            веб
-          </a>
+        <li onClick={webButton} style={!btnColor ? blackBtn : whiteBtn}>
+          <span>веб</span>
         </li>
-        <li
-          onClick={rulesButton}
-          style={!btnColor && !isTitle ? whiteBtn : blackBtn}
-        >
-          <a
-            style={!btnColor && !isTitle ? whiteBtn : blackBtn}
-            href="#service__rule"
-          >
-            правила
-          </a>
+        <li onClick={rulesButton} style={!btnColor ? whiteBtn : blackBtn}>
+          <span>правила</span>
         </li>
       </ul>
     </div>
