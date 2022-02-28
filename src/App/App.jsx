@@ -4,6 +4,7 @@ import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
 import Homepage from "../components/homepage/Homepage";
+import ErrorPage from "../components/ErrorPage/ErroePage";
 import "./App.module.css";
 
 function App() {
@@ -55,6 +56,16 @@ function App() {
           path="contacts"
           element={
             <Contacts
+              showMenu={showMenu}
+              isOpen={isOpen}
+              toggleMobileMenu={toggleMobileMenu}
+            />
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <ErrorPage
               showMenu={showMenu}
               isOpen={isOpen}
               toggleMobileMenu={toggleMobileMenu}
