@@ -4,10 +4,16 @@ import { ServicesInfo } from "./ServicesInfo";
 import { ServicesList } from "./ServicesList";
 import styles from "./ServicesWeb.module.css";
 import "../ServiceScrollBar.css";
+import "../services_mobile/ServiceMobileNavBar.css";
 
-const ServicesWeb = ({ toggleWheel }) => {
+const ServicesWeb = ({ toggleWheel, isWebContent }) => {
   return (
-    <section id="service" className={styles.services} onWheel={toggleWheel}>
+    <section
+      id="service"
+      className={styles.services}
+      onWheel={toggleWheel}
+      style={isWebContent}
+    >
       <div className={styles.container}>
         <div className={styles.service}>
           <div className={styles.service__left}>

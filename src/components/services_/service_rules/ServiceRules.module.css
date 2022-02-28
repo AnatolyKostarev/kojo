@@ -2,8 +2,8 @@
   height: 100vh;
   padding-top: 32.5vh;
   scroll-snap-align: start;
-  scroll-snap-stop: normal;
-  overflow-y: scroll;
+  scroll-snap-stop: always;
+  /* overflow-y: scroll; */
 }
 
 .container {
@@ -113,7 +113,11 @@ html:-ms-full-screen .service__rules_info {
   }
 
   .service__rule {
-    padding-top: 16vh;
+    padding: 0;
+    margin-top: 150px;
+    height: 100%;
+    scroll-snap-type: none;
+    scroll-snap-align: none;
   }
 
   .service__rules {

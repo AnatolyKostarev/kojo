@@ -4,15 +4,15 @@ import { navSideBar } from "../../store";
 import styles from "./Navigation.module.css";
 
 export default function Navigation({ hideContent }) {
-  const toggleFullScreen = () => {
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen();
-    } else {
-      if (document.fullscreenEnabled) {
-        document.exitFullscreen();
-      }
-    }
-  };
+  // const toggleFullScreen = () => {
+  //   if (!document.fullscreenElement) {
+  //     document.documentElement.requestFullscreen();
+  //   } else {
+  //     if (document.fullscreenEnabled) {
+  //       document.exitFullscreen();
+  //     }
+  //   }
+  // };
 
   return (
     <>
@@ -28,7 +28,6 @@ export default function Navigation({ hideContent }) {
                 className={styles.nav__item}
                 to={elem.linkto}
                 key={index}
-                activeStyle={{ color: "#000" }}
               >
                 <li className={styles.nav__items} data-text={elem.title}>
                   {elem.title}
@@ -37,7 +36,7 @@ export default function Navigation({ hideContent }) {
             ))}
           </ul>
         </nav>
-        <div className={styles.nav__screen} onClick={toggleFullScreen}></div>
+        {/* <div className={styles.nav__screen} onClick={toggleFullScreen}></div> */}
       </aside>
     </>
   );

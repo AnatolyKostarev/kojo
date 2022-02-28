@@ -1,10 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "../button/Button";
 import Buttonsmall from "../button/Buttonsmall";
 import styles from "./Worksitemresponsive.module.css";
 
 export const Worksitemresponsive = ({ elem, showMenu }) => {
   return (
     <>
+      {showMenu && (
+        <div>
+          <h1 className={styles.header_title} data-title="Работа">
+            работы
+          </h1>
+        </div>
+      )}
+      {showMenu && (
+        <div className={styles.header__btn}>
+          <Link to="/contacts">
+            <Button title="Заказать" addStyle="animated_btn" />
+          </Link>
+        </div>
+      )}
       {showMenu && (
         <div className={styles.works__list}>
           {elem.map((elem, index, arr) => (

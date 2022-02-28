@@ -113,7 +113,6 @@ export const navSideBar = [
 export const footerWorksNav = [
   { social: "/ фэйсбук", href: "https://facebook.com" },
   { social: "/ инстаграм", href: "https://instagram.com" },
-  { social: "/ вконтакте", href: "https://vk.com" },
 ];
 
 // Array of object for Contacts.jsx component
@@ -121,11 +120,12 @@ export const footerWorksNav = [
 export const socialList = [
   { social: "Фэйсбук", href: "https://facebook.com/" },
   { social: "Инстаграм", href: "https://instagram.com/" },
-  { social: "Беханс", href: "https://www.behance.net/" },
+  // { social: "Беханс", href: "https://www.behance.net/" },
 ];
 
 export const contactsList = [
   { label: "основной", email: "kojo@saintcode.ru" },
+
   { label: "телеграм", email: "https://t.me/saintcoder" },
 ];
 
@@ -231,3 +231,11 @@ export const homepageBackgroundImages = [
   "./img/imgHomepage/10Home.webp",
   "./img/imgHomepage/14Home.webp",
 ];
+
+export const showServices = {
+  display: "block",
+};
+
+export const hideServices = {
+  display: "none",
+};

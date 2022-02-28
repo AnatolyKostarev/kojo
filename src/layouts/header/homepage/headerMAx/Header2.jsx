@@ -1,8 +1,7 @@
-import style from "./header2.module.css";
 import Button from "../../../../components/buttonMax/button.jsx";
-// import Button from '../../../../components/button/Button';
+import style from "./header2.module.css";
 
-export function Header2({ state }) {
+export function Header2() {
   return (
     <header className={style.header}>
       <div className={style.content}>
@@ -10,8 +9,7 @@ export function Header2({ state }) {
         <div className={style.logoWrapper}>
           <div className={style.logoWrapperBox}>
             <a href="#title">
-            <img src="./img/header/icon-logo.svg" alt=" " />
-
+              <img src="./img/header/icon-logo.svg" alt="kojo_icon" />
             </a>
             <div className={style.logoBoxAnimate}></div>
           </div>

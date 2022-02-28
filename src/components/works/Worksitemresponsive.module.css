@@ -1,5 +1,7 @@
 @media (min-width: 1024px) {
-  .works__list {
+  .works__list,
+  .header_title,
+  .header__btn {
     display: none;
   }
 }
@@ -7,6 +9,7 @@
 @media (max-width: 1023px) {
   .works__list {
     display: block;
+    padding-top: 5.5vh;
   }
 
   .works__item {
@@ -26,15 +29,15 @@
     font-size: 2.16vh;
     text-transform: uppercase;
     color: #000;
-    animation: showTitle;
+    /* animation: showTitle;
     animation-duration: 0.8s;
     animation-delay: 365ms;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-    overflow: hidden;
+    overflow: hidden; */
   }
 
-  .title::before,
+  /* .title::before,
   .counter::before,
   .desc::before,
   .action:before {
@@ -48,7 +51,7 @@
     animation-name: slideCoverInfo;
     animation-duration: 0.8s;
     animation-timing-function: ease-in;
-  }
+  } */
 
   .works__img {
     display: block;
@@ -84,13 +87,13 @@
     line-height: 1.2vh;
     text-align: left;
     text-transform: uppercase;
-    color: transparent;
-    animation: showTitle;
+    color: #000;
+    /* animation: showTitle;
     animation-duration: 0.8s;
     animation-delay: 550ms;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-    overflow: hidden;
+    overflow: hidden; */
   }
 
   .desc,
@@ -102,13 +105,13 @@
     line-height: 1.85vh;
     text-align: left;
     text-transform: uppercase;
-    color: transparent;
-    animation: showTitle;
+    color: #000;
+    /* animation: showTitle;
     animation-duration: 0.8s;
     animation-delay: 550ms;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
-    overflow: hidden;
+    overflow: hidden; */
   }
 
   .action {
@@ -123,7 +126,22 @@
     width: 100%;
   }
 
-  @keyframes slideCoverInfo {
+  .header_title {
+    padding: 0 20px;
+    font-family: "GothamProBold";
+    font-size: 4.94vh;
+    line-height: 4.69vh;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .header__btn {
+    margin-top: 4.83vh;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  /* @keyframes slideCoverInfo {
     0% {
       left: -100%;
     }
@@ -141,5 +159,5 @@
     100% {
       color: #000;
     }
-  }
+  } */
 }
