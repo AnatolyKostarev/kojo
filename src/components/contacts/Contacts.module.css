@@ -76,7 +76,7 @@
     transition: 0.3s ease-in-out;
     overflow-y: hidden;
     max-height: 2.4vh;
-    line-height: 2.8vh;
+    line-height: 2.35vh;
   }
 
   .contacts__label {
@@ -140,7 +140,7 @@
   }
 
   .contacts__message {
-    margin-top: 22.35vh;
+    margin-top: 24vh;
     font-size: 11px;
     line-height: 15px;
     text-align: left;
@@ -170,7 +170,7 @@
   .contacts__copyright {
     position: absolute;
     bottom: 0;
-    right: 12.25vw;
+    right: 7.25vw;
     font-size: 11px;
     line-height: 11px;
     text-transform: uppercase;
@@ -336,6 +336,13 @@
   .footer {
     display: block;
     margin-top: 180px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contacts__link a,
+  .contacts__links a {
+    font-size: 13px;
   }
 }
 
