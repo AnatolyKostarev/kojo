@@ -124,9 +124,17 @@ export const socialList = [
 ];
 
 export const contactsList = [
-  { label: "основной", email: "kojo@saintcode.ru" },
+  {
+    label: "основной",
+    href: "mailto:kojo@saintcode.ru",
+    email: "kojo@saintcode.ru",
+  },
 
-  { label: "телеграм", email: "https://t.me/saintcoder" },
+  {
+    label: "телеграм",
+    href: "https://t.me/saintcoder",
+    email: "@saintcoder",
+  },
 ];
 
 // Array of titles for ServicesInfo.jsx
