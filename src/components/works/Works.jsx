@@ -22,7 +22,6 @@ export default function Works({ showMenu, isOpen, toggleMobileMenu }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  console.log(offSetY);
 
   return (
     <>

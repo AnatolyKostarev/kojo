@@ -14,14 +14,16 @@
   width: 100%;
 }
 
-/* @media (max-width: 1023px) {
-  .service__scroll {
-    display: none;
-  }
-} */
-
 @media (max-width: 1023px) {
   .service__scroll {
-    padding: 20px;
+    padding: 0 20px;
+    scroll-snap-type: none;
+    scroll-behavior: unset;
+    overflow-y: hidden;
+  }
+
+  .services__wraper {
+    height: 100vh;
+    overflow-y: hidden;
   }
 }
