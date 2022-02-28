@@ -13,17 +13,15 @@ function MainForm({ hideHeader, showHeader }) {
         <div className={style.mainForm}>
           <div className={style.mainBlock}>
             <div className={style.blockTitle}>
-              <div>SEND US A</div>
-              <div>REQUEST TO</div>
-              <div>CREATE </div>
-              <div>UNIQUE </div>
-              <div>PROJECT </div>
-              <div>FOR YOU</div>
+              <div>ПРОСТО</div>
+              <div>ОТПРАВЬ НАМ</div>
+              <div>ВЕСТОЧКУ,</div>
+              <div>ЧТО ХОЧЕШЬ</div>
+              <div>ПОГОВОРИТЬ</div>
             </div>
             <div className={style.blockFrom}>
               <p>
-                HIRE US NOW - WE'RE HERE TO ASSIST YOU. DROP US A LINE, AND
-                WE'LL GET BACK TO YOU IN A BLINK OF AN EYE.
+                ТЫ ПРАВИЛЬНО ПОНЯЛ, СВОИ ДАННЫЕ НУЖНО ВВЕСТИ НИЖЕ
               </p>
               <Form />
             </div>

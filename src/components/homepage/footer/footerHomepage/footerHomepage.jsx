@@ -4,9 +4,9 @@ import "../../scrollSpy.css";
 
 export default function FooterHomepage({ hideHeader, showHeader }) {
   const footerWorksNav = [
-    { social: "/ фэйсбук", href: "https://facebook.com" },
-    { social: "/ инстаграм", href: "https://instagram.com" },
-    // { social: "/ вконтакте", href: "https://vk.com" },
+    { social: "/ facebook", href: "https://www.facebook.com/Saint-Code-Bootcamp-114797186729898" },
+    { social: "/ instagram", href: "https://www.instagram.com/saint_code_bootcamp" },
+    { social: "/ вконтакте", href: "https://vk.com/public191201156" },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function FooterHomepage({ hideHeader, showHeader }) {
               </ul>
             </div>
             <div className={styles.copyright}>
-              {new Date().getFullYear()} &copy; "kojo" студия
+              {new Date().getFullYear()} &copy; СТУДИЯ KOJO
             </div>
           </div>
         </div>

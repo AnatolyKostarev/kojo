@@ -4,29 +4,29 @@ export const worksItem = [
     imagePosition: "left",
     buttonPosition: "right",
     actionPosition: "right",
-    title: "ods",
+    title: "SaintCode Bootcamp",
     counter: "наша гордость #",
-    desc: "сайт международного аэропорта одесса",
+    desc: "сайт школы по обучению программированию",
     action: "дизайн & код",
-    href: "https://odesa.aero/",
+    href: "https://saintcode.ru",
     src: "/img/works/image_works-1.webp",
     width: "840",
     height: "830",
-    alt: "airport Odesa",
+    alt: "SaintCode Bootcamp",
   },
   {
     imagePosition: "right",
     buttonPosition: "left",
     actionPosition: "left",
-    title: "curo",
-    counter: "наша гордость #",
-    desc: "создание 3-d графики",
-    action: "дизайн & код",
-    href: "https://www.behance.net/gallery/89797887/CURO",
+    title: "Фронтирс",
+    counter: "наша работа #",
+    desc: "сайт инвестиционной компании",
+    action: "код",
+    href: "http://frontiers.ru",
     src: "/img/works/image_works-2.webp",
     width: "720",
     height: "720",
-    alt: "curo",
+    alt: "Инвестиционная компания Фронтирс в Санкт-Петербурге",
   },
   {
     imagePosition: "left",
@@ -34,13 +34,13 @@ export const worksItem = [
     actionPosition: "right",
     title: "infralytiks",
     counter: "наша гордость #",
-    desc: "сайт аналитической компании",
-    action: "дизайн",
-    href: "https://www.behance.net/gallery/80582829/InfraLytiks",
+    desc: "наш сайт",
+    action: "код & анимация",
+    href: "https://kojo.saintcode.ru",
     src: "/img/works/image_works-3.webp",
     width: "840",
     height: "830",
-    alt: "infralytiks",
+    alt: "Cтудия KOJO",
   },
   {
     imagePosition: "right",
@@ -48,7 +48,7 @@ export const worksItem = [
     actionPosition: "left",
     title: "летундра. приложение",
     counter: "наша гордость #",
-    desc: "планировщик полетов",
+    desc: "Удалить!!!",
     action: "UI/UX",
     href: "https://www.behance.net/gallery/65252599/Letundra-App-UIUX",
     src: "/img/works/image_works-4.webp",
@@ -125,7 +125,8 @@ export const socialList = [
 
 export const contactsList = [
   { label: "основной", email: "kojo@saintcode.ru" },
-  // { label: "продажи", email: "sales@zipl.pro" },
+
+  { label: "телеграм", email: "https://t.me/saintcoder" },
 ];
 
 // Array of titles for ServicesInfo.jsx
@@ -207,15 +208,16 @@ export const serviceRulesList = [
 
 export const aboutUsInfo = [
   { label: "страна", value: "россия" },
-  { label: "год", value: "2021" },
+  { label: "год", value: "2022" },
   { label: "тип", value: "веб студия" },
-  { label: "акцент", value: "уникальность" },
+  { label: "акцент", value: "на важном" },
   { label: "цвета", value: "#fff, #000" },
 ];
 
 export const awards = [
-  { label: "беханс", value: "6x featured in interaction" },
-  { label: "cssдизайнавардс", value: "1x kudos" },
+  { label: "второй", value: "Вникаем в суть, по-другому неинтересно" },
+  { label: "третий", value: "Все задачи делаем измеримыми и понятными" },
+  { label: "четвёртый", value: "Остаёмся людьми" },
 ];
 
 // Array of src for title.jsx

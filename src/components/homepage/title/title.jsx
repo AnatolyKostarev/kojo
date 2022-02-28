@@ -40,11 +40,11 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              DESIGN + <span className={style.boxAnimation}></span>
+              Разработка +<span className={style.boxAnimation}></span>
             </p>
             <p>
               {" "}
-              DEVELOPMENT <span className={style.boxAnimation}></span>
+              польза и ценность <span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -54,12 +54,12 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              ZIPL STUDIO IS A HIGH-QUALIFIED TEAM OF TALENTED DEVELOPERS AND
-              DESIGNERS.<span className={style.boxAnimation}></span>
+              KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ ЗАКАЗЧИКА
+              И ЕГО КЛИЕНТОВ.<span className={style.boxAnimation}></span>
             </p>
             <p>
-              EVERY PROJECT IS A CHALLENGE TO DO BETTER THAN ANYTHING WE HAVE
-              ALREADY DONE!<span className={style.boxAnimation}></span>
+              КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ,
+              ЧЕМ ВЫ ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ<span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
