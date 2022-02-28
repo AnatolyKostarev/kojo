@@ -1,10 +1,8 @@
 .services {
   height: 100vh;
-  /* padding-top: 14.5vh; */
   padding-top: 32.5vh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  overflow-y: scroll;
 }
 
 .container {
@@ -195,7 +193,11 @@ html:-ms-full-screen .service__info {
   }
 
   .services {
-    padding-top: 20vh;
+    padding: 0;
+    margin-top: 150px;
+    height: 100%;
+    scroll-snap-type: none;
+    scroll-snap-align: none;
   }
 
   .service {
@@ -240,5 +242,14 @@ html:-ms-full-screen .service__info {
   .service__right,
   .empty {
     display: none;
+  }
+
+  .service__info > ul > li {
+    color: #000;
+    animation: none;
+  }
+
+  .service__info > ul > li::before {
+    animation: none;
   }
 }
