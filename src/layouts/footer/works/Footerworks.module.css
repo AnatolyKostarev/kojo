@@ -43,10 +43,6 @@ footer {
   transition: 0.3s ease-in-out;
 }
 
-/* .item:nth-child(2n) {
-  margin: 0 1.4vw;
-} */
-
 .roll__link {
   display: block;
 }
@@ -81,7 +77,7 @@ footer {
   text-transform: uppercase;
 }
 
-/* @media (min-width: 2000px) {
+@media (min-width: 2000px) {
   .link__top {
     line-height: 15px;
   }
@@ -91,7 +87,13 @@ footer {
   .link__top {
     line-height: 11px;
   }
-} */
+}
+
+@media (max-width: 1500px) {
+  .link__top {
+    line-height: 9px;
+  }
+}
 
 @media (max-width: 1023px) {
   .container {
