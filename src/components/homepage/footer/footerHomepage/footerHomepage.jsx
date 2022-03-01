@@ -4,9 +4,15 @@ import "../../scrollSpy.css";
 
 export default function FooterHomepage({ hideHeader, showHeader }) {
   const footerWorksNav = [
-    { social: "/ facebook", href: "https://www.facebook.com/Saint-Code-Bootcamp-114797186729898" },
-    { social: "/ instagram", href: "https://www.instagram.com/saint_code_bootcamp" },
-    { social: "/ вконтакте", href: "https://vk.com/public191201156" },
+    {
+      social: "/ facebook",
+      href: "https://www.facebook.com/Saint-Code-Bootcamp-114797186729898",
+    },
+    {
+      social: "/ instagram",
+      href: "https://www.instagram.com/saint_code_bootcamp",
+    },
+    // { social: "/ вконтакте", href: "https://vk.com/public191201156" },
   ];
 
   return (
