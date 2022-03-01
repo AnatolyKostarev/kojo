@@ -179,4 +179,16 @@
     background: grey;
     padding: 100px;
   }
+  .blockForm{
+    padding: 0 20px;
+  }
+  .blockForm>p{
+    margin-bottom: 20px;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+  .blockForm>p:nth-child(2){
+    margin-bottom: 40px;
+  }
 }
