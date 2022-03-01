@@ -5,6 +5,7 @@ import Headercontacts from '../../layouts/header/contacts/Headercontacts'
 import NavigationMobile from '../../components/navigation/NavigationMobile'
 import Navigation from '../../components/navigation/Navigation';
 import Footerworks from '../../layouts/footer/works/Footerworks'
+import Form from '../form/Form';
 
 export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = useState(true);
@@ -25,8 +26,8 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
             </div>
             <div className={styles.title_description}>
               <div className={styles.main_title}>
-                <div>DESIGN+</div>
-                <div>DEVELOPMENT</div>
+                <div>Разработка +</div>
+                <div>польза и ценность </div>
               </div>
               <div className={styles.btn}>
                 <a href="# ">
@@ -35,9 +36,11 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
               </div>
               <div className={styles.description_prg}>
                 <p>
-                  ZIPL STUDIO is a high-qualified team of Talented developers and designers. </p>
+                  KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ ЗАКАЗЧИКА
+                  И ЕГО КЛИЕНТОВ. </p>
                 <p>
-                  Every project is a challenge to do better than anything we have already done! </p>
+                  КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ,
+                  ЧЕМ ВЫ ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ </p>
               </div>
               <div className={styles.title_awards}>
                 <span>16+</span>
@@ -50,93 +53,85 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
             <div className={styles.content}>
               <div className={styles.data}>
                 <div className={styles.block_title}>
-                  <h3>DATA</h3>
+                  <h3>кто мы</h3>
                   <p>
-                    Some information about us
+                    общая информация
                   </p>
                 </div>
                 <div className={styles.block_content}>
                   <div className={styles.line}>
                     <span>
 
-                      COUNTRY:
+                      СТРАНА:
+
 
                     </span> <span className={styles.bold + " " + styles.text_bld}>
 
-                      Ukraine
+                      РОССИЯ
                     </span>
                   </div>
                   <div className={styles.line}>
-                    <span> YEAR:
+                    <span> ГОД:
                     </span> <span className={styles.bold + " " + styles.text_bld}>
-                      2015
+                      2022
                     </span>
 
                   </div>
                   <div className={styles.line}>
-                    <span>TYPE:</span> <span className={styles.bold + " " + styles.text_bld}>
+                    <span>ТИП:</span> <span className={styles.bold + " " + styles.text_bld}>
 
-                      WEB STUDIO
+
+                      ВЕБ СТУДИЯ
                     </span>
 
                   </div>
                   <div className={styles.line}>
-                    <span>EMPHASIS:</span> <span className={styles.bold + " " + styles.text_bld} >UNIQUENESS</span>
-
+                    <span>АКЦЕНТ:</span> <span className={styles.bold + " " + styles.text_bld} >НА ВАЖНОМ</span>
                   </div>
                   <div className={styles.line}>
-                    <span>FAVORITE COLORS:</span> <span className={styles.bold + " " + styles.text_bld}>#FFF, #000</span>
-
+                    <span>ЦВЕТА:</span> <span className={styles.bold + " " + styles.text_bld}>#FFF, #000</span>
                   </div>
-
-
                 </div>
-
-
               </div>
             </div>
             <div className={styles.awards}>
               <div className={styles.block_title}>
-                <h3>AWARDS</h3>
-                <p>our achiievements
+                <h3>принципы</h3>
+                <p>нашей работы
                 </p>
               </div>
               <div className={styles.block_content}>
                 <div className={styles.lists}>
-                  <div className={styles.list_title}>AWWWARDS:</div>
+                  <div className={styles.list_title}>первый:</div>
                   <p className={styles.text_bld}>
-                    1X SITE OF THE DAY
-                  </p>
-
-                </div>
-                <div className={styles.lists}>
-
-                  <p className={styles.text_bld}>
-                    8X HONORABLE MENTION
+                    Помогаем клиенту сформулировать задачу так,
+                    как знаем насколько сложно это сделать, когда
+                    не сталкиваешься с этим каждый день
                   </p>
                 </div>
                 <div className={styles.lists}>
-                  <div className={styles.list_title}>BEHANCE:</div>
+                  <div className={styles.list_title}>второй:</div>
                   <p className={styles.text_bld}>
-                    6X FEATURED IN INTERACTION
+                    ВНИКАЕМ В СУТЬ, ПО-ДРУГОМУ НЕИНТЕРЕСНО
                   </p>
                 </div>
                 <div className={styles.lists}>
-                  <div className={styles.list_title}>CSSDESIGNAWARDS:</div>
-                  <p className={styles.text_bld}>1X KUDOS</p>
+                  <div className={styles.list_title}>ТРЕТИЙ:</div>
+                  <p className={styles.text_bld}>
+                    ВСЕ ЗАДАЧИ ДЕЛАЕМ ИЗМЕРИМЫМИ И ПОНЯТНЫМИ
+                  </p>
                 </div>
-
-
+                <div className={styles.lists}>
+                  <div className={styles.list_title}>ЧЕТВЁРТЫЙ:</div>
+                  <p className={styles.text_bld}>ОСТАЁМСЯ ЛЮДЬМИ</p>
+                </div>
               </div>
-
-
             </div>
-
-
-
           </section>
-          <section className={styles.form}>
-            <marquee>place for form</marquee>
+          <section className={styles.blockForm}>
+          <p>Заполните поля ниже и мы свяжемся с вами как можно быстрее.</p>
+          <p>Кто-то из нашей команды работает даже на выходных. Пишите нам в любое время.</p>
+            <Form />
           </section>
         </main >
 
