@@ -193,4 +193,9 @@
   .logo {
     height: 25px;
   }
+
+  [data-style="animated_btn"] {
+    animation: none;
+    opacity: 1;
+  }
 }
