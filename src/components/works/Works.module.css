@@ -175,8 +175,7 @@ html:-ms-fullscreen .title {
 .desc__left,
 .action__left {
   position: relative;
-  display: inline-block;
-  margin-bottom: 4vh;
+  margin-bottom: 1vh;
   font-size: 1.36vh;
   line-height: 1.85vh;
   text-align: left;
@@ -234,11 +233,6 @@ html:-ms-full-screen .desc {
   margin-bottom: 1vh;
 }
 
-.action {
-  margin-left: 2.2vw;
-  text-align: right;
-}
-
 html:-webkit-full-screen .action {
   display: block;
   margin: 0 0 4vh 0;
@@ -257,10 +251,6 @@ html:-ms-full-screen .action {
   text-align: left;
 }
 
-.action__left {
-  margin-right: 50%;
-}
-
 .btn__wraper,
 .btn__wraper_left {
   position: relative;
@@ -276,6 +266,7 @@ html:-ms-full-screen .action {
   -webkit-column-gap: 1.5vw;
   -moz-column-gap: 1.5vw;
   column-gap: 1.5vw;
+  margin-top: 4vh;
   overflow: hidden;
 }
 
@@ -445,7 +436,12 @@ html:-ms-full-screen .action {
   }
 
   .action__left {
-    margin-right: 33%;
+    margin-right: 0;
+  }
+
+  .btn__wraper,
+  .btn__wraper_left {
+    margin-top: 1vh;
   }
 }
 
