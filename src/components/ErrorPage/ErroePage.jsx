@@ -4,8 +4,8 @@ import styles from "./ErrorPage.module.css";
 import NavigationMobile from "../navigation/NavigationMobile";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Button from "../../components/button/Button";
-import HeaderErrorPage from "../../layouts/header/errorpage/HeaderErrorPage";
 import { Link } from "react-router-dom";
+import Headerworks from "../../layouts/header/works/Headerworks";
 
 export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = React.useState(true);
@@ -17,7 +17,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
   return (
     <>
       {hide && (
-        <HeaderErrorPage
+        <Headerworks
           toggleMobileMenu={toggleMobileMenu}
           isOpen={isOpen}
           showMenu={showMenu}

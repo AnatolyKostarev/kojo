@@ -103,7 +103,7 @@
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .errorpage__wraper_right {

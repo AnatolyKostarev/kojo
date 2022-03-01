@@ -4,7 +4,6 @@ import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
-// import Homepage from "../components/homepage/Homepage";
 import ErrorPage from "../components/ErrorPage/ErroePage";
 import "./App.module.css";
 
@@ -36,7 +35,6 @@ function App() {
 
   const hideMobileMenu = (e) => {
     if (e.target.innerWidth > 1023) {
-      // setTitle(0);
       setShowMenu(true);
       setOpen(false);
       setWebContent({ display: "block" });
@@ -69,15 +67,11 @@ function App() {
           path="services"
           element={
             <Services
-              // hide={hide}
-              // isTitle={isTitle}
               showMenu={showMenu}
               isOpen={isOpen}
               btnColor={btnColor}
               isWebContent={isWebContent}
               isRuleContent={isRuleContent}
-              // hideContent={hideContent}
-              // toggleWheel={toggleWheel}
               toggleMobileMenu={toggleMobileMenu}
               changeWebBtn={changeWebBtn}
               changeRuleBtn={changeRuleBtn}

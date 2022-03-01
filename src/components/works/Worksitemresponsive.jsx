@@ -9,7 +9,7 @@ export const Worksitemresponsive = ({ elem, showMenu }) => {
     <>
       {showMenu && (
         <div>
-          <h1 className={styles.header_title} data-title="Работа">
+          <h1 className={styles.header_title} data-title="Работы">
             работы
           </h1>
         </div>
