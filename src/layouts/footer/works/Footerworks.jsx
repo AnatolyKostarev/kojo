@@ -38,7 +38,7 @@ export default function Footerworks() {
             </div>
 
             <div className={styles.copyright}>
-              {new Date().getFullYear()} &copy; "kojo" студия
+              {new Date().getFullYear()} &copy; студия kojo
             </div>
           </div>
         </div>
