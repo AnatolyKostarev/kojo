@@ -109,7 +109,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                       <Form />
                     </div>
                     <p className={styles.contacts__copyright}>
-                      {new Date().getFullYear()} &copy; "kojo" студия
+                      {new Date().getFullYear()} &copy; студия kojo
                     </p>
                   </div>
                 </div>
