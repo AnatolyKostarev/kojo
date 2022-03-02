@@ -114,7 +114,8 @@ html:-ms-full-screen .works__info {
 .title {
   position: relative;
   margin-bottom: 3.33vh;
-  font-family: "GothamProBold", sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
   font-size: 5vh;
   text-transform: uppercase;
   color: transparent;
@@ -147,7 +148,8 @@ html:-ms-fullscreen .title {
 .counter__left {
   position: relative;
   margin-bottom: 1.25vh;
-  font-family: "GothamProMedium", sans-serif;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
   font-size: 1.2vh;
   line-height: 1.2vh;
   text-align: left;
