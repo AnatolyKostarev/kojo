@@ -43,6 +43,7 @@
   flex-direction: column;
   row-gap: 3.7vh;
   margin-top: 10.96vh;
+  padding-right: 6.25vw;
   box-sizing: border-box;
 }
 
@@ -62,7 +63,6 @@
 .value,
 .valueAwards {
   max-width: 70%;
-  padding-right: 40px;
   font-weight: 800;
   font-size: 1.6vh;
   letter-spacing: 0.07vw;
