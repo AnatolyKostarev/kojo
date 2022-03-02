@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #fff;
   position: fixed;
   display: flex;
   align-items: center;
@@ -32,7 +32,7 @@
 
 .success {
   position: relative;
-  font-family: "GothamProBold", sans-serif;
+  font-weight: 800;
   margin: 40px;
   text-align: center;
   font-size: 1.35vh;
