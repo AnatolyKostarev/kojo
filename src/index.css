@@ -11,13 +11,11 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "GothamProMedium", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
+  font-weight: 700;
   font-size: 11px !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   color: #000;
   background: #fff;
   cursor: url("/public/img/header/cursor.png") 6 6, auto;
@@ -25,6 +23,11 @@ body {
 
 *::-webkit-scrollbar {
   display: none;
+}
+
+*::-webkit-input-placeholder {
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 500;
 }
 
 h1,
