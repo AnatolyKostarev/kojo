@@ -1,14 +1,14 @@
 .text_bld {
-  font-family: "GothamProBlack";
+  font-weight: 800;
 }
-@media (min-width: 1025px) {
+
+@media (min-width: 1023px) {
   .mobileBlock {
     display: none;
   }
 }
 
-
-@media (max-width: 1025px) {
+@media (max-width: 1023px) {
   /* header */
   .headerMobile {
     position: fixed;
@@ -21,23 +21,24 @@
     justify-content: space-between;
     background-color: #fff;
   }
+
   .headerWhite {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     background: transparent;
   }
+
   .menu {
     width: 50px;
     height: 50px;
     position: relative;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: space-around;
     overflow: hidden;
-    /* gap: 30%; */
   }
+
   .menu > span {
     width: 100%;
     height: 3px;
@@ -45,10 +46,12 @@
     border-radius: 8px;
     transition: 0.5s;
   }
+
   .menu > input:checked ~ #first {
     transform: rotate(45deg);
     transition: 0.5s;
   }
+
   .menu > input:checked ~ #two {
     transform: rotate(-45deg);
     transition: 0.5s;
@@ -57,12 +60,14 @@
     background: transparent;
     transform: rotate(-45deg);
   }
+
   /* section */
   .title {
     overflow: hidden;
     height: auto;
     padding-bottom: 100px;
   }
+
   .title_img {
     width: 100%;
     height: 72vw;
@@ -72,106 +77,111 @@
     align-items: flex-end;
     overflow-x: scroll;
   }
+
   .title_img > img {
     padding: 0 20vw;
     height: 37.33vw;
   }
+
   .title_description {
     padding: 60px 20px 0;
-    color: black;
+    color: #000;
   }
-  .main_title > div {
-    margin-bottom: 10px;
-  }
+
   .main_title {
     font-size: 34px;
     line-height: 24px;
+    text-transform: uppercase;
   }
+
+  .main_title > h4:first-child {
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .main_title > h4:nth-child(2) {
+    font-weight: 800;
+    line-height: 32px;
+  }
+
   .btn {
-    color: white;
-    margin: 20px 0 60px;
-    height: 60px;
+    margin: 30px 0 60px;
   }
-  .btn > a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .btn > a > button {
-    border: none;
-    outline: none;
-    background: #000000;
-    width: 100%;
-    height: 100%;
-    text-align: left;
-    padding: 0 20px;
-    color: inherit;
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 60px;
-  }
+
   .description_prg {
     font-size: 11px;
     line-height: 15px;
   }
+
   .description_prg > p:nth-child(1) {
     margin-bottom: 21px;
   }
-  .title_awards {
-    margin: 40px 0 0;
-    font-size: 18px;
-    line-height: 13px;
-  }
-  .title_awards > span:nth-child(1) {
-    margin-right: 32px;
-  }
+
   /* section */
   .about {
     height: auto;
     padding: 100px 20px;
     border-top: 1px solid #ebebeb;
   }
+
   .data {
     margin-bottom: 100px;
   }
+
   .block_title {
     margin: 0 0 60px;
   }
-  .block_title > h3 {
-    font-size: 40px;
+
+  .block_title > h4 {
+    font-size: 34px;
+    font-weight: 800;
     letter-spacing: 1px;
     line-height: 28px;
     margin: 0 0 20px;
+    text-transform: uppercase;
   }
+
   .block_title > p {
     font-size: 11px;
     line-height: 8px;
+    text-transform: uppercase;
   }
+
   .line {
     display: flex;
     justify-content: space-between;
   }
+
   .line:not(:last-child) {
     margin: 0 0 30px;
   }
+
   .line > span {
     font-size: 11px;
     line-height: 13px;
   }
+
   .bold {
     font-size: 18px !important;
   }
+
   .lists {
     margin-bottom: 30px;
   }
+
   .list_title {
     font-size: 11px;
     line-height: 13px;
+    text-transform: uppercase;
   }
+
   .lists > p {
     margin: 10px 0 0;
+    font-weight: 800;
     line-height: 18px;
-    font-family: "GothamProBlack";
+    text-transform: uppercase;
   }
+
   /* section */
   .form {
     width: 100%;
@@ -179,16 +189,19 @@
     background: grey;
     padding: 100px;
   }
-  .blockForm{
+
+  .blockForm {
     padding: 0 20px;
   }
-  .blockForm>p{
+
+  .blockForm > p {
     margin-bottom: 20px;
     font-size: 11px;
     line-height: 15px;
     text-transform: uppercase;
   }
-  .blockForm>p:nth-child(2){
+
+  .blockForm > p:nth-child(2) {
     margin-bottom: 40px;
   }
 }
