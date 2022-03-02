@@ -61,6 +61,8 @@
 
 .value,
 .valueAwards {
+  max-width: 70%;
+  padding-right: 40px;
   font-weight: 800;
   font-size: 1.6vh;
   letter-spacing: 0.07vw;
