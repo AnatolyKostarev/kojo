@@ -12,6 +12,7 @@
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .mainImage > img {
@@ -51,7 +52,7 @@
 }
 
 .mainContent {
-  padding-top: 16vh;
+  padding-top: 13.42vh;
   padding-left: 6.25vw;
   display: flex;
   justify-content: space-between;
@@ -64,18 +65,19 @@
 .itemTitle {
   font-size: 5vh;
   line-height: 5vh;
-  font-family: GothamProBold;
+  font-weight: 800;
 }
 
 .itemTitle > p {
   position: relative;
+  text-transform: uppercase;
   overflow: hidden;
 }
 
 .itemParagph {
   font-size: 1.3vh;
   line-height: 1.8vh;
-  font-family: GothamProMedium;
+  font-weight: 800;
 }
 
 .itemParagph > p {
@@ -90,7 +92,7 @@
 .itemText {
   font-size: 2.2vh;
   line-height: 2.5vh;
-  font-family: GothamProBlack;
+  font-weight: 900;
   line-height: 3.6vh;
 }
 
