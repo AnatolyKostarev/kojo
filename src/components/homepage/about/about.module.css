@@ -24,7 +24,7 @@
 .mainData > h2,
 .mainAwards > h2 {
   margin-bottom: 2.96vh;
-  font-family: "GothamProBold", sans-serif;
+  font-weight: 800;
   font-size: 4.94vh;
   letter-spacing: 0.07vw;
   line-height: 3.46vh;
@@ -42,13 +42,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 3.7vh;
-  /* margin-top: 40px; */
   margin-top: 10.96vh;
   box-sizing: border-box;
 }
 
 .item {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -60,8 +61,8 @@
 
 .value,
 .valueAwards {
-  font-family: "GothamProBlack", sans-serif;
-  font-size: 2.22vh;
+  font-weight: 800;
+  font-size: 1.6vh;
   letter-spacing: 0.07vw;
   line-height: 1.6vh;
   text-transform: uppercase;
