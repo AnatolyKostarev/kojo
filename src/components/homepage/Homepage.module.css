@@ -1,4 +1,4 @@
-@media(min-width: 1025px) {
+@media (min-width: 1024px) {
   .homepage {
     position: relative;
     height: 100vh;
@@ -27,28 +27,8 @@
     }
   }
 }
-@media(max-width: 1025px) {
-.homepage{
-  display: none;
-}
-}
-
-
-
-/* .blockLine {
-  width: 1px;
-  height: 17.28vh;
-  background: #000;
-  position: absolute;
-  top: 0;
-  left: 39.93vw;
-  animation: showLine 0.5s ease;
-}
-@keyframes showLine {
-  from{
-    top: -100%;
+@media (max-width: 1023px) {
+  .homepage {
+    display: none;
   }
-  to{
-    top: 0;
-  }
-} */
+}
