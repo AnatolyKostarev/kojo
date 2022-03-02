@@ -27,7 +27,7 @@ footer:hover ~ div > nav > #indicator {
 /*  */
 .blockSpy {
   position: fixed;
-  bottom: 10vh;
+  bottom: 13vh;
   left: 50vw;
 }
 
