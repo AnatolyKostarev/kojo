@@ -71,7 +71,6 @@
 
   .contacts__row_top {
     display: flex;
-    /* column-gap: 7.25vw; */
     position: relative;
     transition: 0.3s ease-in-out;
     overflow-y: hidden;
@@ -122,7 +121,7 @@
   .contacts__item_top,
   .contacts__item_bottom {
     display: block;
-    font-family: "GothamProBlack", sans-serif;
+    font-weight: 800;
     font-size: 2.22vh;
     letter-spacing: 0.07vh;
     text-align: left;
@@ -141,6 +140,7 @@
 
   .contacts__message {
     margin-top: 24vh;
+    width: 26.2vw;
     font-size: 11px;
     line-height: 15px;
     text-align: left;
@@ -153,13 +153,13 @@
 
   .contacts__wraper_right {
     position: relative;
-    padding: 0 7.25vw;
+    padding: 0 6.25vw;
   }
 
   .contacts__text {
     position: absolute;
     top: -20.25vh;
-    left: 7.25vw;
+    left: 6.25vw;
     max-width: 27.5vw;
     font-size: 11px;
     line-height: 15px;
@@ -170,8 +170,8 @@
   .contacts__copyright {
     position: absolute;
     bottom: 0;
-    right: 7.25vw;
-    font-size: 11px;
+    right: 6.25vw;
+    font-size: 10px;
     line-height: 11px;
     text-transform: uppercase;
   }
@@ -180,7 +180,7 @@
     position: absolute;
     top: 12.59vh;
     left: 18.59vw;
-    font-family: "GothamProBold", sans-serif;
+    font-weight: 900;
     font-size: 4.93vh;
     line-height: 4.69vh;
     text-transform: uppercase;
@@ -278,7 +278,7 @@
 
   .contacts__item_top {
     display: block;
-    font-family: "GothamProBlack", sans-serif;
+    font-weight: 800;
     font-size: 18px;
     line-height: 13px;
     letter-spacing: 1px;

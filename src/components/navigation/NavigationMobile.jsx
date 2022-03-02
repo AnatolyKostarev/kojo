@@ -40,7 +40,10 @@ export default function NavigationMobile({ toggleMobileMenu }) {
             </li>
           ))}
         </div>
-        <Button title="заказать" />
+        <NavLink to="/contacts" onClick={toggleMobileMenu}>
+          <Button title="заказать" />
+        </NavLink>
+
         <p className={styles.contacts__copyright}>
           {new Date().getFullYear()} &copy; "kojo" студия
         </p>

@@ -15,6 +15,8 @@
   position: relative;
   height: 4.9vh;
   width: 12.5vw;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
   border: none;
   background: transparent;
   overflow: hidden;
@@ -28,9 +30,8 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  font-size: 3.8vh;
-  line-height: 4.93vh;
-  font-weight: 900;
+  font-size: 3.5vh;
+  line-height: 4.9vh;
   color: #000;
   background: transparent;
   box-sizing: border-box;
@@ -46,8 +47,9 @@
   padding-left: 1.38vw;
   width: 100%;
   height: 100%;
-  font-size: 1.48vh;
-  letter-spacing: 0.06vw;
+  font-size: 1.5vh;
+  font-weight: 800;
+  letter-spacing: 0.07vw;
   line-height: 4.9vh;
   color: #fff;
   text-transform: uppercase;

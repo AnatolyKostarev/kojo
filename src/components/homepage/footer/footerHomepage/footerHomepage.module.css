@@ -1,153 +1,144 @@
 .footerHomepage {
-    background: transparent;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 6.25vw;
+  box-sizing: content-box;
+}
 
-  
-  
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.25vw 12.58vh 0;
+  font-size: 10px;
+  line-height: 8px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  align-self: flex-start;
+  margin-right: 88px;
+}
+
+.list {
+  display: flex;
+  height: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.item {
+  transition: 0.3s ease-in-out;
+}
+
+.item:nth-child(2n) {
+  margin: 0 1.4vw;
+}
+
+.roll__link {
+  display: block;
+}
+
+.link__top,
+.link__bottom {
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.link__top {
+  line-height: 14px;
+}
+
+.item:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  transform: translateY(-112%);
+  transition: 0.3s ease-in-out;
+}
+
+.link__top:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+
+.link__bottom:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+
+.copyright {
+  font-size: 10px;
+  line-height: 8px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
   .container {
-      /* width: 100%; */
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 100px;
-    box-sizing: content-box;
+    padding: 0 16px;
   }
-  
+
   .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 10vh;
-    max-width: 1440px;
-    font-size: 10px;
-    line-height: 8px;
-    text-transform: uppercase;
-    position: relative;
+    flex-direction: column;
   }
-  
+
   .social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
   }
-  
+
   .title {
-    align-self: flex-start;
-    margin-right: 88px;
+    margin: 0 auto 2.5vh;
   }
-  
-  .list {
-    display: flex;
-    height: 10px;
-    justify-content: space-between;
-    overflow: hidden;
-  }
-  
-  .item {
-    transition: 0.3s ease-in-out;
-  }
-  
+
   .item:nth-child(2n) {
-    margin: 0 1.4vw;
+    margin: 0 8.4vw;
   }
-  
-  .roll__link {
-    display: block;
-  }
-  
-  .link__top,
-  .link__bottom {
-    display: block;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .link__top {
-    /* line-height: 12px; */
-line-height: 14px;
-  }
-  
-  .item:hover {
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-    transform: translateY(-112%);
-    transition: 0.3s ease-in-out;
-  }
-  
-  .link__top:hover {
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  }
-  
-  .link__bottom:hover {
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  }
-  
-  .copyright {
-    font-size: 10px;
-    line-height: 8px;
-    text-transform: uppercase;
-  }
-  
-  @media (max-width: 1023px) {
-    .container {
-      padding: 0 16px;
-    }
-  
-    .footer {
-      flex-direction: column;
-    }
-  
-    .social {
-      flex-direction: column;
-      margin-bottom: 40px;
-    }
-  
-    .title {
-      margin: 0 auto 2.5vh;
-    }
-  
-    .item:nth-child(2n) {
-      margin: 0 8.4vw;
-    }
-  }
-  /* ondicator */
-  .scrollSpy {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .scrollSpy > span {
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transition: 0.2s;
-  }
-  
-  
-  .scrollSpy > a {
-    box-sizing: border-box;
-    font-size: 16px;
-    text-decoration: none;
-    color: white;
-    width: 11px;
-    height: 11px;
-    border: 2px solid black;
-    z-index: 10;
-  }
-  .scrollSpy:hover{
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  
-  }
-  .scrollSpy > a:hover {
-    background: black;
-    cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  }
-  
-  
+}
+
+/* ondicator */
+.scrollSpy {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.scrollSpy > span {
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: 0.2s;
+}
+
+.scrollSpy > a {
+  box-sizing: border-box;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  width: 11px;
+  height: 11px;
+  border: 2px solid black;
+  z-index: 10;
+}
+.scrollSpy:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
+.scrollSpy > a:hover {
+  background: #000;
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}

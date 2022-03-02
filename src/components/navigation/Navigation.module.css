@@ -17,8 +17,8 @@
   width: 6.25vw;
   height: 100%;
   outline: 1px solid rgba(0, 0, 0, 0.1);
-  font-family: "GothamProMedium", sans-serif;
-  font-size: 12px;
+  font-weight: 800;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 13px;
   z-index: 102;
@@ -84,8 +84,8 @@
   -webkit-transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   -o-transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
-  font-family: "GothamProBlack", sans-serif;
-  font-size: 9vh;
+  font-weight: 900;
+  font-size: 9.5vh;
   line-height: 5.5vh;
   color: rgba(0, 0, 0, 1);
   z-index: 105;
@@ -96,9 +96,9 @@
   left: 1vw;
   bottom: 0;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  -webkit-transform: rotate(90deg) translateY(-625%);
-  -ms-transform: rotate(90deg) translateY(-625%);
-  transform: rotate(90deg) translateY(-625%);
+  -webkit-transform: rotate(90deg) translateY(-450%);
+  -ms-transform: rotate(90deg) translateY(-450%);
+  transform: rotate(90deg) translateY(-450%);
   -webkit-transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
   -o-transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
   transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);

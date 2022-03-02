@@ -25,8 +25,8 @@
   .nav__item {
     display: flex;
     justify-content: center;
-    font-family: "GothamProBlack";
-    font-size: 18px;
+    font-weight: 900;
+    font-size: 20px;
     letter-spacing: 1px;
     line-height: 23px;
     text-transform: uppercase;
@@ -51,7 +51,6 @@
 
   .item {
     list-style-type: none;
-    font-family: "GothamProMedium";
     font-size: 10px;
     text-transform: uppercase;
   }
