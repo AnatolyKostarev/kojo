@@ -167,7 +167,7 @@ export const aboutUsInfo = [
   { label: "год", value: "2022" },
   { label: "тип", value: "веб студия" },
   { label: "акцент", value: "на важном" },
-  { label: "цвета", value: "#fff, #000" },
+  { label: "цвета", value: "#fff, #1f1f1f" },
 ];
 
 export const awards = [
