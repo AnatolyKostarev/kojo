@@ -46,7 +46,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                   </p>
                   <p>
                     КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ, ЧЕМ ВЫ
-                    ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ
+                    ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ.
                   </p>
                 </div>
               </div>
