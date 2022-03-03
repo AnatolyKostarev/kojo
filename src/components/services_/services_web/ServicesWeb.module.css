@@ -55,7 +55,7 @@ html:-ms-full-screen .service__info {
   margin-left: 2.65vw;
 }
 
-.service__info > ul > li:nth-child(2) {
+.service__info > ul > li:nth-child(even) {
   margin: 2.86vh 0;
 }
 
