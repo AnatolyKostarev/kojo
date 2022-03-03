@@ -98,8 +98,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                   </div>
                   <div className={styles.contacts__wraper_right}>
                     <p className={styles.contacts__text}>
-                      Заполните поля ниже и мы свяжемся с вами как можно
-                      быстрее.
+                      Мы бы с радостью нашли связались с вами мысленно, но пока только так, нужно заполнить форму
                     </p>
                     <p className={styles.contacts__message_right}>
                       Кто-то из нашей команды работает даже на выходных. Пишите
