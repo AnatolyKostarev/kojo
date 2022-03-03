@@ -71,10 +71,10 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              16+ <span className={style.boxAnimation}></span>
+             JavaScript <span className={style.boxAnimation}></span>
             </p>
             <p>
-              Awards<span className={style.boxAnimation}></span>
+              React Gatsby Node/PHP<span className={style.boxAnimation}></span>
             </p>
           </div>
         </div>
