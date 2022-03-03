@@ -142,8 +142,7 @@ export const servicesList = [
 
 export const servicesRulesInfo = [
   {
-    title:
-      "Как мы не работаем?",
+    title: "Как мы не работаем",
   },
 ];
 

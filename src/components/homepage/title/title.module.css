@@ -103,3 +103,9 @@
   overflow: hidden;
   line-height: 3.6vh;
 }
+
+@media (min-width: 1024px) and (max-width: 1252px) {
+  .mainContent > div {
+    width: 25vw;
+  }
+}

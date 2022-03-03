@@ -40,11 +40,13 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              Разработка +<span className={style.boxAnimation}></span>
+              Разработка<span className={style.boxAnimation}></span>
             </p>
             <p>
-              {" "}
-              польза и ценность <span className={style.boxAnimation}></span>
+              + польза<span className={style.boxAnimation}></span>
+            </p>
+            <p>
+              и ценность<span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -54,12 +56,12 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ ЗАКАЗЧИКА
-              И ЕГО КЛИЕНТОВ.<span className={style.boxAnimation}></span>
+              KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ ЗАКАЗЧИКА И
+              ЕГО КЛИЕНТОВ.<span className={style.boxAnimation}></span>
             </p>
             <p>
-              КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ,
-              ЧЕМ ВЫ ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ<span className={style.boxAnimation}></span>
+              КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ, ЧЕМ ВЫ ЗАТРАТИЛИ НА
+              ЕГО РАЗРАБОТКУ.<span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -69,7 +71,7 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-             16+ <span className={style.boxAnimation}></span>
+              16+ <span className={style.boxAnimation}></span>
             </p>
             <p>
               Awards<span className={style.boxAnimation}></span>
