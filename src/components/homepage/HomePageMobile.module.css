@@ -96,7 +96,7 @@
 
   .main_title > h4:first-child {
     font-weight: 800;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .main_title > h4:nth-child(2) {
@@ -109,8 +109,9 @@
   }
 
   .description_prg {
-    font-size: 11px;
+    font-size: 14px;
     line-height: 15px;
+    text-align: justify;
   }
 
   .description_prg > p:nth-child(1) {
@@ -177,7 +178,7 @@
 
   .lists > p {
     margin: 10px 0 0;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
   }
