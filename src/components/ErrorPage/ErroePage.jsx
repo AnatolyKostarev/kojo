@@ -36,9 +36,7 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                     <h1 className={styles.title_m}>
                       <strong>404</strong>
                     </h1>
-                    <p className={styles.errorpage_text}>
-                      такого мы еще не сделали...
-                    </p>
+                    <p className={styles.errorpage_text}>очень жаль...</p>
                     <div className={styles.tohome}>
                       <Link to="/">
                         <Button title="на главную" addStyle="animated_btn" />
