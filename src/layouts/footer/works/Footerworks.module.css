@@ -77,9 +77,9 @@ footer {
   text-transform: uppercase;
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1921px) {
   .link__top {
-    line-height: 15px;
+    line-height: 11px;
   }
 }
 

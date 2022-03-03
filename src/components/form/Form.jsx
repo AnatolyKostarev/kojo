@@ -45,7 +45,11 @@ export default function Form() {
             placeholder="Имя"
           />
           <div>
-            {errors?.name && <p className={styles.focus}>{errors?.name?.message || "Error!"}</p>}
+            {errors?.name && (
+              <p className={styles.focus}>
+                {errors?.name?.message || "Error!"}
+              </p>
+            )}
           </div>
         </div>
         <div className={styles.borders}>
@@ -69,7 +73,11 @@ export default function Form() {
             placeholder="Email"
           />
           <div>
-            {errors?.email && <p className={styles.focus}>{errors?.email?.message || "Error!"}</p>}
+            {errors?.email && (
+              <p className={styles.focus}>
+                {errors?.email?.message || "Error!"}
+              </p>
+            )}
           </div>
         </div>
         <div className={styles.borders}>
@@ -91,7 +99,11 @@ export default function Form() {
             placeholder="Сообщение"
           ></textarea>
           <div>
-            {errors?.message && <p className={styles.focus}>{errors?.message?.message || "Error!"}</p>}
+            {errors?.message && (
+              <p className={styles.focus}>
+                {errors?.message?.message || "Error!"}
+              </p>
+            )}
           </div>
         </div>
         <label className={styles.consent}>
@@ -106,7 +118,7 @@ export default function Form() {
           />
           <span className={styles.checkfake}></span>
           <span className={styles.policy_text}>
-            Я даю согласие на обработку <Link to="/">персональных данных</Link>
+            Я даю согласие на обработку <Link to="*">персональных данных</Link>
           </span>
         </label>
         <div className={styles.focus_consent}>
