@@ -114,7 +114,7 @@ export const servicesInfo = [
       "Squarespace или CMS в чистый HTML/CSS/JS/React",
   },
   {
-    title: "Делаем интересные анимации, как на этом сайте.",
+    title: "Делаем интересные анимации, как на этом сайте",
   },
 ];
 
@@ -143,7 +143,7 @@ export const servicesList = [
 export const servicesRulesInfo = [
   {
     title:
-      "Как мы не работаем?",
+      "Как мы не работаем!",
   },
 ];
 

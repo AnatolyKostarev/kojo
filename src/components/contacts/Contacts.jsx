@@ -92,13 +92,18 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
                       </ul>
                     </div>
                     <p className={styles.contacts__message}>
-                      Кто-то из нашей команды работает даже на выходных. Пишите
-                      нам в любое время.
+                      Кто-то из нашей команды работает даже на выходных
+                    </p>
+                    <p className={styles.contacts__message}>
+                      Пишите нам в любое время
                     </p>
                   </div>
                   <div className={styles.contacts__wraper_right}>
                     <p className={styles.contacts__text}>
-                      Мы бы с радостью нашли связались с вами мысленно, но пока только так, нужно заполнить форму
+                      Мы бы с радостью связались с вами мысленно
+                    </p>
+                    <p className={styles.contacts__text}>
+                      Но пока только так
                     </p>
                     <p className={styles.contacts__message_right}>
                       Кто-то из нашей команды работает даже на выходных. Пишите
