@@ -41,16 +41,12 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                 </div>
                 <div className={styles.description_prg}>
                   <p>
-                    <strong>
-                      KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ
-                      ЗАКАЗЧИКА И ЕГО КЛИЕНТОВ.
-                    </strong>
+                    KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ
+                    ЗАКАЗЧИКА И ЕГО КЛИЕНТОВ.
                   </p>
                   <p>
-                    <strong>
-                      КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ, ЧЕМ ВЫ
-                      ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ
-                    </strong>
+                    КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ, ЧЕМ ВЫ
+                    ЗАТРАТИЛИ НА ЕГО РАЗРАБОТКУ
                   </p>
                 </div>
               </div>
@@ -105,31 +101,27 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                   <div className={styles.lists}>
                     <p className={styles.list_title}>первый:</p>
                     <p className={styles.text_bld}>
-                      <strong>
-                        Помогаем клиенту сформулировать задачу так, как знаем
-                        насколько сложно это сделать, когда не сталкиваешься с
-                        этим каждый день
-                      </strong>
+                      Помогаем клиенту сформулировать задачу так, как знаем
+                      насколько сложно это сделать, когда не сталкиваешься с
+                      этим каждый день
                     </p>
                   </div>
                   <div className={styles.lists}>
                     <p className={styles.list_title}>второй:</p>
                     <p className={styles.text_bld}>
-                      <strong>ВНИКАЕМ В СУТЬ, ПО-ДРУГОМУ НЕИНТЕРЕСНО</strong>
+                      ВНИКАЕМ В СУТЬ, ПО-ДРУГОМУ НЕИНТЕРЕСНО
                     </p>
                   </div>
                   <div className={styles.lists}>
                     <p className={styles.list_title}>третий:</p>
                     <p className={styles.text_bld}>
-                      <strong>ВСЕ ЗАДАЧИ ДЕЛАЕМ ИЗМЕРИМЫМИ И ПОНЯТНЫМИ</strong>
+                      ВСЕ ЗАДАЧИ ДЕЛАЕМ ИЗМЕРИМЫМИ И ПОНЯТНЫМИ
                     </p>
                   </div>
                   <div className={styles.lists}>
                     <p className={styles.list_title}>четвертый:</p>
 
-                    <p className={styles.text_bld}>
-                      <strong>ОСТАЁМСЯ ЛЮДЬМИ</strong>
-                    </p>
+                    <p className={styles.text_bld}>ОСТАЁМСЯ ЛЮДЬМИ</p>
                   </div>
                 </div>
               </div>
