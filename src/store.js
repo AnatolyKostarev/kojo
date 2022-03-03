@@ -32,11 +32,11 @@ export const worksItem = [
     imagePosition: "left",
     buttonPosition: "right",
     actionPosition: "right",
-    title: "infralytiks",
-    counter: "наша гордость #",
-    desc: "наш сайт",
-    action: "код & анимация",
-    href: "https://kojo.saintcode.ru",
+    title: "Кино и Свет",
+    counter: "наша работа #",
+    desc: "сайт кинооборудования",
+    action: "код & дизайн & seo",
+    href: "https://kinoisvet.ru",
     src: "/img/works/image_works-3.webp",
     width: "840",
     height: "830",
@@ -143,10 +143,7 @@ export const servicesList = [
 export const servicesRulesInfo = [
   {
     title:
-      "Чтобы сэкономить наше и ваше время, мы составили для Вас список того, с чем мы не работаем и как.",
-  },
-  {
-    title: "С уважением, команда «kojo»",
+      "Как мы не работаем?",
   },
 ];
 
@@ -157,22 +154,10 @@ export const serviceRulesList = [
     title: "бесплатно",
   },
   {
-    title: "с нереальными сроками",
-  },
-  {
     title: "без утвержденного технического задания",
   },
   {
     title: "без предоплаты",
-  },
-  {
-    title: "с проектами о насилии и порнографии",
-  },
-  {
-    title: "баннеры",
-  },
-  {
-    title: "не доделываем чужой код/дизайн после других специалистов",
   },
 ];
 

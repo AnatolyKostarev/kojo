@@ -69,10 +69,10 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              16+ <span className={style.boxAnimation}></span>
+             16+ <span className={style.boxAnimation}></span>
             </p>
             <p>
-              AWARDS <span className={style.boxAnimation}></span>
+              Awards<span className={style.boxAnimation}></span>
             </p>
           </div>
         </div>
