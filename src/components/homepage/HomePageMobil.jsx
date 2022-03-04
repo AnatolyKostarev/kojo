@@ -24,10 +24,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
           <main>
             <section className={styles.title}>
               <div className={styles.title_img}>
-                <img
-                  src="https://zipl.pro/assets/ce6872b3/img/studio.svg "
-                  alt="logo-icon"
-                />
+                <img src="/img/imgHomepage/studio.svg " alt="logo-icon" />
               </div>
               <div className={styles.title_description}>
                 <div className={styles.main_title}>
