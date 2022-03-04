@@ -40,7 +40,7 @@
     position: absolute;
     top: 12.59vh;
     left: 18.59vw;
-    font-family: "GothamProBold", sans-serif;
+    font-weight: 900;
     font-size: 4.93vh;
     line-height: 4.69vh;
     text-transform: uppercase;
@@ -75,7 +75,7 @@
     height: 33.33vh;
     width: 37.5vw;
     background-color: rgba(0, 0, 0, 0.03);
-    background: url("/public/img/errorpage/404.jpg");
+    background: url("/public/img/errorpage/404.webp");
     background-size: cover;
     background-position: center center;
   }
@@ -83,7 +83,7 @@
   .footer {
     position: fixed;
     bottom: 0vh;
-    width: 97.25vw;
+    width: 100vw;
   }
 }
 
@@ -124,7 +124,7 @@
   }
 
   .title_m {
-    font-family: "GothamProBold", sans-serif;
+    font-weight: 900;
     display: block;
     font-size: 40px;
     line-height: 28px;
@@ -135,7 +135,7 @@
     height: 33.33vh;
     width: 37.5vw;
     background-color: rgba(0, 0, 0, 0.03);
-    background: url("/public/img/errorpage/404.jpg");
+    background: url("/public/img/errorpage/404.webp");
     background-size: cover;
     background-position: center center;
   }
