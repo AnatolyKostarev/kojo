@@ -20,69 +20,7 @@
   height: 11px;
   font-size: 16px;
   border: 2px solid #1f1f1f;
-  color: #fff;
   box-sizing: border-box;
-  /* z-index: 10; */
-}
-
-#indicator {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 11px;
-  height: 11px;
-  transition: 0.2s linear;
-  z-index: -1;
-}
-
-.service__scroll_link:hover {
-  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-}
-
-.service__scroll_span:hover {
-  background: #1f1f1f;
-  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-}
-
-#service:hover ~ div > div > #indicator {
-  top: 0;
-  background: #1f1f1f;
-  transition: 0.3s linear;
-  transform: rotate(0deg);
-  z-index: 0;
-}
-
-#service__rule:hover ~ div > div > #indicator {
-  top: 16vh;
-  background: #1f1f1f;
-  transition: 0.3s linear;
-  transform: rotate(0deg);
-  z-index: 0;
-}
-
-html:-webkit-full-screen #service__rule:hover ~ div > div > #indicator {
-  top: 15.9vh;
-}
-
-html:-moz-full-screen #service__rule:hover ~ div > div > #indicator {
-  top: 15.9vh;
-}
-
-html:-ms-full-screen #service__rule:hover ~ div > div > #indicator {
-  top: 15.9vh;
-}
-
-#service__footer:hover ~ div > div > #indicator {
-  top: 0;
-  background: #1f1f1f;
-  height: 100%;
-}
-
-#header__service:hover ~ div > div > #indicator {
-  top: 0;
-  background: #1f1f1f;
-  height: 100%;
 }
 
 @media (max-width: 1023px) {

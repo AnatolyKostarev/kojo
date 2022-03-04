@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { MenuToggle } from "../../../layouts/header/contacts/MenuToggle";
 import Button from "../../../components/button/Button";
 import styles from "./Headerservice.module.css";
-import "../../../components/services_/ServiceScrollBar.css";
 
 const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
   return (

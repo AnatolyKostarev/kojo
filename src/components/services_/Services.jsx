@@ -8,7 +8,6 @@ import NavigationMobile from "../navigation/NavigationMobile";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
 import styles from "./Services.module.css";
-import "./ServiceScrollBar.css";
 
 export default function Services({
   showMenu,
@@ -66,7 +65,7 @@ export default function Services({
         </div>
       )}
 
-      {hide && <ServiceScrollBar />}
+      {hide && <ServiceScrollBar isTitle={isTitle} />}
       {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
     </div>
   );
