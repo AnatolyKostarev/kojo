@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import styles from "./Form.module.css";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
-
+  const form = useRef();
   const {
     register,
     formState: { errors },
@@ -17,18 +18,32 @@ export default function Form() {
     mode: "onBlur",
   });
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const onSubmit = () => {
+    emailjs
+      .sendForm(
+        "service_ekqmigd",
+        "template_in7k4u3",
+        form.current,
+        "user_pBA6wdTbaWOwTzojch5L0"
+      )
+      .then((res) => {
+        console.log("res", res);
+      })
+      .catch((err) => console.log(err));
     setActiveModal(true);
     reset();
   };
 
   return (
     <>
-      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+      <form
+        ref={form}
+        className={styles.form}
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <div className={styles.borders}>
           <input
-            name="Feedback[name]"
+            name="name"
             {...register("name", {
               required: "Это поле обязательно",
               minLength: {
@@ -54,7 +69,7 @@ export default function Form() {
         </div>
         <div className={styles.borders}>
           <input
-            name="Feedback[email]"
+            name="email"
             {...register("email", {
               required: "Это поле обязательно",
               maxLength: {
@@ -82,7 +97,7 @@ export default function Form() {
         </div>
         <div className={styles.borders}>
           <textarea
-            name="Feedback[message]"
+            name="message"
             {...register("message", {
               required: "Это поле обязательно",
               minLength: {
@@ -108,7 +123,7 @@ export default function Form() {
         </div>
         <label className={styles.consent}>
           <input
-            name="Feedback[consent]"
+            name="consent"
             type="checkbox"
             {...register("consent", {
               required: "Подтвердите свое согласие для отправки формы",
