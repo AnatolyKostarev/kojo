@@ -83,7 +83,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
                     <div className={styles.line}>
                       <span>ЦВЕТА:</span>
                       <span className={styles.bold + " " + styles.text_bld}>
-                        #FFF, #000
+                        #FFF, #1F1F1F
                       </span>
                     </div>
                   </div>
