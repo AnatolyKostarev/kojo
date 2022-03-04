@@ -20,7 +20,7 @@
   border: none;
   background: transparent;
   overflow: hidden;
-  transition: 0.3s linear;
+  transition: 0.5s linear;
 }
 
 #btn:before {
@@ -35,7 +35,7 @@
   color: #000;
   background: transparent;
   box-sizing: border-box;
-  transition: 0.3s linear;
+  transition: 0.5s linear;
   text-align: left;
 }
 
@@ -54,7 +54,7 @@
   color: #fff;
   text-transform: uppercase;
   background: #1f1f1f;
-  transition: 0.3s linear;
+  transition: 0.5s linear;
   text-align: left;
   box-sizing: border-box;
   animation: showElement 0.8s ease-out;
