@@ -45,6 +45,7 @@ export const worksItem = [
 ];
 
 // Array of object for Navigation.jsx component
+
 export const navSideBar = [
   { linkto: "/", title: "Главная" },
   { linkto: "/works", title: "Работы" },
@@ -142,8 +143,7 @@ export const servicesList = [
 
 export const servicesRulesInfo = [
   {
-    title:
-      "Как мы не работаем!",
+    title: "Как мы не работаем!",
   },
 ];
 
@@ -196,3 +196,11 @@ export const showServices = {
 export const hideServices = {
   display: "none",
 };
+
+export const technology = [
+  { src: "/img/tech_icons/js_icon.svg", alt: "javascript", width: 32 },
+  { src: "/img/tech_icons/react_icon.svg", alt: "react", width: 32 },
+  { src: "/img/tech_icons/gatsby_icon.svg", alt: "gatsby", width: 32 },
+  { src: "/img/tech_icons/node_icon.svg", alt: "nodejs", width: 32 },
+  { src: "/img/tech_icons/php_icon.svg", alt: "php", width: 32 },
+];
