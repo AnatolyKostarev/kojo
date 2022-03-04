@@ -25,10 +25,7 @@ function Title({ showHeader }) {
             setIndex(6);
           }}
         >
-          <img
-            src="https://zipl.pro/assets/ce6872b3/img/studio.svg"
-            alt="webDesign"
-          />
+          <img src="/img/imgHomepage/studio.svg" alt="webDesign" />
 
           <div className={style.boxAnimation}></div>
         </div>
