@@ -52,7 +52,7 @@ export default function FooterHomepage({ hideHeader, showHeader }) {
               </ul>
             </div>
             <div className={styles.copyright}>
-              {new Date().getFullYear()} &copy; СТУДИЯ KOJO
+              {new Date().getFullYear()} &copy; СТУДИЯ KOJO ONE
             </div>
           </div>
         </div>
