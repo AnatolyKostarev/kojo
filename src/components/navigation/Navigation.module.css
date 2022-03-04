@@ -96,9 +96,9 @@
   left: 1vw;
   bottom: 0;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
-  -webkit-transform: rotate(90deg) translateY(-450%);
-  -ms-transform: rotate(90deg) translateY(-450%);
-  transform: rotate(90deg) translateY(-450%);
+  -webkit-transform: rotate(90deg) translateY(-465%);
+  -ms-transform: rotate(90deg) translateY(-465%);
+  transform: rotate(90deg) translateY(-465%);
   -webkit-transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
   -o-transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
   transition: all 0.6s cubic-bezier(0.6, 0, 0.5, 1);
