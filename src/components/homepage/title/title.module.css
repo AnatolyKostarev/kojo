@@ -91,9 +91,11 @@
 }
 
 .itemText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   font-size: 2.2vh;
-  line-height: 2.5vh;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 3.6vh;
 }
 
@@ -101,11 +103,14 @@
   width: 8vw;
   position: relative;
   overflow: hidden;
-  line-height: 3.6vh;
 }
 
-@media (min-width: 1024px) and (max-width: 1252px) {
+@media (min-width: 1024px) and (max-width: 1919px) {
   .mainContent > div {
     width: 25vw;
+  }
+
+  .itemText > p {
+    width: 11vw;
   }
 }

@@ -71,11 +71,16 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-             JavaScript <span className={style.boxAnimation}></span>
+              JavaScript<span className={style.boxAnimation}></span>
             </p>
             <p>
               React Gatsby Node/PHP<span className={style.boxAnimation}></span>
             </p>
+            {/* {technology.map((elem, index) => (
+              <div className={style.icons} key={index}>
+                <img src={elem.src} alt={elem.alt} width={elem.width} />
+              </div>
+            ))} */}
           </div>
         </div>
       </section>

@@ -89,7 +89,8 @@
   .contacts__span,
   .contacts__item_top,
   .contacts__message,
-  .contacts__text,
+  .contacts__text_top,
+  .contacts__text_bottom,
   .contacts__copyright {
     position: relative;
     color: transparent;
@@ -104,7 +105,8 @@
   .contacts__span::before,
   .contacts__item_top::before,
   .contacts__message::before,
-  .contacts__text::before,
+  .contacts__text_top::before,
+  .contacts__text_bottom::before,
   .contacts__copyright::before {
     content: "";
     position: absolute;
@@ -140,7 +142,7 @@
 
   .contacts__message {
     margin-top: 24vh;
-    width: 26.2vw;
+    width: 32vw;
     font-size: 11px;
     line-height: 15px;
     text-align: left;
@@ -156,7 +158,8 @@
     padding: 0 6.25vw;
   }
 
-  .contacts__text {
+  .contacts__text_top,
+  .contacts__text_bottom {
     position: absolute;
     top: -20.25vh;
     left: 6.25vw;
@@ -167,9 +170,13 @@
     text-transform: uppercase;
   }
 
+  .contacts__text_bottom {
+    top: -18.25vh;
+  }
+
   .contacts__copyright {
     position: absolute;
-    bottom: 0;
+    bottom: 2vh;
     right: 6.25vw;
     font-size: 10px;
     line-height: 11px;
@@ -308,7 +315,8 @@
     margin-top: 230px;
   }
 
-  .contacts__text,
+  .contacts__text_top,
+  .contacts__text_bottom,
   .contacts__message_right {
     position: relative;
     margin-bottom: 20px;
