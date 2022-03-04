@@ -79,6 +79,7 @@
 }
 
 .copyright {
+  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
   font-size: 10px;
   line-height: 8px;
   text-transform: uppercase;
@@ -132,13 +133,13 @@
   color: #fff;
   width: 11px;
   height: 11px;
-  border: 2px solid black;
+  border: 2px solid #1f1f1f;
   z-index: 10;
 }
 .scrollSpy:hover {
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 .scrollSpy > a:hover {
-  background: #000;
+  background: #1f1f1f;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
