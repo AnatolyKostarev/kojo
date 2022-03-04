@@ -69,6 +69,7 @@
   }
 
   .title_img {
+    position: relative;
     width: 100%;
     height: 72vw;
     background: url("/public/img/imgHomepage/1Home.webp");
