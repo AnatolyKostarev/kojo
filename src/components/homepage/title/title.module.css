@@ -8,7 +8,6 @@
 .mainImage {
   width: 93.75vw;
   height: 17vh;
-  background-image: url("https://zipl.pro/assets/ce6872b3/img/mainBg/19.jpg");
   background-size: 100% 100%;
   position: relative;
   overflow: hidden;
@@ -21,7 +20,7 @@
   left: 6.25vw;
   z-index: 100;
   height: calc(100% - -2px);
-  /* pointer-events: none; */
+  pointer-events: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
