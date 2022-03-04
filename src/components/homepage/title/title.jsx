@@ -21,7 +21,7 @@ function Title({ showHeader }) {
           onClick={() => {
             setIndex(5);
           }}
-          onDoubleClick={() => {
+          onMouseLeave={() => {
             setIndex(6);
           }}
         >
