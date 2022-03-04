@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  row-gap: 14.75vh; /*14.75vh*/
+  row-gap: 14.75vh;
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
   width: 11px;
   height: 11px;
   font-size: 16px;
-  border: 2px solid #000;
+  border: 2px solid #1f1f1f;
   color: #fff;
   box-sizing: border-box;
   /* z-index: 10; */
@@ -41,13 +41,13 @@
 }
 
 .service__scroll_span:hover {
-  background: #000;
+  background: #1f1f1f;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }
 
 #service:hover ~ div > div > #indicator {
   top: 0;
-  background: #000;
+  background: #1f1f1f;
   transition: 0.3s linear;
   transform: rotate(0deg);
   z-index: 0;
@@ -55,7 +55,7 @@
 
 #service__rule:hover ~ div > div > #indicator {
   top: 16vh;
-  background: #000;
+  background: #1f1f1f;
   transition: 0.3s linear;
   transform: rotate(0deg);
   z-index: 0;
@@ -75,13 +75,13 @@ html:-ms-full-screen #service__rule:hover ~ div > div > #indicator {
 
 #service__footer:hover ~ div > div > #indicator {
   top: 0;
-  background: #000;
+  background: #1f1f1f;
   height: 100%;
 }
 
 #header__service:hover ~ div > div > #indicator {
   top: 0;
-  background: #000;
+  background: #1f1f1f;
   height: 100%;
 }
 

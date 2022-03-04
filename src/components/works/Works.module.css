@@ -49,7 +49,7 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #1f1f1f;
   -webkit-transform: translateX(-105%);
   -ms-transform: translateX(-105%);
   transform: translateX(-105%);
@@ -209,7 +209,7 @@ html:-ms-fullscreen .title {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #1f1f1f;
   -webkit-animation-name: slideCoverInfo;
   animation-name: slideCoverInfo;
   -webkit-animation-duration: 0.8s;
@@ -285,7 +285,7 @@ html:-ms-full-screen .action {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #1f1f1f;
   -webkit-animation: slideCoverInfo;
   animation: slideCoverInfo;
   -webkit-animation-duration: 0.8s;
@@ -355,21 +355,21 @@ html:-ms-full-screen .action {
 
 @-webkit-keyframes showTitle {
   0% {
-    color: #000;
+    color: #1f1f1f;
   }
 
   100% {
-    color: #000;
+    color: #1f1f1f;
   }
 }
 
 @keyframes showTitle {
   0% {
-    color: #000;
+    color: #1f1f1f;
   }
 
   100% {
-    color: #000;
+    color: #1f1f1f;
   }
 }
 

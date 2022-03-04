@@ -29,11 +29,11 @@
   }
 
   .borders:first-child {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(31, 31, 31, 0.1);
   }
 
   .borders {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(31, 31, 31, 0.1);
   }
 
   .focus {
@@ -59,7 +59,7 @@
     padding: 10px;
     line-height: 15px;
     text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(31, 31, 31, 0.5);
   }
 
   .policy_text > a {
@@ -75,7 +75,7 @@
     display: block;
     width: 12px;
     height: 12px;
-    border: 2px solid #000;
+    border: 2px solid #1f1f1f;
     transform: translateY(80%);
   }
 
@@ -113,7 +113,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #1f1f1f;
     animation: slideCoverTitle;
     animation-duration: 0.8s;
     animation-timing-function: ease-in;
@@ -185,11 +185,11 @@
   }
 
   .borders:first-child {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(31, 31, 31, 0.1);
   }
 
   .borders {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(31, 31, 31, 0.1);
   }
 
   .focus {
@@ -214,7 +214,7 @@
   .policy_text {
     line-height: 15px;
     padding: 10px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(31, 31, 31, 0.5);
     text-transform: uppercase;
   }
 
@@ -232,7 +232,7 @@
     transform: translateY(75%);
     width: 12px;
     height: 12px;
-    border: 2px solid #000;
+    border: 2px solid #1f1f1f;
   }
 
   .checkfake::before {

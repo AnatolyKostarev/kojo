@@ -107,9 +107,9 @@
 
 @keyframes showTitle {
   0% {
-    color: #000;
+    color: #1f1f1f;
   }
   100% {
-    color: #000;
+    color: #1f1f1f;
   }
 }

@@ -1,26 +1,26 @@
 #title:hover ~ div > nav > #indicator {
   left: 0px;
-  background: #000;
+  background: #1f1f1f;
   transition: 0.5s linear;
   transform: rotate(360deg);
 }
 
 #about:hover ~ div > nav > #indicator {
   left: 41px;
-  background: #000;
+  background: #1f1f1f;
   transition: 0.5s linear;
   transform: rotate(0deg);
 }
 
 #form:hover ~ div > nav > #indicator {
   left: 82px;
-  background: #000;
+  background: #1f1f1f;
   transition: 0.5s linear;
   transform: rotate(360deg);
 }
 
 footer:hover ~ div > nav > #indicator {
-  background: #000;
+  background: #1f1f1f;
   width: 100%;
 }
 
@@ -52,7 +52,7 @@ footer:hover ~ div > nav > #indicator {
   font-size: 16px;
   width: 11px;
   height: 11px;
-  border: 2px solid #000;
+  border: 2px solid #1f1f1f;
   text-decoration: none;
   color: #fff;
   box-sizing: border-box;
@@ -64,6 +64,6 @@ footer:hover ~ div > nav > #indicator {
 }
 
 .scrollSpy > a:hover {
-  background: #000;
+  background: #1f1f1f;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
 }

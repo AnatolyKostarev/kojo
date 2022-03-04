@@ -101,9 +101,9 @@
 }
 
 .input:checked ~ .label span {
-  background: #000;
+  background: #1f1f1f;
 }
 
 .nav > div > a > img {
-  fill: #000;
+  fill: #1f1f1f;
 }

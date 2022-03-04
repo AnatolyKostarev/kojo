@@ -7,7 +7,7 @@
     width: 1px;
     left: 50vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(31, 31, 31, 0.1);
   }
 
   .container {
@@ -114,7 +114,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #1f1f1f;
     animation: slideCoverTitle;
     animation-duration: 0.8s;
     animation-timing-function: ease-in;
@@ -207,7 +207,7 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #1f1f1f;
     animation: slideCoverTitle;
     animation-duration: 0.8s;
     animation-timing-function: ease-in;
@@ -227,7 +227,7 @@
     height: 1px;
     top: 566px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(31, 31, 31, 0.1);
   }
 
   .styleLine::before {
@@ -366,10 +366,10 @@
 
 @keyframes showTitle {
   0% {
-    color: #000;
+    color: #1f1f1f;
   }
   100% {
-    color: #000;
+    color: #1f1f1f;
   }
 }
 
@@ -385,9 +385,9 @@
 
 @keyframes showTitle {
   0% {
-    color: #000;
+    color: #1f1f1f;
   }
   100% {
-    color: #000;
+    color: #1f1f1f;
   }
 }
