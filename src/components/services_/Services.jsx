@@ -40,7 +40,7 @@ export default function Services({
         />
       )}
       {hide && showMenu && (
-        <>
+        <main>
           <ServiceMobileNavBar
             btnColor={btnColor}
             webButton={changeWebBtn}
@@ -56,7 +56,11 @@ export default function Services({
               isRuleContent={isRuleContent}
             />
           </div>
-        </>
+          {hide && <ServiceScrollBar isTitle={isTitle} />}
+          {!showMenu && (
+            <NavigationMobile toggleMobileMenu={toggleMobileMenu} />
+          )}
+        </main>
       )}
       <Navigation hideContent={hideContent} />
       {showMenu && (
@@ -64,9 +68,6 @@ export default function Services({
           {hide && <Footerworks />}
         </div>
       )}
-
-      {hide && <ServiceScrollBar isTitle={isTitle} />}
-      {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
     </div>
   );
 }
