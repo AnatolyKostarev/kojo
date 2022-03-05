@@ -20,105 +20,108 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
         <Headercontacts toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
       )}
       {hide && (
-        <section className={showMenu ? styles.contacts : styles.styleLine}>
-          {showMenu && (
-            <>
-              <div className={styles.container}>
-                <h1 className={styles.title}>
-                  <strong>контакты</strong>
-                </h1>
-                <div className={styles.contacts__wraper}>
-                  <div className={styles.contacts__wraper_left}>
-                    <ul className={styles.contacts__info}>
-                      {contactsList.map((elem, index) => (
-                        <li className={styles.contacts__row_top} key={index}>
-                          <p className={styles.contacts__label}>
-                            <span className={styles.contacts__span}>
-                              {elem.label}:
-                            </span>
-                          </p>
-                          <div className={styles.contacts__link}>
-                            <a
-                              href={elem.href}
-                              data-hover={elem.email}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={styles.contacts__item_top}
-                            >
-                              {elem.email}
-                            </a>
-                            <a
-                              href={elem.href}
-                              data-hover={elem.email}
-                              target="_blank"
-                              rel="noreferrer"
-                              className={styles.contacts__item_bottom}
-                            >
-                              {elem.email}
-                            </a>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                    <div className={styles.contacts__social}>
-                      <p className={styles.contacts__label}>
-                        <span className={styles.contacts__span}>
-                          Мы в сети:
-                        </span>
-                      </p>
-                      <ul className={styles.contacts__list}>
-                        {socialList.map((elem, index) => (
-                          <li className={styles.contacts__row} key={index}>
-                            <div className={styles.contacts__links}>
+        <main>
+          <section className={showMenu ? styles.contacts : styles.styleLine}>
+            {showMenu && (
+              <>
+                <div className={styles.container}>
+                  <h1 className={styles.title}>
+                    <strong>контакты</strong>
+                  </h1>
+                  <div className={styles.contacts__wraper}>
+                    <div className={styles.contacts__wraper_left}>
+                      <ul className={styles.contacts__info}>
+                        {contactsList.map((elem, index) => (
+                          <li className={styles.contacts__row_top} key={index}>
+                            <p className={styles.contacts__label}>
+                              <span className={styles.contacts__span}>
+                                {elem.label}:
+                              </span>
+                            </p>
+                            <div className={styles.contacts__link}>
                               <a
                                 href={elem.href}
+                                data-hover={elem.email}
                                 target="_blank"
                                 rel="noreferrer"
                                 className={styles.contacts__item_top}
                               >
-                                {elem.social}
+                                {elem.email}
                               </a>
                               <a
                                 href={elem.href}
+                                data-hover={elem.email}
                                 target="_blank"
                                 rel="noreferrer"
                                 className={styles.contacts__item_bottom}
                               >
-                                {elem.social}
+                                {elem.email}
                               </a>
                             </div>
                           </li>
                         ))}
                       </ul>
+                      <div className={styles.contacts__social}>
+                        <p className={styles.contacts__label}>
+                          <span className={styles.contacts__span}>
+                            Мы в сети:
+                          </span>
+                        </p>
+                        <ul className={styles.contacts__list}>
+                          {socialList.map((elem, index) => (
+                            <li className={styles.contacts__row} key={index}>
+                              <div className={styles.contacts__links}>
+                                <a
+                                  href={elem.href}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className={styles.contacts__item_top}
+                                >
+                                  {elem.social}
+                                </a>
+                                <a
+                                  href={elem.href}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className={styles.contacts__item_bottom}
+                                >
+                                  {elem.social}
+                                </a>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <p className={styles.contacts__message}>
+                        Кто-то из нашей команды работает даже на выходных
+                        <br></br>
+                        Пишите нам в любое время
+                      </p>
                     </div>
-                    <p className={styles.contacts__message}>
-                      Кто-то из нашей команды работает даже на выходных<br></br>
-                      Пишите нам в любое время
-                    </p>
-                  </div>
-                  <div className={styles.contacts__wraper_right}>
-                    <p className={styles.contacts__text_top}>
-                      Мы бы с радостью связались с вами мысленно
-                    </p>
-                    <p className={styles.contacts__text_bottom}>
-                      Но пока только так
-                    </p>
-                    <p className={styles.contacts__message_right}>
-                      Кто-то из нашей команды работает даже на выходных. Пишите
-                      нам в любое время.
-                    </p>
-                    <div className={styles.contacts__form}>
-                      <Form />
+                    <div className={styles.contacts__wraper_right}>
+                      <p className={styles.contacts__text_top}>
+                        Мы бы с радостью связались с вами мысленно
+                      </p>
+                      <p className={styles.contacts__text_bottom}>
+                        Но пока только так
+                      </p>
+                      <p className={styles.contacts__message_right}>
+                        Кто-то из нашей команды работает даже на выходных.
+                        Пишите нам в любое время.
+                      </p>
+                      <div className={styles.contacts__form}>
+                        <Form />
+                      </div>
+                      <p className={styles.contacts__copyright}>
+                        {new Date().getFullYear()} &copy; студия kojo one
+                      </p>
                     </div>
-                    <p className={styles.contacts__copyright}>
-                      {new Date().getFullYear()} &copy; студия kojo one
-                    </p>
                   </div>
                 </div>
-              </div>
-            </>
-          )}
-        </section>
+              </>
+            )}
+          </section>
+        </main>
       )}
       {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
       <Navigation hideContent={hideContent} />
