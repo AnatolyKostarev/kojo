@@ -1,32 +1,31 @@
-@media (min-width: 1024px) {
-  .homepage {
-    position: relative;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+.homepage {
+  position: relative;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
 
-  .vertical_line {
-    width: 1px;
-    height: 17.28vh;
-    position: absolute;
+.vertical_line {
+  width: 1px;
+  height: 17.28vh;
+  position: absolute;
+  top: 0;
+  left: 39.93vw;
+  background: #1f1f1f;
+  animation: showLine 0.5s ease;
+}
+
+@keyframes showLine {
+  from {
+    top: -100%;
+  }
+  to {
     top: 0;
-    left: 39.93vw;
-    background: #1f1f1f;
-    animation: showLine 0.5s ease;
-  }
-
-  @keyframes showLine {
-    from {
-      top: -100%;
-    }
-    to {
-      top: 0;
-    }
   }
 }
+
 @media (max-width: 1023px) {
   .homepage {
     display: none;
