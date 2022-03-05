@@ -29,15 +29,16 @@ export default function Homepage({ showMenu, isOpen, toggleMobileMenu }) {
   return (
     <>
       <div className={style.homepage}>
-        {hide && header && <Header2 />}
-        {hide && <div className={style.vertical_line}></div>}
-
-        {hide && <Title showHeader={showHeader} />}
-        {hide && <AboutUs showHeader={showHeader} />}
-        {hide && <MainForm hideHeader={hideHeader} />}
-        <Navigation hideContent={hideContent} />
-        {hide && <FooterHomepage />}
-        {hide && <ScrollSpy />}
+        {hide && header && showMenu && <Header2 />}
+        {hide && showMenu && <div className={style.vertical_line}></div>}
+        <main>
+          {hide && showMenu && <Title showHeader={showHeader} />}
+          {hide && showMenu && <AboutUs showHeader={showHeader} />}
+          {hide && showMenu && <MainForm hideHeader={hideHeader} />}
+          {showMenu && <Navigation hideContent={hideContent} />}
+          {hide && showMenu && <ScrollSpy />}
+        </main>
+        {hide && showMenu && <FooterHomepage />}
       </div>
 
       <HomePageMobile
