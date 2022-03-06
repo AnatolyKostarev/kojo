@@ -19,7 +19,7 @@ export default function Headerworks({
               <Link to="/">
                 <div className={styles.header__img}>
                   <img
-                    src="img/header/icon-logo.svg"
+                    src="/img/header/icon-logo.svg"
                     alt="ZIPL"
                     className={styles.logo}
                   />

@@ -27,6 +27,7 @@ export const worksItem = [
     width: "720",
     height: "720",
     alt: "Инвестиционная компания Фронтирс в Санкт-Петербурге",
+    loading: "lazy",
   },
   {
     imagePosition: "left",
@@ -41,6 +42,7 @@ export const worksItem = [
     width: "840",
     height: "830",
     alt: "Cтудия KOJO",
+    loading: "lazy",
   },
 ];
 
@@ -204,3 +206,7 @@ export const technology = [
   { src: "/img/tech_icons/node_icon.svg", alt: "nodejs", width: 32 },
   { src: "/img/tech_icons/php_icon.svg", alt: "php", width: 32 },
 ];
+
+export const SERVICE_ID = "service_ekqmigd";
+export const TEMPLATE_ID = "template_in7k4u3";
+export const USER_ID = "user_pBA6wdTbaWOwTzojch5L0";

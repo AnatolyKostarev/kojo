@@ -5,6 +5,7 @@ import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import { Helmet } from "react-helmet";
 import "./App.module.css";
 
 function App() {
@@ -49,6 +50,20 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>
+          KOJO ONE | Веб-студия, создания сайтов под ключ: находим оптимальное
+          решение вашей проблемы
+        </title>
+        <meta
+          name="description"
+          content="Разработка адаптивных сайтов с современным дизайном в Санкт-Петербурге. Спб. Лендинг, промо сайт, брэндовый, корпоративный сайт, интернет-магазин с высокой конверсией"
+        />
+        <meta
+          name="keywords"
+          content="студия веб разработки, разработка сайтов, web, нанять разработчика, услуги программиста, gatsby react сайт, сайт на реакте, адаптивный дизайн"
+        />
+      </Helmet>
       <Routes>
         <Route
           path="/"

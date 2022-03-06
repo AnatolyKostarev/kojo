@@ -7,6 +7,7 @@ import ServiceRules from "./service_rules/ServiceRules";
 import NavigationMobile from "../navigation/NavigationMobile";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
+import { Helmet } from "react-helmet";
 import styles from "./Services.module.css";
 
 export default function Services({
@@ -31,6 +32,13 @@ export default function Services({
 
   return (
     <div className={styles.service__scroll}>
+      <Helmet>
+        <meta
+          name="description"
+          content="Услуги по разработке сайтов. Использовать современные возможности React вместе с Wordpress"
+        />
+        <title>Услуги веб студии в Спб. Нанять программиста.</title>
+      </Helmet>
       {hide && (
         <Headerservice
           title="Услуги"
@@ -39,14 +47,16 @@ export default function Services({
           toggleMobileMenu={toggleMobileMenu}
         />
       )}
+
+      {hide && showMenu && (
+        <ServiceMobileNavBar
+          btnColor={btnColor}
+          webButton={changeWebBtn}
+          rulesButton={changeRuleBtn}
+        />
+      )}
       <main>
-        {hide && showMenu && (
-          <ServiceMobileNavBar
-            btnColor={btnColor}
-            webButton={changeWebBtn}
-            rulesButton={changeRuleBtn}
-          />
-        )}
+        <h1 style={{ color: "transparent" }}>мы делаем сайты</h1>
         {hide && showMenu && (
           <div className={styles.services__wraper}>
             <ServicesWeb

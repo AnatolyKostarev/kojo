@@ -4,11 +4,13 @@ import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import styles from "./Form.module.css";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
   const form = useRef();
+
   const {
     register,
     formState: { errors },
@@ -20,14 +22,8 @@ export default function Form() {
 
   const onSubmit = () => {
     emailjs
-      .sendForm(
-        "service_ekqmigd",
-        "template_in7k4u3",
-        form.current,
-        "user_pBA6wdTbaWOwTzojch5L0"
-      )
+      .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((res) => {
-        // console.log("res", res);
         setActiveModal(true);
       })
       .catch((err) => console.log(err));

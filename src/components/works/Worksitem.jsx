@@ -15,6 +15,7 @@ export default function Worksitem({
   width,
   height,
   alt,
+  loading,
   offSetY,
 }) {
   const image = (
@@ -31,6 +32,7 @@ export default function Worksitem({
         src={src}
         width={width}
         height={height}
+        loading={loading}
         alt={alt}
       />
     </div>
