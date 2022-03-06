@@ -19,8 +19,9 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
       {hide && (
         <Headercontacts toggleMobileMenu={toggleMobileMenu} isOpen={isOpen} />
       )}
-      {hide && (
-        <main>
+
+      <main>
+        {hide && (
           <section className={showMenu ? styles.contacts : styles.styleLine}>
             {showMenu && (
               <>
@@ -121,11 +122,10 @@ export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
               </>
             )}
           </section>
-        </main>
-      )}
-      {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
+        )}
+        {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
+      </main>
       <Navigation hideContent={hideContent} />
-
       {showMenu && (
         <div className={styles.footer}>
           <Footerworks />
