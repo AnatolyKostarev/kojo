@@ -27,6 +27,7 @@ export const worksItem = [
     width: "720",
     height: "720",
     alt: "Инвестиционная компания Фронтирс в Санкт-Петербурге",
+    loading: "lazy",
   },
   {
     imagePosition: "left",
@@ -41,6 +42,7 @@ export const worksItem = [
     width: "840",
     height: "830",
     alt: "Cтудия KOJO",
+    loading: "lazy",
   },
 ];
 
