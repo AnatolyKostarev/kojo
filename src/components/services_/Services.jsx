@@ -47,14 +47,16 @@ export default function Services({
           toggleMobileMenu={toggleMobileMenu}
         />
       )}
+
+      {hide && showMenu && (
+        <ServiceMobileNavBar
+          btnColor={btnColor}
+          webButton={changeWebBtn}
+          rulesButton={changeRuleBtn}
+        />
+      )}
       <main>
-        {hide && showMenu && (
-          <ServiceMobileNavBar
-            btnColor={btnColor}
-            webButton={changeWebBtn}
-            rulesButton={changeRuleBtn}
-          />
-        )}
+        <h1 style={{ color: "transparent" }}>мы делаем сайты</h1>
         {hide && showMenu && (
           <div className={styles.services__wraper}>
             <ServicesWeb
