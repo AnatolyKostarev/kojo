@@ -39,13 +39,15 @@ export default function Services({
           toggleMobileMenu={toggleMobileMenu}
         />
       )}
-      {hide && showMenu && (
-        <main>
+      <main>
+        {hide && showMenu && (
           <ServiceMobileNavBar
             btnColor={btnColor}
             webButton={changeWebBtn}
             rulesButton={changeRuleBtn}
           />
+        )}
+        {hide && showMenu && (
           <div className={styles.services__wraper}>
             <ServicesWeb
               toggleWheel={toggleWheel}
@@ -56,10 +58,10 @@ export default function Services({
               isRuleContent={isRuleContent}
             />
           </div>
-          {hide && <ServiceScrollBar isTitle={isTitle} />}
-        </main>
-      )}
-      {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
+        )}
+        {hide && showMenu && <ServiceScrollBar isTitle={isTitle} />}
+        {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
+      </main>
       <Navigation hideContent={hideContent} />
       {showMenu && (
         <div id="service__footer" className={styles.footer}>

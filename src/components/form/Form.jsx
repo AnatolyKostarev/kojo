@@ -27,10 +27,10 @@ export default function Form() {
         "user_pBA6wdTbaWOwTzojch5L0"
       )
       .then((res) => {
-        console.log("res", res);
+        // console.log("res", res);
+        setActiveModal(true);
       })
       .catch((err) => console.log(err));
-    setActiveModal(true);
     reset();
   };
 
