@@ -4,7 +4,7 @@ import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
-import ErrorPage from "../components/ErrorPage/ErroePage";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 import "./App.module.css";
 
 function App() {
