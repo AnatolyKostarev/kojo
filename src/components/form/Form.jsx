@@ -129,7 +129,8 @@ export default function Form() {
           />
           <span className={styles.checkfake}></span>
           <span className={styles.policy_text}>
-            Я даю согласие на обработку <Link to="*">персональных данных</Link>
+            Я даю согласие на обработку
+            <Link to="personal">персональных данных</Link>
           </span>
         </label>
         <div className={styles.focus_consent}>
