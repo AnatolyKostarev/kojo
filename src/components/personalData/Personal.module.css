@@ -1,0 +1,73 @@
+.personal {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(31, 31, 31, 0.5);
+  z-index: 110;
+}
+
+.container {
+  max-width: 100vw;
+  padding: 6.25vh 6.25vw;
+  box-sizing: content-box;
+}
+
+.personal__agreement {
+  margin: 0 auto;
+  padding: 6.25vh 6.5vw;
+  max-width: 60vw;
+  height: 90vh;
+  background: #fff;
+  border-radius: 5px;
+  overflow-y: scroll;
+}
+
+.personal__title {
+  margin-bottom: 6.25vh;
+  font-family: "JetBrains Mono ExtraBold", monospace;
+  font-size: 4.94vh;
+  line-height: 6vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personal__head {
+  margin-bottom: 6.25vh;
+}
+
+.personal__preamble {
+  margin-bottom: 3vh;
+  font-family: "JetBrains Mono Bold", monospace;
+  font-size: 3vh;
+  line-height: 4.69vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personal__subtitle {
+  margin-bottom: 3vh;
+  font-family: "JetBrains Mono Bold", monospace;
+  font-size: 2vh;
+  line-height: 4.69vh;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.personal__paragraph {
+  margin-bottom: 2vh;
+  font-family: "JetBrains Mono Regular", monospace;
+  font-size: 1.5vh;
+  font-weight: 500;
+  line-height: 2vh;
+  text-align: justify;
+  text-indent: 2vw;
+}
+
+.personal__link:hover {
+  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+}
