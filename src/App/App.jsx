@@ -5,6 +5,7 @@ import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
+import Personal from "../components/personalData/Personal";
 import { Helmet } from "react-helmet";
 import "./App.module.css";
 
@@ -110,6 +111,7 @@ function App() {
             />
           }
         />
+        <Route path="personal" element={<Personal />} />
         <Route
           path="*"
           element={
