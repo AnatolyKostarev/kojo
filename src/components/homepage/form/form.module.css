@@ -28,7 +28,7 @@
 }
 
 .blockTitle > div {
-  font-weight: 900;
+  font-family: "JetBrains Mono Bold", monospace;
 }
 
 .blockFrom > p {

@@ -123,7 +123,7 @@
   .contacts__item_top,
   .contacts__item_bottom {
     display: block;
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     font-size: 2.22vh;
     letter-spacing: 0.07vh;
     text-align: left;
@@ -187,7 +187,7 @@
     position: absolute;
     top: 12.59vh;
     left: 18.59vw;
-    font-weight: 900;
+    font-family: "JetBrains Mono ExtraBold", monospace;
     font-size: 4.93vh;
     line-height: 4.69vh;
     text-transform: uppercase;
@@ -285,7 +285,7 @@
 
   .contacts__item_top {
     display: block;
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     font-size: 18px;
     line-height: 13px;
     letter-spacing: 1px;
@@ -334,6 +334,7 @@
   }
 
   .title {
+    font-family: "JetBrains Mono ExtraBold", monospace;
     font-size: 40px;
     letter-spacing: 1px;
     line-height: 28px;

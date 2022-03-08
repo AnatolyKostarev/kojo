@@ -32,7 +32,7 @@
 
 .success {
   position: relative;
-  font-weight: 800;
+  font-family: "JetBrains Mono Bold", monospace;
   margin: 40px;
   text-align: center;
   font-size: 1.35vh;

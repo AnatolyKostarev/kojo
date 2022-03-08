@@ -19,12 +19,16 @@
 
 .personal__agreement {
   margin: 0 auto;
-  padding: 6.25vh 6.5vw;
+  padding: 6.25vh 6.25vw;
   max-width: 60vw;
   height: 90vh;
   background: #fff;
   border-radius: 5px;
   overflow-y: scroll;
+}
+
+.personal__basic {
+  margin-bottom: 6.25vh;
 }
 
 .personal__title {
@@ -68,6 +72,18 @@
   text-indent: 2vw;
 }
 
-.personal__link:hover {
-  cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+[data-style="personal_btn"] {
+  margin-left: auto;
+}
+
+@media (max-width: 1023px) {
+  .personal__agreement {
+    padding: 6.25vh 1vw;
+    max-width: 100vw;
+  }
+
+  .personal__title {
+    font-size: 2.94vh;
+    line-height: 4vh;
+  }
 }

@@ -181,7 +181,7 @@ html:-ms-full-screen .service__info {
   position: absolute;
   top: 2.25vh;
   left: 1.41vw;
-  font-weight: 800;
+  font-family: "JetBrains Mono Bold", monospace;
   font-size: 0.99vh;
   letter-spacing: 0.35vw;
   line-height: 0.74vh;

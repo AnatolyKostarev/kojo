@@ -61,7 +61,7 @@
 }
 
 .link__top {
-  line-height: 14px;
+  line-height: 11px;
 }
 
 .item:hover {
@@ -79,7 +79,6 @@
 }
 
 .copyright {
-  font-family: "JetBrains Mono", "Courier New", Courier, monospace;
   font-size: 10px;
   line-height: 8px;
   text-transform: uppercase;
