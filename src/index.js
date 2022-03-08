@@ -5,11 +5,9 @@ import { hydrate, render } from "react-dom";
 import "./index.css";
 
 const APP = (
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );
 
 const rootElement = document.getElementById("root");
