@@ -1,31 +1,40 @@
 .footer {
-  width: calc(93.75vw - 6.25vw);
-  height: 100px;
   position: fixed;
   left: 6.25vw;
   bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  width: calc(93.75vw - 6.25vw);
+  height: 100px;
 }
 
 .scrollSpy {
-  list-style-type: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  position: relative;
+  list-style-type: none;
   overflow: hidden;
 }
 
 .scrollSpy > span {
-  width: 11px;
-  height: 11px;
   position: absolute;
   top: 0px;
   left: 0px;
+  width: 11px;
+  height: 11px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
 .scrollSpy > a {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
   text-decoration: none;

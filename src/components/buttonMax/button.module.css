@@ -16,10 +16,11 @@
   height: 4.9vh;
   width: 13.5vw;
   font-family: "JetBrains Mono Bold", monospace;
-  /* font-weight: 800; */
   border: none;
   background: transparent;
   overflow: hidden;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
@@ -33,9 +34,12 @@
   font-size: 3.5vh;
   font-family: "JetBrains Mono ExtraBold", monospace;
   line-height: 4.9vh;
-  color: #000;
+  color: #1f1f1f;
   background: transparent;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
   text-align: left;
 }
@@ -55,9 +59,13 @@
   color: #fff;
   text-transform: uppercase;
   background: #1f1f1f;
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
   text-align: left;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-animation: showElement 0.8s ease-out;
   animation: showElement 0.8s ease-out;
   /* анимация для появление элемента */
 }
@@ -68,6 +76,20 @@
 
 #btn:hover::after {
   left: -100%;
+}
+
+@-webkit-keyframes showElement {
+  from {
+    left: -100%;
+    color: transparent;
+  }
+  90% {
+    left: 0;
+    color: transparent;
+  }
+  to {
+    color: #fff;
+  }
 }
 
 @keyframes showElement {

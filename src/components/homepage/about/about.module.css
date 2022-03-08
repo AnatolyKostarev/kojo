@@ -2,14 +2,18 @@
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .mainBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 6.25vw;
   height: 100vh;
   width: 93.75vw;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -18,6 +22,7 @@
   width: 50%;
   background: #f9f9f9;
   padding-top: 30vh;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -39,17 +44,29 @@
 }
 
 .listData {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 3.7vh;
   margin-top: 10.96vh;
   padding-right: 6.25vw;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
 }

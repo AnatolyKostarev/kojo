@@ -6,11 +6,19 @@
   height: 100vh;
   background-color: #fff;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -20,22 +28,30 @@
 }
 
 .window {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 50vw;
   height: 50vh;
-  background: #ffffff;
+  background: #fff;
+  -webkit-transition: 0.4s all;
+  -o-transition: 0.4s all;
   transition: 0.4s all;
 }
 
 .success {
   position: relative;
-  font-family: "JetBrains Mono Bold", monospace;
   margin: 40px;
-  text-align: center;
+  font-family: "JetBrains Mono Bold", monospace;
   font-size: 1.35vh;
   line-height: 42px;
+  text-align: center;
   text-transform: uppercase;
 }

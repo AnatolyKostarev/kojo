@@ -6,10 +6,10 @@
 }
 
 #h1 {
-  color: transparent;
   position: fixed;
   top: 0;
   left: 0;
+  color: transparent;
 }
 
 .content {
@@ -18,17 +18,17 @@
 
 .btn_box {
   position: absolute;
-  z-index: 10;
   right: 12.5vw;
   top: 12.35vh;
+  z-index: 10;
 }
 
 #btn {
   width: 12.5vw;
+  height: 4.94vh;
   background: #1f1f1f;
   color: #fff;
   text-align: left;
-  height: 4.94vh;
   overflow: hidden;
   border: transparent;
 }
@@ -51,11 +51,22 @@
   width: 100%;
   height: 100%;
   background: #fff;
+  -webkit-animation: showLogo 0.4s;
   animation: showLogo 0.4s;
 }
 
 .logoWrapper > .logoWrapperBox > a > img {
   height: 3.7vh;
+}
+
+@-webkit-keyframes showLogo {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: 100%;
+  }
 }
 
 @keyframes showLogo {

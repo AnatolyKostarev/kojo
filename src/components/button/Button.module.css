@@ -13,6 +13,8 @@
   text-transform: uppercase;
   color: transparent;
   cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+  -webkit-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
   transition: 0.4s linear;
   overflow: hidden;
 }
@@ -28,8 +30,13 @@
   background: #1f1f1f;
   outline: none;
   color: #fff;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
@@ -45,18 +52,31 @@
   line-height: 4.9vh;
   letter-spacing: -0.05vw;
   color: #1f1f1f;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
   transform: translateX(-100%);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
 .btn:hover::after {
+  -webkit-transform: translateX(-105%);
+  -ms-transform: translateX(-105%);
   transform: translateX(-105%);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
 .btn:hover::before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
   transform: translateX(0);
+  -webkit-transition: 0.5s linear;
+  -o-transition: 0.5s linear;
   transition: 0.5s linear;
 }
 
@@ -76,16 +96,26 @@
     padding: 1vh calc(50% - 52px);
     font-size: 14px;
     letter-spacing: 2px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
   }
 
   .btn:hover::after {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
+    -webkit-transition: 0s linear;
+    -o-transition: 0s linear;
     transition: 0s linear;
   }
 
   .btn:hover::before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
     transform: translateX(100%);
+    -webkit-transition: 0s linear;
+    -o-transition: 0s linear;
     transition: 0s linear;
   }
 }
