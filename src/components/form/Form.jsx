@@ -32,11 +32,9 @@ export default function Form() {
   };
 
   const openPersonal = () => {
-    document.body.style.overflow = "hidden";
     setIsPersonal(true);
   };
   const closePersonal = () => {
-    document.body.style.overflow = "";
     setIsPersonal(false);
   };
 

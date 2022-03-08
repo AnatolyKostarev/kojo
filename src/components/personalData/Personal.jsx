@@ -3,6 +3,11 @@ import Button from "../button/Button";
 import styles from "./Personal.module.css";
 
 const Personal = ({ closePersonal }) => {
+  React.useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "");
+  }, []);
+
   return (
     <div onClick={closePersonal} className={styles.personal}>
       <div className={styles.container}>
