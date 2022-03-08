@@ -1,14 +1,15 @@
 import React, { useState, useRef } from "react";
-import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import styles from "./Form.module.css";
+import Personal from "../personalData/Personal";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
+  const [isPersonal, setIsPersonal] = useState(false);
   const form = useRef();
 
   const {
@@ -28,6 +29,15 @@ export default function Form() {
       })
       .catch((err) => console.log(err));
     reset();
+  };
+
+  const openPersonal = () => {
+    document.body.style.overflow = "hidden";
+    setIsPersonal(true);
+  };
+  const closePersonal = () => {
+    document.body.style.overflow = "";
+    setIsPersonal(false);
   };
 
   return (
@@ -129,8 +139,13 @@ export default function Form() {
           />
           <span className={styles.checkfake}></span>
           <span className={styles.policy_text}>
-            Я даю согласие на обработку
-            <Link to="personal">персональных данных</Link>
+            Я даю согласие на обработку&nbsp;
+            <span
+              onClick={openPersonal}
+              style={{ color: "#1f1f1f", textDecoration: "underline" }}
+            >
+              персональных данных
+            </span>
           </span>
         </label>
         <div className={styles.focus_consent}>
@@ -144,6 +159,7 @@ export default function Form() {
         </div>
       </form>
       <Modal active={activeModal} setActive={setActiveModal} />
+      {isPersonal && <Personal closePersonal={closePersonal} />}
     </>
   );
 }
