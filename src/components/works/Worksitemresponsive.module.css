@@ -25,7 +25,7 @@
     position: relative;
     margin-bottom: 3.33vh;
     padding: 0 20px;
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     font-size: 3vh;
     text-transform: uppercase;
     color: #1f1f1f;
@@ -60,8 +60,6 @@
   .counter {
     position: relative;
     margin-bottom: 1.25vh;
-    font-family: "JetBrains Mono", monospace;
-    font-weight: 800;
     font-size: 1.6vh; /*1.2vh;*/
     line-height: 1.2vh;
     text-align: left;

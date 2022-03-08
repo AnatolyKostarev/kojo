@@ -25,7 +25,7 @@
   .nav__item {
     display: flex;
     justify-content: center;
-    font-weight: 900;
+    font-family: "JetBrains Mono ExtraBold", monospace;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 23px;

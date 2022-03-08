@@ -73,7 +73,7 @@
 .title,
 .header__subtitle p {
   position: relative;
-  font-weight: 900;
+  font-family: "JetBrains Mono ExtraBold", monospace;
   font-size: 4.94vh;
   line-height: 4.69vh;
   text-transform: uppercase;

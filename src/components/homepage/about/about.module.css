@@ -24,7 +24,7 @@
 .mainData > h2,
 .mainAwards > h2 {
   margin-bottom: 2.96vh;
-  font-weight: 800;
+  font-family: "JetBrains Mono Bold", monospace;
   font-size: 4.94vh;
   letter-spacing: 0.07vw;
   line-height: 3.46vh;
@@ -63,7 +63,7 @@
 .value,
 .valueAwards {
   max-width: 70%;
-  font-weight: 800;
+  font-family: "JetBrains Mono ExtraBold", monospace;
   font-size: 1.6vh;
   letter-spacing: 0.07vw;
   line-height: 1.6vh;

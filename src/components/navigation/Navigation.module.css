@@ -17,7 +17,7 @@
   width: 6.25vw;
   height: 100%;
   outline: 1px solid rgba(31, 31, 31, 0.1);
-  font-weight: 800;
+  font-family: "JetBrains Mono Bold", monospace;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 13px;
@@ -84,7 +84,7 @@
   -webkit-transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   -o-transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
   transition: all 0.8s cubic-bezier(0.6, 0, 0.5, 1);
-  font-weight: 900;
+  font-family: "JetBrains Mono ExtraBold";
   font-size: 9.5vh;
   line-height: 5.5vh;
   color: rgba(31, 31, 31, 1);

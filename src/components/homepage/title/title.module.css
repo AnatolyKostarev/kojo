@@ -62,8 +62,8 @@
 
 .itemTitle {
   font-size: 5vh;
+  font-family: "JetBrains Mono Bold", monospace;
   line-height: 4.4vh;
-  font-weight: 800;
 }
 
 .itemTitle > p {
@@ -75,8 +75,8 @@
 
 .itemParagph {
   font-size: 1.6vh;
+  font-family: "JetBrains Mono Bold", monospace;
   line-height: 1.8vh;
-  font-weight: 800;
 }
 
 .itemParagph > p {
@@ -93,7 +93,6 @@
   flex-direction: column;
   justify-content: flex-start;
   font-size: 2.2vh;
-  font-weight: 700;
   line-height: 3.6vh;
 }
 

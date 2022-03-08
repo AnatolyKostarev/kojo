@@ -1,5 +1,5 @@
 .text_bld {
-  font-weight: 800;
+  font-family: "JetBrains Mono Bold", monospace;
 }
 
 @media (min-width: 1023px) {
@@ -96,12 +96,12 @@
   }
 
   .main_title > h4:first-child {
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     margin-bottom: 5px;
   }
 
   .main_title > h4:nth-child(2) {
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     line-height: 32px;
   }
 
@@ -136,7 +136,7 @@
 
   .block_title > h4 {
     font-size: 34px;
-    font-weight: 800;
+    font-family: "JetBrains Mono Bold", monospace;
     letter-spacing: 1px;
     line-height: 28px;
     margin: 0 0 20px;
@@ -179,7 +179,6 @@
 
   .lists > p {
     margin: 10px 0 0;
-    font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
   }
