@@ -13,16 +13,26 @@
   .container {
     max-width: 93.75vw;
     padding: 0 6.25vw;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
   .contacts__wraper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .contacts__wraper_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 7.5vh;
     width: 43.75vw;
@@ -30,8 +40,15 @@
 
   .contacts__info,
   .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     row-gap: 2.5vh;
   }
@@ -39,6 +56,8 @@
   .contacts__row {
     position: relative;
     top: -1vh;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     overflow-y: hidden;
     max-height: 2.4vh;
@@ -47,31 +66,51 @@
 
   .contacts__link {
     display: block;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
     transform: translateY(0%);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
   .contacts__link:hover {
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
     transform: translateY(-100%);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
   .contacts__links {
     display: block;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
     transform: translateY(0%);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
   .contacts__links:hover {
     cursor: url("/public/img/header/cursor_active.svg") 10 10, pointer;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
   .contacts__row_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     overflow-y: hidden;
     max-height: 2.4vh;
@@ -94,10 +133,15 @@
   .contacts__copyright {
     position: relative;
     color: transparent;
+    -webkit-animation: showTitle;
     animation: showTitle;
+    -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
+    -webkit-animation-delay: 520ms;
     animation-delay: 520ms;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     overflow: hidden;
   }
@@ -115,8 +159,11 @@
     width: 100%;
     height: 100%;
     background: #1f1f1f;
+    -webkit-animation: slideCoverTitle;
     animation: slideCoverTitle;
+    -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
@@ -128,6 +175,8 @@
     letter-spacing: 0.07vh;
     text-align: left;
     text-transform: uppercase;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
 
@@ -137,6 +186,8 @@
   }
 
   .contacts__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -192,10 +243,15 @@
     line-height: 4.69vh;
     text-transform: uppercase;
     color: transparent;
+    -webkit-animation: showTitle;
     animation: showTitle;
+    -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
+    -webkit-animation-delay: 550ms;
     animation-delay: 550ms;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     overflow: hidden;
   }
@@ -208,8 +264,11 @@
     width: 100%;
     height: 100%;
     background: #1f1f1f;
+    -webkit-animation: slideCoverTitle;
     animation: slideCoverTitle;
+    -webkit-animation-duration: 0.8s;
     animation-duration: 0.8s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
@@ -239,24 +298,39 @@
     top: 110px;
     max-width: 100vw;
     padding: 0 20px;
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
   }
 
   .contacts__wraper {
     display: contents;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .contacts__wraper_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     row-gap: 90px;
   }
 
   .contacts__info,
   .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     row-gap: 30px;
   }
@@ -272,7 +346,11 @@
   }
 
   .contacts__row_top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     position: relative;
   }
@@ -302,7 +380,11 @@
   }
 
   .contacts__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
@@ -355,6 +437,16 @@
   }
 }
 
+@-webkit-keyframes slideCoverTitle {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
 @keyframes slideCoverTitle {
   0% {
     left: -100%;
@@ -362,6 +454,15 @@
 
   100% {
     left: 100%;
+  }
+}
+
+@-webkit-keyframes showTitle {
+  0% {
+    color: #1f1f1f;
+  }
+  100% {
+    color: #1f1f1f;
   }
 }
 

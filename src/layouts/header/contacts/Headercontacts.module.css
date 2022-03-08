@@ -8,20 +8,35 @@
   .container {
     width: 50vw;
     padding: 0 0 0 6.25vw;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
   .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-column-gap: 8.23vw;
+    -moz-column-gap: 8.23vw;
     column-gap: 8.23vw;
     overflow: hidden;
   }
 
   .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     min-height: 3.7vh;
     overflow: hidden;
@@ -40,8 +55,11 @@
     width: 100%;
     height: 100%;
     background: #fff;
+    -webkit-animation: showLogo;
     animation: showLogo;
+    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
@@ -57,8 +75,14 @@
     width: 100vw;
     padding: 20px;
     background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -76,13 +100,25 @@
     width: 100%;
     height: 100%;
     background: #fff;
+    -webkit-animation: showLogo;
     animation: showLogo;
+    -webkit-animation-duration: 0.5s;
     animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
 
   .logo {
     height: 25px;
+  }
+}
+
+@-webkit-keyframes showLogo {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
   }
 }
 
@@ -95,6 +131,16 @@
   }
 }
 
+@-webkit-keyframes slideCoverTitle {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
 @keyframes slideCoverTitle {
   0% {
     left: -100%;
@@ -102,6 +148,15 @@
 
   100% {
     left: 100%;
+  }
+}
+
+@-webkit-keyframes showTitle {
+  0% {
+    color: #1f1f1f;
+  }
+  100% {
+    color: #1f1f1f;
   }
 }
 

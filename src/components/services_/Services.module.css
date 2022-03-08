@@ -1,9 +1,11 @@
 .service__scroll {
   height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -17,6 +19,7 @@
 @media (max-width: 1023px) {
   .service__scroll {
     padding: 0 20px;
+    -ms-scroll-snap-type: none;
     scroll-snap-type: none;
     scroll-behavior: unset;
     overflow-y: hidden;

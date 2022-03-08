@@ -1,6 +1,7 @@
 .homepage {
   position: relative;
   height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
@@ -8,19 +9,31 @@
 }
 
 .vertical_line {
-  width: 1px;
-  height: 17.28vh;
   position: absolute;
   top: 0;
   left: 39.93vw;
+  width: 1px;
+  height: 17.28vh;
   background: #1f1f1f;
+  -webkit-animation: showLine 0.5s ease;
   animation: showLine 0.5s ease;
+}
+
+@-webkit-keyframes showLine {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0;
+  }
 }
 
 @keyframes showLine {
   from {
     top: -100%;
   }
+
   to {
     top: 0;
   }

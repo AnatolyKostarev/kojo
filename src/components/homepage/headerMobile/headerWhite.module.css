@@ -16,6 +16,8 @@
   left: 0;
   display: block;
   background: #020304;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -38,11 +40,15 @@
 
 .input:checked + .label span:first-child {
   opacity: 1;
+  -webkit-transform: rotate(405deg);
+  -ms-transform: rotate(405deg);
   transform: rotate(405deg);
 }
 
 .input:checked + .label span:last-child {
   opacity: 1;
+  -webkit-transform: rotate(-405deg);
+  -ms-transform: rotate(-405deg);
   transform: rotate(-405deg);
 }
 
@@ -55,9 +61,14 @@
   height: 65px;
   padding: 20px;
   padding: 20px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   z-index: 3;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
   overflow: hidden;
 }
@@ -72,7 +83,11 @@
 
 .input ~ .nav > ul > li {
   opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 }
 
@@ -88,11 +103,15 @@
 
 .input:checked ~ .nav {
   height: 100%;
+  -webkit-transition-delay: 0s;
+  -o-transition-delay: 0s;
   transition-delay: 0s;
 }
 
 .input:checked ~ .nav > ul > li {
   opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
   font-size: 18px;
   letter-spacing: 1px;
