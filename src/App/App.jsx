@@ -7,7 +7,6 @@ import Contacts from "../components/contacts/Contacts";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import Personal from "../components/personalData/Personal";
 import { Helmet } from "react-helmet";
-import "./App.module.css";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(true);
