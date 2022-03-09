@@ -4,8 +4,9 @@ import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
-import styles from "./Form.module.css";
 import Personal from "../personalData/Personal";
+// import Preloader from "../loader/Preloader";
+import styles from "./Form.module.css";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
