@@ -6,11 +6,13 @@ import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import styles from "./Form.module.css";
 import Personal from "../personalData/Personal";
+import ModalError from "../modal/ModalError"
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
   const [isPersonal, setIsPersonal] = useState(false);
   const form = useRef();
+  const [isModalError, setModalError] = useState(false)
 
   const {
     register,
@@ -26,8 +28,12 @@ export default function Form() {
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((res) => {
         setActiveModal(true);
+        setTimeout(setActiveModal, 5000);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setModalError(true)
+        setTimeout(setModalError, 5000)
+      });
     reset();
   };
 
@@ -73,6 +79,30 @@ export default function Form() {
         </div>
         <div className={styles.borders}>
           <input
+            name="phone"
+            {...register("phone", {
+              required: "Это поле обязательно",
+              pattern: {
+                value:
+                  /^\+?7(\d{10})$/,
+                message: "Недопустимый формат телефона",
+              },
+            })}
+            id="feedback-phone"
+            className={styles.input}
+            type="tel"
+            placeholder="Телефон в формате +7XXXXXXXXXX"
+          />
+          <div>
+            {errors?.phone && (
+              <p className={styles.focus}>
+                {errors?.phone?.message || "Error!"}
+              </p>
+            )}
+          </div>
+        </div>
+        <div className={styles.borders}>
+          <input
             name="email"
             {...register("email", {
               required: "Это поле обязательно",
@@ -82,7 +112,7 @@ export default function Form() {
               },
               pattern: {
                 value:
-                  /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/,
+                  /\S+@\S+\.\S+/,
                 message: "Недопустимый формат email",
               },
             })}
@@ -157,6 +187,7 @@ export default function Form() {
         </div>
       </form>
       <Modal active={activeModal} setActive={setActiveModal} />
+      <ModalError active={isModalError} setActive={setModalError} />
       {isPersonal && <Personal closePersonal={closePersonal} />}
     </>
   );

@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: rgba(31, 31, 31, 0.5);
   position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +20,7 @@
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  z-index: 110;
 }
 
 .layout.active {
@@ -38,9 +39,10 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 50vw;
-  height: 50vh;
+  width: 60vw;
+  height: 90vh;
   background: #fff;
+  border-radius: 5px;
   -webkit-transition: 0.4s all;
   -o-transition: 0.4s all;
   transition: 0.4s all;
@@ -54,4 +56,13 @@
   line-height: 42px;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .window{
+    flex-direction: column;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+  }
 }
