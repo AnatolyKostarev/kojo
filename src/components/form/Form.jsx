@@ -4,17 +4,19 @@ import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
-import styles from "./Form.module.css";
 import Personal from "../personalData/Personal";
+import Preloader from "../loader/Preloader";
+import styles from "./Form.module.css";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
   const [isPersonal, setIsPersonal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
 
   const {
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
   } = useForm({
@@ -22,12 +24,14 @@ export default function Form() {
   });
 
   const onSubmit = () => {
+    setIsLoading(true);
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((res) => {
         setActiveModal(true);
+        setIsLoading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => setIsLoading(false));
     reset();
   };
 
@@ -152,12 +156,18 @@ export default function Form() {
         <div className={styles.submitWrapper}>
           <div></div>
           <div className={styles.form__btn}>
-            <Button title="Отправить" addStyle="form_btn" />
+            <Button
+              title="Отправить"
+              addStyle="form_btn"
+              type="submit"
+              disabled={!isValid}
+            />
           </div>
         </div>
       </form>
       <Modal active={activeModal} setActive={setActiveModal} />
       {isPersonal && <Personal closePersonal={closePersonal} />}
+      {isLoading && <Preloader />}
     </>
   );
 }
