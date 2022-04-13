@@ -9,7 +9,7 @@ export function Header2() {
         <div className={style.logoWrapper}>
           <div className={style.logoWrapperBox}>
             <a href="#title">
-              <img src="./img/header/icon-logo.svg" alt="kojo_icon" />
+              <img src="./img/header/kojo-logo.svg" alt="KOJO" />
             </a>
             <div className={style.logoBoxAnimate}></div>
           </div>

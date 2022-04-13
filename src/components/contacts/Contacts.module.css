@@ -192,7 +192,7 @@
   }
 
   .contacts__message {
-    margin-top: 24vh;
+    margin-top: 32vh;
     width: 32vw;
     font-size: 11px;
     line-height: 15px;
@@ -212,7 +212,7 @@
   .contacts__text_top,
   .contacts__text_bottom {
     position: absolute;
-    top: -20.25vh;
+    top: -15.25vh;
     left: 6.25vw;
     max-width: 27.5vw;
     font-size: 11px;
@@ -222,7 +222,7 @@
   }
 
   .contacts__text_bottom {
-    top: -18.25vh;
+    top: -13.25vh;
   }
 
   .contacts__copyright {

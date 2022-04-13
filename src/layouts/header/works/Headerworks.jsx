@@ -19,8 +19,8 @@ export default function Headerworks({
               <Link to="/">
                 <div className={styles.header__img}>
                   <img
-                    src="/img/header/icon-logo.svg"
-                    alt="ZIPL"
+                    src="/img/header/kojo-logo.svg"
+                    alt="KOJO"
                     className={styles.logo}
                   />
                   <div className={styles.logo__animation}></div>

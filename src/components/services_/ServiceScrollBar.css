@@ -1,7 +1,7 @@
 .service__scroll_bar {
   position: fixed;
-  top: 32.5vh;
-  left: 6.25vw;
+  bottom: 8.25vh;
+  right: 3.125vw;
 }
 
 .service__scroll_link {
@@ -19,7 +19,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  row-gap: 14.75vh;
+  row-gap: 71px;
   overflow: hidden;
 }
 

@@ -41,7 +41,8 @@ footer:hover ~ div > nav > #indicator {
 .blockSpy {
   position: fixed;
   bottom: 13vh;
-  left: 50vw;
+  right: 0.55vw;
+  transform: rotate(90deg); 
 }
 
 .scrollSpy {

@@ -5,6 +5,7 @@ import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import Personal from "../personalData/Personal";
+import ModalError from "../modal/ModalError";
 import Preloader from "../loader/Preloader";
 import styles from "./Form.module.css";
 
@@ -13,6 +14,7 @@ export default function Form() {
   const [isPersonal, setIsPersonal] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
+  const [isModalError, setModalError] = useState(false);
 
   const {
     register,
@@ -29,9 +31,14 @@ export default function Form() {
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((res) => {
         setActiveModal(true);
+        setTimeout(setActiveModal, 2000);
         setIsLoading(false);
       })
-      .catch((err) => setIsLoading(false));
+      .catch((err) => {
+        setModalError(true);
+        setTimeout(setModalError, 2000);
+        setIsLoading(false);
+      });
     reset();
   };
 
@@ -85,8 +92,7 @@ export default function Form() {
                 message: "Максимум 50 символов",
               },
               pattern: {
-                value:
-                  /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/,
+                value: /\S+@\S+\.\S+/,
                 message: "Недопустимый формат email",
               },
             })}
@@ -99,6 +105,29 @@ export default function Form() {
             {errors?.email && (
               <p className={styles.focus}>
                 {errors?.email?.message || "Error!"}
+              </p>
+            )}
+          </div>
+        </div>
+        <div className={styles.borders}>
+          <input
+            name="phone"
+            {...register("phone", {
+              required: "Это поле обязательно",
+              pattern: {
+                value: /^\+?7(\d{10})$/,
+                message: "Введите в формате +7XXXXXXXXXX",
+              },
+            })}
+            id="feedback-phone"
+            className={styles.input}
+            type="tel"
+            placeholder="Телефон"
+          />
+          <div>
+            {errors?.phone && (
+              <p className={styles.focus}>
+                {errors?.phone?.message || "Error!"}
               </p>
             )}
           </div>
@@ -165,7 +194,8 @@ export default function Form() {
           </div>
         </div>
       </form>
-      <Modal active={activeModal} setActive={setActiveModal} />
+        <Modal active={activeModal} setActive={setActiveModal} />
+        <ModalError active={isModalError} setActive={setModalError} />
       {isPersonal && <Personal closePersonal={closePersonal} />}
       {isLoading && <Preloader />}
     </>
