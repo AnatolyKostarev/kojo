@@ -4,9 +4,9 @@ import emailjs from "emailjs-com";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
-import styles from "./Form.module.css";
 import Personal from "../personalData/Personal";
 import ModalError from "../modal/ModalError";
+import styles from "./Form.module.css";
 
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
@@ -16,7 +16,7 @@ export default function Form() {
 
   const {
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
   } = useForm({
@@ -24,6 +24,7 @@ export default function Form() {
   });
 
   const onSubmit = () => {
+    setIsLoading(true);
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((res) => {
@@ -33,7 +34,8 @@ export default function Form() {
       .catch((err) => {
         setModalError(true);
         setTimeout(setModalError, 2000);
-      });
+      })
+      .catch((err) => setIsLoading(false));
     reset();
   };
 
@@ -180,13 +182,19 @@ export default function Form() {
         <div className={styles.submitWrapper}>
           <div></div>
           <div className={styles.form__btn}>
-            <Button title="Отправить" addStyle="form_btn" />
+            <Button
+              title="Отправить"
+              addStyle="form_btn"
+              type="submit"
+              disabled={!isValid}
+            />
           </div>
         </div>
       </form>
         <Modal active={activeModal} setActive={setActiveModal} />
         <ModalError active={isModalError} setActive={setModalError} />
       {isPersonal && <Personal closePersonal={closePersonal} />}
+      {isLoading && <Preloader />}
     </>
   );
 }
