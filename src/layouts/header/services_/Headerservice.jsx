@@ -14,51 +14,51 @@ const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
               <Link to="/">
                 <div className={styles.header__img}>
                   <img
-                    src="img/header/icon-logo.svg"
-                    alt="ZIPL"
+                    src="img/header/kojo-logo.svg"
+                    alt="KOJO"
                     className={styles.logo}
                   />
                   <div className={styles.logo__animation}></div>
                 </div>
               </Link>
-              <div className={styles.header__title}>
-                <h1 className={styles.title} data-title="Услуги">
-                  {title}
-                </h1>
-              </div>
-              <div className={styles.header__subtitle}>
-                <p
-                  style={
-                    isTitle
-                      ? {
-                          transform: "translateY(-100%)",
-                          transition: "0.8s ease-in-out",
-                        }
-                      : {
-                          transform: "translateY(0)",
-                          transition: "0.8s ease-in-out",
-                        }
-                  }
-                >
-                  веб
-                </p>
-                <p
-                  style={
-                    isTitle
-                      ? {
-                          transform: "translateY(-100%)",
-                          transition: "0.8s ease-in-out",
-                        }
-                      : {
-                          transform: "translateY(0)",
-                          transition: "0.8s ease-in-out",
-                        }
-                  }
-                >
-                  правила
-                </p>
-              </div>
               <MenuToggle isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
+            </div>
+            <div className={styles.header__title}>
+              <h1 className={styles.title} data-title="Услуги">
+                {title}
+              </h1>
+            </div>
+            <div className={styles.header__subtitle}>
+              <p
+                style={
+                  isTitle
+                    ? {
+                        transform: "translateY(-100%)",
+                        transition: "0.8s ease-in-out",
+                      }
+                    : {
+                        transform: "translateY(0)",
+                        transition: "0.8s ease-in-out",
+                      }
+                }
+              >
+                веб
+              </p>
+              <p
+                style={
+                  isTitle
+                    ? {
+                        transform: "translateY(-100%)",
+                        transition: "0.8s ease-in-out",
+                      }
+                    : {
+                        transform: "translateY(0)",
+                        transition: "0.8s ease-in-out",
+                      }
+                }
+              >
+                правила
+              </p>
             </div>
             <div className={styles.header__btn}>
               <Link to="/contacts">

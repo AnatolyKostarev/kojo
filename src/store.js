@@ -9,7 +9,7 @@ export const worksItem = [
     desc: "сайт школы по обучению программированию",
     action: "дизайн & код",
     href: "https://saintcode.ru",
-    src: "/img/works/image_works-1.webp",
+    src: "/img/works/saintcode_bootcamp.png",
     width: "840",
     height: "830",
     alt: "SaintCode Bootcamp",
@@ -23,7 +23,7 @@ export const worksItem = [
     desc: "сайт инвестиционной компании",
     action: "код",
     href: "http://frontiers.ru",
-    src: "/img/works/image_works-2.webp",
+    src: "/img/works/frontiers.png",
     width: "720",
     height: "720",
     alt: "Инвестиционная компания Фронтирс в Санкт-Петербурге",
@@ -38,7 +38,7 @@ export const worksItem = [
     desc: "сайт кинооборудования",
     action: "код & дизайн & seo",
     href: "https://kinoisvet.ru",
-    src: "/img/works/image_works-3.webp",
+    src: "/img/works/kinoisvet.png",
     width: "840",
     height: "830",
     alt: "Cтудия KOJO",
@@ -110,7 +110,7 @@ export const servicesInfo = [
   },
   {
     title:
-      "Увеличаем скорость работы сайта, как следствие " +
+      "Увеличиваем скорость работы сайта, как следствие " +
       "больше довольных пользователей и " +
       "более высокие позиции в поиске Google и Yandex. " +
       "(Чаще всего для этого нужно перенести сайт с конструктора Tilda, Wix, " +
@@ -125,7 +125,7 @@ export const servicesInfo = [
 
 export const servicesList = [
   {
-    title: "лэндингы",
+    title: "лэндинги",
   },
   {
     title: "промо сайты",
@@ -182,6 +182,7 @@ export const awards = [
 // Array of src for title.jsx
 
 export const homepageBackgroundImages = [
+  "./img/imgHomepage/kojo_home1.png",
   "./img/imgHomepage/1Home.webp",
   "./img/imgHomepage/2Home.webp",
   "./img/imgHomepage/3Home.webp",

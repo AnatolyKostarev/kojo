@@ -13,8 +13,8 @@ export default function Headercontacts({ toggleMobileMenu, isOpen }) {
               <Link to="/">
                 <div className={styles.header__img}>
                   <img
-                    src="img/header/icon-logo.svg"
-                    alt="ZIPL"
+                    src="img/header/kojo-logo.svg"
+                    alt="KOJO"
                     className={styles.logo}
                   />
                 </div>

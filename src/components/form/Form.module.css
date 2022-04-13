@@ -39,12 +39,12 @@
   .focus {
     text-transform: uppercase;
     color: red;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .focus_consent {
     position: relative;
-    top: 10px;
+    top: 5px;
     text-transform: uppercase;
     color: red;
   }
