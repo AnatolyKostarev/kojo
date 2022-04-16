@@ -6,6 +6,7 @@ import Modal from "../modal/Modal";
 import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import Personal from "../personalData/Personal";
 import ModalError from "../modal/ModalError";
+import Preloader from "../loader/Preloader";
 import styles from "./Form.module.css";
 
 export default function Form() {
@@ -34,8 +35,13 @@ export default function Form() {
       .catch((err) => {
         setModalError(true);
         setTimeout(setModalError, 2000);
+        setIsLoading(false);
       })
-      .catch((err) => setIsLoading(false));
+      .catch((err) => {
+        setModalError(true);
+        setTimeout(setModalError, 2000);
+        setIsLoading(false);
+      });
     reset();
   };
 
