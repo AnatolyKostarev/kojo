@@ -15,6 +15,7 @@ export default function Form() {
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
   const [isModalError, setModalError] = useState(false);
+  const [checked, setChecked] = useState(false)
 
   const {
     register,
@@ -47,6 +48,7 @@ export default function Form() {
   };
   const closePersonal = () => {
     setIsPersonal(false);
+    setChecked(true);
   };
 
   return (
@@ -162,13 +164,15 @@ export default function Form() {
           <input
             name="consent"
             type="checkbox"
+            checked={checked}
+            onChange={() => setChecked(!checked)}
             {...register("consent", {
               required: "Подтвердите свое согласие для отправки формы",
             })}
             id="feedback-consent"
             className={styles.checkbox}
           />
-          <span className={styles.checkfake}></span>
+          <span className={styles.checkfake} onClick={() => setChecked(!checked)}></span>
           <span className={styles.policy_text}>
             Я даю согласие на обработку&nbsp;
             <span
