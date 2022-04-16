@@ -39,11 +39,6 @@ export default function Form() {
         setModalError(true);
         setTimeout(setModalError, 2000);
         setIsLoading(false);
-      })
-      .catch((err) => {
-        setModalError(true);
-        setTimeout(setModalError, 2000);
-        setIsLoading(false);
       });
     reset();
   };
