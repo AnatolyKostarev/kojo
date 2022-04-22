@@ -16,6 +16,29 @@ export default function Form() {
   const form = useRef();
   const [isModalError, setModalError] = useState(false);
   const [checked, setChecked] = useState(false)
+  const [values, setValues] = React.useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+    consent: '',
+  })
+
+  React.useEffect(() => {
+    const data = localStorage.getItem('form');
+    if(data) {
+      setValues(JSON.parse(data));
+    };
+  }, []);
+
+  React.useEffect(() => {
+    localStorage.setItem('form', JSON.stringify(values))
+  }, [values]);
+
+  const handleChange = () => {
+    setValues()
+  }
+
 
   const {
     register,
@@ -75,6 +98,7 @@ export default function Form() {
             id="feedback-name"
             className={styles.input}
             placeholder="Имя"
+            onChange={handleChange}
           />
           <div>
             {errors?.name && (
