@@ -27,6 +27,12 @@
 
   .services__wraper {
     height: 100vh;
+    min-height: 690px;
     overflow-y: hidden;
+  }
+
+  .footer {
+    position: static;
+    margin-top: -150px;
   }
 }

@@ -64,6 +64,7 @@ export default function Form() {
         setIsLoading(false);
       });
     reset();
+    localStorage.clear();
   };
 
   const openPersonal = () => {

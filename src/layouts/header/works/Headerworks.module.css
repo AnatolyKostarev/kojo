@@ -231,8 +231,7 @@
     position: sticky;
     top: 0;
     margin-bottom: 0;
-    padding-top: 2.42vh;
-    padding-bottom: 2.42vh;
+    padding-top: 20px;
     background: #fff;
     z-index: 105;
   }
@@ -274,5 +273,10 @@
   .title,
   .header__btn {
     display: none;
+  }
+
+  .logo {
+    width: 77px;
+    height: 25px;
   }
 }

@@ -71,13 +71,13 @@ export default function Services({
         )}
         {hide && showMenu && <ServiceScrollBar isTitle={isTitle} />}
         {!showMenu && <NavigationMobile toggleMobileMenu={toggleMobileMenu} />}
+        {showMenu && (
+          <div id="service__footer" className={styles.footer}>
+            {hide && <Footerworks />}
+          </div>
+        )}
       </main>
       <Navigation hideContent={hideContent} />
-      {showMenu && (
-        <div id="service__footer" className={styles.footer}>
-          {hide && <Footerworks />}
-        </div>
-      )}
     </div>
   );
 }

@@ -23,7 +23,7 @@ footer {
   padding: 0 0 12.58vh;
   max-width: 81.25vw;
   font-size: 10px;
-  line-height: 8px;
+  /* line-height: 8px; */
   text-transform: uppercase;
 }
 
@@ -55,7 +55,7 @@ footer {
   -webkit-column-gap: 2.5vw;
   -moz-column-gap: 2.5vw;
   column-gap: 2.5vw;
-  height: 1vh;
+  height: 10px;
   overflow: hidden;
 }
 
@@ -78,7 +78,7 @@ footer {
 }
 
 .link__top {
-  line-height: 10px;
+  line-height: 11px;
 }
 
 .item:hover {
