@@ -41,6 +41,7 @@ export default function Form() {
         setIsLoading(false);
       });
     reset();
+    localStorage.clear();
   };
 
   const openPersonal = () => {
@@ -54,6 +55,8 @@ export default function Form() {
   return (
     <>
       <form
+        name="form"
+        id="form"
         ref={form}
         className={styles.form}
         onSubmit={handleSubmit(onSubmit)}
@@ -72,7 +75,7 @@ export default function Form() {
                 message: "Максимум 50 символов",
               },
             })}
-            id="feedback-name"
+            id="name1"
             className={styles.input}
             placeholder="Имя"
           />
@@ -98,7 +101,7 @@ export default function Form() {
                 message: "Недопустимый формат email",
               },
             })}
-            id="feedback-email"
+            id="email"
             className={styles.input}
             type="email"
             placeholder="Email"
@@ -121,7 +124,7 @@ export default function Form() {
                 message: "Введите в формате +7XXXXXXXXXX",
               },
             })}
-            id="feedback-phone"
+            id="phone"
             className={styles.input}
             type="tel"
             placeholder="Телефон"
@@ -148,7 +151,7 @@ export default function Form() {
                 message: "Максимум 500 символов",
               },
             })}
-            id="feedback-message"
+            id="message"
             className={styles.textarea}
             placeholder="Сообщение"
           ></textarea>
@@ -169,7 +172,7 @@ export default function Form() {
             {...register("consent", {
               required: "Подтвердите свое согласие для отправки формы",
             })}
-            id="feedback-consent"
+            id="consent"
             className={styles.checkbox}
           />
           <span className={styles.checkfake} onClick={() => setChecked(!checked)}></span>
