@@ -9,6 +9,18 @@ import ModalError from "../modal/ModalError";
 import Preloader from "../loader/Preloader";
 import styles from "./Form.module.css";
 
+function getFormValues() {
+	const storedValues = localStorage.getItem('form');
+	if (!storedValues)
+		return {
+			email: '',
+			message: '',
+			name: '',
+			phone: '',
+		};
+	return JSON.parse(storedValues);
+}
+
 export default function Form() {
   const [activeModal, setActiveModal] = useState(false);
   const [isPersonal, setIsPersonal] = useState(false);
@@ -16,6 +28,18 @@ export default function Form() {
   const form = useRef();
   const [isModalError, setModalError] = useState(false);
   const [checked, setChecked] = useState(false)
+  const [values, setValues] = useState(getFormValues)
+
+  React.useEffect(() => {
+		localStorage.setItem('form', JSON.stringify(values));
+	}, [values]);
+
+	function handleChange(event) {
+		setValues((previousValues) => ({
+			...previousValues,
+			[event.target.name]: event.target.value,
+		}));
+	}
 
   const {
     register,
@@ -34,6 +58,9 @@ export default function Form() {
         setActiveModal(true);
         setTimeout(setActiveModal, 2000);
         setIsLoading(false);
+        localStorage.clear();
+        setValues(getFormValues)
+        setChecked(false)
       })
       .catch((err) => {
         setModalError(true);
@@ -41,7 +68,6 @@ export default function Form() {
         setIsLoading(false);
       });
     reset();
-    localStorage.clear();
   };
 
   const openPersonal = () => {
@@ -49,7 +75,6 @@ export default function Form() {
   };
   const closePersonal = () => {
     setIsPersonal(false);
-    setChecked(true);
   };
 
   return (
@@ -75,9 +100,11 @@ export default function Form() {
                 message: "Максимум 50 символов",
               },
             })}
-            id="name1"
+            id="name"
             className={styles.input}
             placeholder="Имя"
+            onChange={handleChange}
+            value={values.name}
           />
           <div>
             {errors?.name && (
@@ -105,6 +132,8 @@ export default function Form() {
             className={styles.input}
             type="email"
             placeholder="Email"
+            onChange={handleChange}
+            value={values.email}
           />
           <div>
             {errors?.email && (
@@ -128,6 +157,9 @@ export default function Form() {
             className={styles.input}
             type="tel"
             placeholder="Телефон"
+
+            onChange={handleChange}
+            value={values.phone}
           />
           <div>
             {errors?.phone && (
@@ -154,6 +186,8 @@ export default function Form() {
             id="message"
             className={styles.textarea}
             placeholder="Сообщение"
+            onChange={handleChange}
+            value={values.message}
           ></textarea>
           <div>
             {errors?.message && (
@@ -169,6 +203,7 @@ export default function Form() {
             type="checkbox"
             checked={checked}
             onChange={() => setChecked(!checked)}
+            value={checked}
             {...register("consent", {
               required: "Подтвердите свое согласие для отправки формы",
             })}
