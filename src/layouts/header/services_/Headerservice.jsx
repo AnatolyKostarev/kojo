@@ -21,8 +21,8 @@ const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
                   <div className={styles.logo__animation}></div>
                 </div>
               </Link>
-              <MenuToggle isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
             </div>
+              <MenuToggle isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
             <div className={styles.header__title}>
               <h1 className={styles.title} data-title="Услуги">
                 {title}
