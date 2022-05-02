@@ -252,7 +252,8 @@
   }
 
   .checkbox {
-    display: none;
+    opacity: 0;
+    width: 0;
   }
 
   .checkfake {
