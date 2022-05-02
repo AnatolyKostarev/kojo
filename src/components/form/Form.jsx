@@ -10,15 +10,15 @@ import Preloader from "../loader/Preloader";
 import styles from "./Form.module.css";
 
 function getFormValues() {
-	const storedValues = localStorage.getItem('form');
-	if (!storedValues)
-		return {
-			email: '',
-			message: '',
-			name: '',
-			phone: '',
-		};
-	return JSON.parse(storedValues);
+  const storedValues = localStorage.getItem("form");
+  if (!storedValues)
+    return {
+      email: "",
+      message: "",
+      name: "",
+      phone: "",
+    };
+  return JSON.parse(storedValues);
 }
 
 export default function Form() {
@@ -27,19 +27,19 @@ export default function Form() {
   const [isLoading, setIsLoading] = useState(false);
   const form = useRef();
   const [isModalError, setModalError] = useState(false);
-  const [checked, setChecked] = useState(false)
-  const [values, setValues] = useState(getFormValues)
+  const [checked, setChecked] = useState(false);
+  const [values, setValues] = useState(getFormValues);
 
   React.useEffect(() => {
-		localStorage.setItem('form', JSON.stringify(values));
-	}, [values]);
+    localStorage.setItem("form", JSON.stringify(values));
+  }, [values]);
 
-	function handleChange(event) {
-		setValues((previousValues) => ({
-			...previousValues,
-			[event.target.name]: event.target.value,
-		}));
-	}
+  function handleChange(event) {
+    setValues((previousValues) => ({
+      ...previousValues,
+      [event.target.name]: event.target.value,
+    }));
+  }
 
   const {
     register,
@@ -59,8 +59,8 @@ export default function Form() {
         setTimeout(setActiveModal, 2000);
         setIsLoading(false);
         localStorage.clear();
-        setValues(getFormValues)
-        setChecked(false)
+        setValues(getFormValues);
+        setChecked(false);
       })
       .catch((err) => {
         setModalError(true);
@@ -157,7 +157,6 @@ export default function Form() {
             className={styles.input}
             type="tel"
             placeholder="Телефон"
-
             onChange={handleChange}
             value={values.phone}
           />
@@ -210,7 +209,10 @@ export default function Form() {
             id="consent"
             className={styles.checkbox}
           />
-          <span className={styles.checkfake} onClick={() => setChecked(!checked)}></span>
+          <span
+            className={styles.checkfake}
+            onClick={() => setChecked(!checked)}
+          ></span>
           <span className={styles.policy_text}>
             Я даю согласие на обработку&nbsp;
             <span
@@ -236,8 +238,8 @@ export default function Form() {
           </div>
         </div>
       </form>
-        <Modal active={activeModal} setActive={setActiveModal} />
-        <ModalError active={isModalError} setActive={setModalError} />
+      <Modal active={activeModal} setActive={setActiveModal} />
+      <ModalError active={isModalError} setActive={setModalError} />
       {isPersonal && <Personal closePersonal={closePersonal} />}
       {isLoading && <Preloader />}
     </>
