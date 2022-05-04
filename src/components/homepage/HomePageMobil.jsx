@@ -24,7 +24,7 @@ export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
           <main>
             <section className={styles.title}>
               <div className={styles.title_img}>
-                <img src="/img/imgHomepage/WebDev.svg " alt="logo-icon" />
+                <img src="/img/imgHomepage/webdev.svg " alt="logo-icon" />
               </div>
               <div className={styles.title_description}>
                 <div className={styles.main_title}>

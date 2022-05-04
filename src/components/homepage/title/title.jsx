@@ -25,7 +25,7 @@ function Title({ showHeader }) {
             setIndex(6);
           }}
         >
-          <img src="/img/imgHomepage/WebDev.svg" alt="webDesign" />
+          <img src="/img/imgHomepage/webdev.svg" alt="webDesign" />
 
           <div className={style.boxAnimation}></div>
         </div>
