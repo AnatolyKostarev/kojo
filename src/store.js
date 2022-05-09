@@ -9,7 +9,7 @@ export const worksItem = [
     desc: "сайт школы по обучению программированию",
     action: "дизайн & код",
     href: "https://saintcode.ru",
-    src: "/img/works/saintcode_bootcamp.png",
+    src: "/img/works/saintcode_bootcamp.webp",
     width: "840",
     height: "830",
     alt: "SaintCode Bootcamp",
@@ -23,7 +23,7 @@ export const worksItem = [
     desc: "сайт инвестиционной компании",
     action: "код",
     href: "http://frontiers.ru",
-    src: "/img/works/frontiers.png",
+    src: "/img/works/frontiers.webp",
     width: "720",
     height: "720",
     alt: "Инвестиционная компания Фронтирс в Санкт-Петербурге",
@@ -38,7 +38,7 @@ export const worksItem = [
     desc: "сайт кинооборудования",
     action: "код & дизайн & seo",
     href: "https://kinoisvet.ru",
-    src: "/img/works/kinoisvet.png",
+    src: "/img/works/kinoisvet.webp",
     width: "840",
     height: "830",
     alt: "Cтудия KOJO",
@@ -182,7 +182,7 @@ export const awards = [
 // Array of src for title.jsx
 
 export const homepageBackgroundImages = [
-  "./img/imgHomepage/kojo_home1.png",
+  "./img/imgHomepage/kojo_home1.webp",
   "./img/imgHomepage/1Home.webp",
   "./img/imgHomepage/2Home.webp",
   "./img/imgHomepage/3Home.webp",
