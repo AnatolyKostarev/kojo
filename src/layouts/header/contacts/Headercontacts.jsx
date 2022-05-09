@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./Headercontacts.module.css";
 import { MenuToggle } from "./MenuToggle";
+import styles from "./Headercontacts.module.css";
 
 export default function Headercontacts({ toggleMobileMenu, isOpen }) {
   return (

@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import emailjs from "emailjs-com";
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import Button from "../button/Button";
 import Modal from "../modal/Modal";
-import { SERVICE_ID, TEMPLATE_ID, USER_ID } from "../../store";
 import Personal from "../personalData/Personal";
 import ModalError from "../modal/ModalError";
 import Preloader from "../loader/Preloader";

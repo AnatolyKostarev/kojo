@@ -1,12 +1,12 @@
 import { useState } from "react";
-import styles from "./HomePageMobile.module.css";
+import { NavLink } from "react-router-dom";
 import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import NavigationMobile from "../../components/navigation/NavigationMobile";
 import Navigation from "../../components/navigation/Navigation";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Form from "../form/Form";
-import { NavLink } from "react-router-dom";
 import Button from "../button/Button";
+import styles from "./HomePageMobile.module.css";
 
 export default function HomePageMobile({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = useState(true);

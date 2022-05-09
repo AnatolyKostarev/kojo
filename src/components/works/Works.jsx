@@ -1,11 +1,11 @@
 import React from "react";
+import { worksItem } from "../../store";
 import Headerworks from "../../layouts/header/works/Headerworks";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Navigation from "../navigation/Navigation";
 import Worksitem from "./Worksitem";
 import { Worksitemresponsive } from "./Worksitemresponsive";
 import NavigationMobile from "../navigation/NavigationMobile";
-import { worksItem } from "../../store";
 import styles from "./Works.module.css";
 
 export default function Works({ showMenu, isOpen, toggleMobileMenu }) {

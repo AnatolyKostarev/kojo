@@ -1,10 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Headerworks from "../../layouts/header/works/Headerworks";
 import Navigation from "../navigation/Navigation";
 import NavigationMobile from "../navigation/NavigationMobile";
 import Footerworks from "../../layouts/footer/works/Footerworks";
 import Button from "../button/Button";
-import { Link } from "react-router-dom";
 import styles from "./ErrorPage.module.css";
 
 export default function ErrorPage({ showMenu, isOpen, toggleMobileMenu }) {

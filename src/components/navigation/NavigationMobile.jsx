@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { navSideBar, footerWorksNav } from "../../store";
-import styles from "./NavigationMobile.module.css";
 import Button from "../button/Button";
+import styles from "./NavigationMobile.module.css";
 
 export default function NavigationMobile({ toggleMobileMenu }) {
   return (
