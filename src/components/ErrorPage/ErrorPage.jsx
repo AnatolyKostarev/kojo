@@ -52,9 +52,7 @@ export default function ErrorPage({ showMenu, isOpen, toggleMobileMenu }) {
       <Navigation hideContent={hideContent} />
 
       {showMenu && (
-        <div className={styles.footer}>
-          <Footerworks />
-        </div>
+        <div className={styles.footer}>{hide && <Footerworks />}</div>
       )}
     </>
   );
