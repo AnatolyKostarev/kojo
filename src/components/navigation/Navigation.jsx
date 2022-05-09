@@ -4,16 +4,6 @@ import { navSideBar } from "../../store";
 import styles from "./Navigation.module.css";
 
 export default function Navigation({ hideContent }) {
-  // const toggleFullScreen = () => {
-  //   if (!document.fullscreenElement) {
-  //     document.documentElement.requestFullscreen();
-  //   } else {
-  //     if (document.fullscreenEnabled) {
-  //       document.exitFullscreen();
-  //     }
-  //   }
-  // };
-
   return (
     <>
       <aside className={styles.nav__sidebar}>
@@ -36,7 +26,6 @@ export default function Navigation({ hideContent }) {
             ))}
           </ul>
         </nav>
-        {/* <div className={styles.nav__screen} onClick={toggleFullScreen}></div> */}
       </aside>
     </>
   );
