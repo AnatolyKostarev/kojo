@@ -1,11 +1,11 @@
 import React from "react";
+import { socialList, contactsList } from "../../store";
 import Headercontacts from "../../layouts/header/contacts/Headercontacts";
 import Form from "../form/Form";
 import Navigation from "../navigation/Navigation";
-import { socialList, contactsList } from "../../store";
-import styles from "./Contacts.module.css";
 import NavigationMobile from "../navigation/NavigationMobile";
 import Footerworks from "../../layouts/footer/works/Footerworks";
+import styles from "./Contacts.module.css";
 
 export default function Contacts({ showMenu, isOpen, toggleMobileMenu }) {
   const [hide, setHide] = React.useState(true);
