@@ -1,12 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Homepage from "../components/homepage/Homepage";
 import Works from "../components/works/Works";
 import Services from "../components/services_/Services";
 import Contacts from "../components/contacts/Contacts";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
-import Personal from "../components/personalData/Personal";
-import { Helmet } from "react-helmet";
 
 function App() {
   const [showMenu, setShowMenu] = React.useState(true);
@@ -110,7 +109,7 @@ function App() {
             />
           }
         />
-        <Route path="personal" element={<Personal />} />
+        {/* <Route path="personal" element={<Personal />} /> */}
         <Route
           path="*"
           element={
