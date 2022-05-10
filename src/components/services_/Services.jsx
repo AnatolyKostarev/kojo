@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Headerservice from "../../layouts/header/services_/Headerservice";
 import Navigation from "../navigation/Navigation";
 import Footerworks from "../../layouts/footer/works/Footerworks";
@@ -7,7 +8,6 @@ import ServiceRules from "./service_rules/ServiceRules";
 import NavigationMobile from "../navigation/NavigationMobile";
 import { ServiceScrollBar } from "../services_/ServiceScrollBar";
 import ServiceMobileNavBar from "./services_mobile/ServiceMobileNavBar";
-import { Helmet } from "react-helmet";
 import styles from "./Services.module.css";
 
 export default function Services({
