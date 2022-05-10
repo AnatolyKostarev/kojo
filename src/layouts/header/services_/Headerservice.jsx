@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MenuToggle } from "../../../layouts/header/contacts/MenuToggle";
+import logo from "./kojo-logo.svg";
 import Button from "../../../components/button/Button";
 import styles from "./Headerservice.module.css";
 
@@ -13,16 +14,12 @@ const Headerservice = ({ title, isTitle, isOpen, toggleMobileMenu }) => {
             <div className={styles.header__logo}>
               <Link to="/">
                 <div className={styles.header__img}>
-                  <img
-                    src="img/header/kojo-logo.svg"
-                    alt="KOJO"
-                    className={styles.logo}
-                  />
+                  <img src={logo} alt="KOJO" className={styles.logo} />
                   <div className={styles.logo__animation}></div>
                 </div>
               </Link>
             </div>
-              <MenuToggle isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
+            <MenuToggle isOpen={isOpen} toggleMobileMenu={toggleMobileMenu} />
             <div className={styles.header__title}>
               <h1 className={styles.title} data-title="Услуги">
                 {title}
