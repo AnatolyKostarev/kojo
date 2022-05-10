@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MenuToggle } from "./MenuToggle";
+import logo from "./kojo-logo.svg";
 import styles from "./Headercontacts.module.css";
 
 export default function Headercontacts({ toggleMobileMenu, isOpen }) {
@@ -12,11 +13,7 @@ export default function Headercontacts({ toggleMobileMenu, isOpen }) {
             <div className={styles.header__logo}>
               <Link to="/">
                 <div className={styles.header__img}>
-                  <img
-                    src="img/header/kojo-logo.svg"
-                    alt="KOJO"
-                    className={styles.logo}
-                  />
+                  <img src={logo} alt="KOJO" className={styles.logo} />
                 </div>
               </Link>
             </div>
