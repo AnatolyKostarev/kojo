@@ -42,10 +42,21 @@ function App() {
     }
   };
 
+  // const changeMobileHomePage = (e) => {
+  //   if (e.target.innerWidth > 1023) {
+  //     setShowHomeMobile(true);
+  //   }
+  // };
+
   React.useEffect(() => {
     window.addEventListener("resize", hideMobileMenu);
     return () => window.removeEventListener("resize", hideMobileMenu);
   }, []);
+
+  // React.useEffect(() => {
+  //   window.addEventListener("resize", changeMobileHomePage);
+  //   return () => window.removeEventListener("resize", changeMobileHomePage);
+  // }, []);
 
   return (
     <>
@@ -71,6 +82,7 @@ function App() {
               showMenu={showMenu}
               isOpen={isOpen}
               toggleMobileMenu={toggleMobileMenu}
+              // showHomeMobile={showHomeMobile}
             />
           }
         />

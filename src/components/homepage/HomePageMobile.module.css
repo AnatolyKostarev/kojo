@@ -8,7 +8,7 @@
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   /* header */
   .headerMobile {
     position: fixed;
@@ -97,7 +97,7 @@
   .title_img {
     position: relative;
     width: 100%;
-    height: 72vw;
+    height: 44vh;
     background: url("/public/img/imgHomepage/kojo_home1.webp");
     background-size: 300% 100%;
     display: -webkit-box;
@@ -111,7 +111,7 @@
 
   .title_img > img {
     padding: 0 20px;
-    height: 37.33vw;
+    height: 37.33vh;
   }
 
   .title_description {

@@ -9,7 +9,12 @@ import FooterHomepage from "./footer/footerHomepage/footerHomepage";
 import style from "./Homepage.module.css";
 import ScrollSpy from "./scrollSpy/scrollSpy";
 
-export default function Homepage({ showMenu, isOpen, toggleMobileMenu }) {
+export default function Homepage({
+  showMenu,
+  isOpen,
+  toggleMobileMenu,
+  // showHomeMobile,
+}) {
   // for header
   let [header, setHeader] = useState(true);
   const [hide, setHide] = useState(true);

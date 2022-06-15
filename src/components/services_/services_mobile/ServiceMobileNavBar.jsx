@@ -3,13 +3,13 @@ import "./ServiceMobileNavBar.css";
 
 const ServiceMobileNavBar = ({ btnColor, webButton, rulesButton }) => {
   const blackBtn = {
-    background: "#000",
+    background: "#1f1f1f",
     color: "#fff",
   };
 
   const whiteBtn = {
     background: "#fff",
-    color: "#000",
+    color: "#1f1f1f",
   };
 
   return (
