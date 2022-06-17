@@ -23,21 +23,28 @@
 }
 
 .blockTitle {
-  padding-top: 0.86vh;
-  height: 54.3vh;
+  /* height: 54.3vh; */
   width: 47.9vw;
   font-size: 9.8vh;
   letter-spacing: 0.13vw;
 }
 
-.blockTitle > div {
+.blockTitle > div:nth-child(1) {
+  margin-bottom: 20px;
   font-family: "JetBrains Mono Bold", monospace;
+  line-height: 70%;
+}
+
+.blockTitle > div:nth-child(n + 2) {
+  font-family: "JetBrains Mono Bold", monospace;
+  line-height: 110%;
 }
 
 .blockFrom > p {
   margin-bottom: 7.8vh;
   width: 19vw;
-  line-height: 1.8vh;
+  /* line-height: 1.8vh; */
+  line-height: 110%;
   font-size: 1.3vh;
 }
 
