@@ -81,7 +81,7 @@
 .itemTitle {
   font-family: "JetBrains Mono Bold", monospace;
   font-size: 5vh;
-  line-height: 4.4vh;
+  line-height: 110%;
 }
 
 .itemTitle > p {
@@ -118,7 +118,7 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
   font-size: 2.2vh;
-  line-height: 3.6vh;
+  line-height: 110%;
 }
 
 .itemText > p {
