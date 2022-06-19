@@ -33,8 +33,10 @@ export default function Services({
   const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(true) : setTitle(false));
 
   const watchSizeSides = (e) => {
-    setInnerWidth(e.target.innerWidth);
-    setInnerHeight(e.target.innerHeight);
+    if (e.target.innerWidth > 1023) {
+      setInnerWidth(e.target.innerWidth);
+      setInnerHeight(e.target.innerHeight);
+    }
   };
 
   React.useEffect(() => {
