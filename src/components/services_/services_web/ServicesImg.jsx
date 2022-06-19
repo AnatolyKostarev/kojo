@@ -6,7 +6,7 @@ export const ServicesImg = ({ width, height }) => {
     <div className={styles.service__img_wraper}>
       <div
         className={styles.service__img}
-        screen-width={`${width} : ${height}`}
+        screen-sizes={`${width} : ${height}`}
       ></div>
     </div>
   );
