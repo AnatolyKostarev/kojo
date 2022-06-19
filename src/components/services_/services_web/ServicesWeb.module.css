@@ -221,7 +221,7 @@ html:-ms-full-screen .service__info {
 }
 
 .service__img::after {
-  content: attr(screen-width);
+  content: attr(screen-sizes);
   position: absolute;
   top: 2.25vh;
   left: 1.41vw;
