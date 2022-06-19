@@ -22,6 +22,8 @@ export default function Services({
 }) {
   const [hide, setHide] = React.useState(true);
   const [isTitle, setTitle] = React.useState(false);
+  const [innerWidth, setInnerWidth] = React.useState(window.innerWidth);
+  const [innerHeight, setInnerHeight] = React.useState(window.innerHeight);
 
   const hideContent = () => {
     setHide(!hide);
@@ -29,6 +31,16 @@ export default function Services({
   };
 
   const toggleWheel = (e) => (e.deltaY > 0 ? setTitle(true) : setTitle(false));
+
+  const watchSizeSides = (e) => {
+    setInnerWidth(e.target.innerWidth);
+    setInnerHeight(e.target.innerHeight);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("resize", (e) => watchSizeSides(e));
+    return window.removeEventListener("resize", (e) => watchSizeSides(e));
+  }, []);
 
   return (
     <div className={styles.service__scroll}>
@@ -62,6 +74,8 @@ export default function Services({
             <ServicesWeb
               toggleWheel={toggleWheel}
               isWebContent={isWebContent}
+              width={innerWidth}
+              height={innerHeight}
             />
             <ServiceRules
               toggleWheel={toggleWheel}
