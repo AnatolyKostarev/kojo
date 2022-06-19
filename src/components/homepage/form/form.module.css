@@ -27,15 +27,16 @@
   padding-left: 6.25vw;
   font-size: 9.8vh;
   letter-spacing: 0.13vw;
+  text-transform: uppercase;
 }
 
-.blockTitle > div:nth-child(1) {
+.blockTitle > p:nth-child(1) {
   margin-bottom: 20px;
   font-family: "JetBrains Mono Bold", monospace;
   line-height: 70%;
 }
 
-.blockTitle > div:nth-child(n + 2) {
+.blockTitle > p:nth-child(n + 2) {
   font-family: "JetBrains Mono Bold", monospace;
   line-height: 110%;
 }
@@ -46,9 +47,10 @@
 
 .blockFrom > p {
   margin-bottom: 7.8vh;
-  width: 19vw;
+  width: 22vw;
   line-height: 110%;
-  font-size: 1.3vh;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1440px) and (max-width: 1800px) {

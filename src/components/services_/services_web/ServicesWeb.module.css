@@ -221,12 +221,12 @@ html:-ms-full-screen .service__info {
 }
 
 .service__img::after {
-  content: "1920  :  1080";
+  content: attr(screen-width);
   position: absolute;
   top: 2.25vh;
   left: 1.41vw;
   font-family: "JetBrains Mono Bold", monospace;
-  font-size: 0.99vh;
+  font-size: 1vh;
   letter-spacing: 0.35vw;
   line-height: 0.74vh;
 }

@@ -212,17 +212,17 @@
   .contacts__text_top,
   .contacts__text_bottom {
     position: absolute;
-    top: -15.25vh;
+    top: -16.25vh;
     left: 6.25vw;
     max-width: 27.5vw;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 15px;
     text-align: left;
     text-transform: uppercase;
   }
 
   .contacts__text_bottom {
-    top: -13.25vh;
+    top: -14.25vh;
   }
 
   .contacts__copyright {

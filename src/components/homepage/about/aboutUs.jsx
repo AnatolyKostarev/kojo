@@ -26,9 +26,11 @@ function AboutUs({ showHeader }) {
               <div className={style.item}>
                 <div className={style.label}>первый:</div>
                 <div className={style.valueAwards}>
-                  <div>Помогаем клиенту сформулировать задачу так,
-                    как знаем насколько сложно это сделать, когда
-                    не сталкиваешься с этим каждый день</div>
+                  <p>
+                    Помогаем клиенту сформулировать задачу. Потому что понимаем
+                    — это сложно, когда не сталкиваешься с разработкой каждый
+                    день.
+                  </p>
                 </div>
               </div>
               {awards.map((elem, index) => (
