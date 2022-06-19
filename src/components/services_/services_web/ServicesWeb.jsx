@@ -6,7 +6,7 @@ import styles from "./ServicesWeb.module.css";
 import "../ServiceScrollBar.css";
 import "../services_mobile/ServiceMobileNavBar.css";
 
-const ServicesWeb = ({ toggleWheel, isWebContent }) => {
+const ServicesWeb = ({ toggleWheel, isWebContent, width, height }) => {
   return (
     <section
       id="service"
@@ -22,7 +22,7 @@ const ServicesWeb = ({ toggleWheel, isWebContent }) => {
             <ServicesList />
           </div>
           <div className={styles.service__right}>
-            <ServicesImg />
+            <ServicesImg width={width} height={height} />
           </div>
         </div>
       </div>
