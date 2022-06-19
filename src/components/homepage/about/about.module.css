@@ -92,10 +92,6 @@
   text-transform: uppercase;
 }
 
-.valueAwards > div:nth-child(2) {
-  margin-top: 25px;
-}
-
 .mainAwards {
   height: 100%;
   width: 50%;
