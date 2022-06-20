@@ -40,7 +40,8 @@ function Title({ showHeader }) {
               Разработка<span className={style.boxAnimation}></span>
             </p>
             <p>
-              + польза<span className={style.boxAnimation}></span>
+              + польза
+              <span className={style.boxAnimation}></span>
             </p>
             <p>
               и ценность<span className={style.boxAnimation}></span>
@@ -53,12 +54,12 @@ function Title({ showHeader }) {
             }}
           >
             <p>
-              KOJO — МЫ КОНЦЕНТРИРУЕМСЯ НА РЕШЕНИИ РЕАЛЬНЫХ ПРОБЛЕМ ЗАКАЗЧИКА И
-              ЕГО КЛИЕНТОВ.<span className={style.boxAnimation}></span>
+              KOJO — мы концентрируемся на решении реальных проблем заказчика и
+              его клиентов.<span className={style.boxAnimation}></span>
             </p>
             <p>
-              КАЖДОЕ НАШЕ РЕШЕНИЕ ДОЛЖНО ПРИНОСИТЬ БОЛЬШЕ, ЧЕМ ВЫ ЗАТРАТИЛИ НА
-              ЕГО РАЗРАБОТКУ.<span className={style.boxAnimation}></span>
+              Каждое наше решение должно приносить больше, чем вы затратили на
+              разработку.<span className={style.boxAnimation}></span>
             </p>
           </div>
           <div
@@ -71,7 +72,10 @@ function Title({ showHeader }) {
               JavaScript<span className={style.boxAnimation}></span>
             </p>
             <p>
-              React Gatsby Node/PHP<span className={style.boxAnimation}></span>
+              React Gatsby<span className={style.boxAnimation}></span>
+            </p>
+            <p>
+              Node/PHP<span className={style.boxAnimation}></span>
             </p>
           </div>
         </div>

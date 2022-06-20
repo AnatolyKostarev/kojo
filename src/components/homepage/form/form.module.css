@@ -33,7 +33,7 @@
 .blockTitle > p:nth-child(1) {
   margin-bottom: 20px;
   font-family: "JetBrains Mono Bold", monospace;
-  line-height: 70%;
+  line-height: 85%;
 }
 
 .blockTitle > p:nth-child(n + 2) {
@@ -42,6 +42,7 @@
 }
 
 .blockFrom {
+  flex-basis: 35%;
   padding-left: 1.5625vw;
 }
 
