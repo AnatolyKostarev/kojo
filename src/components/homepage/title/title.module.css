@@ -79,7 +79,7 @@
 }
 
 .itemTitle {
-  font-family: "JetBrains Mono Bold", monospace;
+  font-family: "JetBrains Mono ExtraBold", monospace;
   font-size: 5vh;
   line-height: 110%;
 }
@@ -92,9 +92,9 @@
 }
 
 .itemParagph {
-  font-family: "JetBrains Mono Bold", monospace;
+  font-family: "JetBrains Mono Regular", monospace;
   font-size: 1.6vh;
-  line-height: 1.8vh;
+  line-height: 110%;
 }
 
 .itemParagph > p {
@@ -117,6 +117,7 @@
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  font-family: "JetBrains Mono Regular", monospace;
   font-size: 2.2vh;
   line-height: 160%;
 }
